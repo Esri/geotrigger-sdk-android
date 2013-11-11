@@ -1,0 +1,2 @@
+geotrigger-sdk-android
+======================
