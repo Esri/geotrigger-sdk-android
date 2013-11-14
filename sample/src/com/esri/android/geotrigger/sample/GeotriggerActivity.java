@@ -44,7 +44,7 @@ public class GeotriggerActivity extends Activity implements
     public void onStart() {
         super.onStart();
 
-        GeotriggerHelper.startGeotriggers(this, PLAY_SERVICES_REQUEST_CODE,
+        GeotriggerHelper.startGeotriggerService(this, PLAY_SERVICES_REQUEST_CODE,
                 AGO_CLIENT_ID, GCM_SENDER_ID, GeotriggerService.TRACKING_PROFILE_ADAPTIVE);
     }
 
