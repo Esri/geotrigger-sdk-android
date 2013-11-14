@@ -14,7 +14,7 @@ import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 
 /**
- * A class that packages some convenient
+ * A class that packages some convenience methods for starting the Geotrigger Service.
  */
 public final class GeotriggerHelper {
     private static final String TAG = "GeotriggerHelper";
