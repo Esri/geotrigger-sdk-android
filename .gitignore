@@ -1,0 +1,22 @@
+# Ignore system files
+.DS_Store
+
+# Ignore generated files and binaries
+bin/
+gen/
+*.em
+
+# Ignore editor files
+*.swp
+*.iml
+.settings
+.classpath
+local.properties
+proguard.cfg
+.idea
+
+# Ignore config files
+geoloqi.properties
+
+# Ignore local constants
+Constants.java
