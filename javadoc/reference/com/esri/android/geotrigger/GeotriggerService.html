@@ -1,0 +1,5572 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <meta name="description" content="Javadoc API documentation for Android Geotrigger SDK." />
+
+<link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
+<title>
+
+  GeotriggerService
+
+
+| Android Geotrigger SDK
+
+</title>
+<link href="../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
+<link href="../../../../../assets/customizations.css" rel="stylesheet" type="text/css" />
+<script src="../../../../../assets/search_autocomplete.js" type="text/javascript"></script>
+<script src="../../../../../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="../../../../../assets/doclava-developer-docs.js" type="text/javascript"></script>
+<script src="../../../../../assets/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+  setToRoot("../../../../", "../../../../../assets/");
+</script>
+<script src="../../../../../assets/doclava-developer-reference.js" type="text/javascript"></script>
+<script src="../../../../../assets/navtree_data.js" type="text/javascript"></script>
+<script src="../../../../../assets/customizations.js" type="text/javascript"></script>
+<noscript>
+  <style type="text/css">
+    html,body{overflow:auto;}
+    #body-content{position:relative; top:0;}
+    #doc-content{overflow:visible;border-left:3px solid #666;}
+    #side-nav{padding:0;}
+    #side-nav .toggle-list ul {display:block;}
+    #resize-packages-nav{border-bottom:3px solid #666;}
+  </style>
+</noscript>
+</head>
+
+<body class="">
+
+<div id="header">
+    <div id="headerLeft">
+    
+      <span id="masthead-title">Android Geotrigger SDK</span>
+    
+    </div>
+    <div id="headerRight">
+      
+  <div id="search" >
+      <div id="searchForm">
+          <form accept-charset="utf-8" class="gsc-search-box" 
+                onsubmit="return submit_search()">
+            <table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody>
+                <tr>
+                  <td class="gsc-input">
+                    <input id="search_autocomplete" class="gsc-input" type="text" size="33" autocomplete="off"
+                      title="search developer docs" name="q"
+                      value="search developer docs"
+                      onFocus="search_focus_changed(this, true)"
+                      onBlur="search_focus_changed(this, false)"
+                      onkeydown="return search_changed(event, true, '../../../../')"
+                      onkeyup="return search_changed(event, false, '../../../../')" />
+                  <div id="search_filtered_div" class="no-display">
+                      <table id="search_filtered" cellspacing=0>
+                      </table>
+                  </div>
+                  </td>
+                  <td class="gsc-search-button">
+                    <input type="submit" value="Search" title="search" id="search-button" class="gsc-search-button" />
+                  </td>
+                  <td class="gsc-clear-button">
+                    <div title="clear results" class="gsc-clear-button">&nbsp;</div>
+                  </td>
+                </tr></tbody>
+              </table>
+          </form>
+      </div><!-- searchForm -->
+  </div><!-- search -->
+      
+    </div>
+</div><!-- header -->
+
+
+  <div class="g-section g-tpl-240" id="body-content">
+    <div class="g-unit g-first side-nav-resizable" id="side-nav">
+      <div id="swapper">
+        <div id="nav-panels">
+          <div id="resize-packages-nav">
+            <div id="packages-nav">
+              <div id="index-links">
+                <a href="../../../../packages.html"  >Package Index</a> | 
+                <a href="../../../../classes.html" >Class Index</a>
+              </div>
+              <ul>
+                
+    <li class="selected api apilevel-">
+  <a href="../../../../com/esri/android/geotrigger/package-summary.html">com.esri.android.geotrigger</a></li>
+              </ul><br/>
+            </div> <!-- end packages -->
+          </div> <!-- end resize-packages -->
+          <div id="classes-nav">
+            <ul>
+              
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerApiListener.html">GeotriggerApiListener</a></li>
+          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.DeviceReadyListener.html">GeotriggerBroadcastReceiver.DeviceReadyListener</a></li>
+          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.DeviceRegisterFailListener.html">GeotriggerBroadcastReceiver.DeviceRegisterFailListener</a></li>
+          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUpdateListener.html">GeotriggerBroadcastReceiver.LocationUpdateListener</a></li>
+          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadFailListener.html">GeotriggerBroadcastReceiver.LocationUploadFailListener</a></li>
+          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadListener.html">GeotriggerBroadcastReceiver.LocationUploadListener</a></li>
+          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushMessageListener.html">GeotriggerBroadcastReceiver.PushMessageListener</a></li>
+          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterFailListener.html">GeotriggerBroadcastReceiver.PushTokenRegisterFailListener</a></li>
+          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterListener.html">GeotriggerBroadcastReceiver.PushTokenRegisterListener</a></li>
+          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TrackingProfileChangeListener.html">GeotriggerBroadcastReceiver.TrackingProfileChangeListener</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Classes</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerApiClient.html">GeotriggerApiClient</a></li>
+          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.html">GeotriggerBroadcastReceiver</a></li>
+          <li class="selected api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html">GeotriggerService</a></li>
+          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/MessageReceiver.html">MessageReceiver</a></li>
+          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/TriggerBuilder.html">TriggerBuilder</a></li>
+      </ul>
+    </li>
+              
+              
+              
+              
+            </ul><br/>
+          </div><!-- end classes -->
+        </div><!-- end nav-panels -->
+        <div id="nav-tree" style="display:none">
+          <div id="index-links">
+            <a href="../../../../packages.html"  >Package Index</a> | 
+            <a href="../../../../classes.html" >Class Index</a>
+          </div>
+        </div><!-- end nav-tree -->
+      </div><!-- end swapper -->
+    </div> <!-- end side-nav -->
+    <script>
+      if (!isMobile) {
+        $("<a href='#' id='nav-swap' onclick='swapNav();return false;' style='font-size:10px;line-height:9px;margin-left:1em;text-decoration:none;'><span id='tree-link'>Use Tree Navigation</span><span id='panel-link' style='display:none'>Use Panel Navigation</span></a>").appendTo("#side-nav");
+        chooseDefaultNav();
+        if ($("#nav-tree").is(':visible')) {
+          init_default_navtree("../../../../");
+        } else {
+          addLoadEvent(function() {
+            scrollIntoView("packages-nav");
+            scrollIntoView("classes-nav");
+          });
+        }
+        $("#swapper").css({borderBottom:"2px solid #aaa"});
+      } else {
+        swapNav(); // tree view should be used on mobile
+      }
+    </script>
+
+
+
+<div class="g-unit" id="doc-content">
+
+<div id="api-info-block">
+
+
+
+  
+   
+  
+  
+   
+  
+  
+  
+
+  
+   
+  
+  
+  
+  
+
+  
+   
+  
+  
+   
+  
+  
+  
+
+  
+   
+  
+  
+  
+  
+
+  
+   
+  
+  
+  
+  
+
+
+<div class="sum-details-links">
+
+
+Summary:
+
+
+
+
+
+  <a href="#constants">Constants</a>
+  
+
+
+  &#124; <a href="#inhconstants">Inherited Constants</a>
+  
+
+
+
+
+  &#124; <a href="#pubctors">Ctors</a>
+  
+
+
+
+  &#124; <a href="#pubmethods">Methods</a>
+  
+
+
+
+  &#124; <a href="#inhmethods">Inherited Methods</a>
+
+&#124; <a href="#" onclick="return toggleAllClassInherited()" id="toggleAllClassInherited">[Expand All]</a>
+
+</div><!-- end sum-details-links -->
+<div class="api-level">
+  
+
+
+  
+  
+
+</div>
+</div><!-- end api-info-block -->
+
+
+<!-- ======== START OF CLASS DATA ======== -->
+
+<div id="jd-header">
+    public
+     
+    final 
+    
+    class
+<h1>GeotriggerService</h1>
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    extends <a href="http://d.android.com/reference/android/app/Service.html">Service</a><br/>
+  
+  
+  
+
+  
+  
+  
+
+
+</div><!-- end header -->
+
+<div id="naMessage"></div>
+
+<div id="jd-content" class="api apilevel-">
+<table class="jd-inheritance-table">
+
+
+    <tr>
+         	
+        <td colspan="5" class="jd-inheritance-class-cell"><a href="http://d.android.com/reference/java/lang/Object.html">java.lang.Object</a></td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="4" class="jd-inheritance-class-cell"><a href="http://d.android.com/reference/android/content/Context.html">android.content.Context</a></td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;</td>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="3" class="jd-inheritance-class-cell"><a href="http://d.android.com/reference/android/content/ContextWrapper.html">android.content.ContextWrapper</a></td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;</td>
+        
+            <td class="jd-inheritance-space">&nbsp;</td>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="2" class="jd-inheritance-class-cell"><a href="http://d.android.com/reference/android/app/Service.html">android.app.Service</a></td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;</td>
+        
+            <td class="jd-inheritance-space">&nbsp;</td>
+        
+            <td class="jd-inheritance-space">&nbsp;</td>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.esri.android.geotrigger.GeotriggerService</td>
+    </tr>
+    
+
+</table>
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Class Overview</h2>
+<p>A background <code>Service</code> that records locations, periodically posting them to the Geotrigger API.
+
+ <p>You can instantiate and register a <code><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.html">GeotriggerBroadcastReceiver</a></code> and implement its interfaces on your
+ Activity or Service in order to receive callbacks when certain events occur.
+</p>
+
+
+
+
+
+</div><!-- jd-descr -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Summary</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- =========== ENUM CONSTANT SUMMARY =========== -->
+<table id="constants" class="jd-sumtable"><tr><th colspan="12">Constants</th></tr>
+
+
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#ACTION_REQUEST_ON_DEMAND_LOCATION">ACTION_REQUEST_ON_DEMAND_LOCATION</a></td>
+        <td class="jd-descrcol" width="100%">Intent action for requesting a single point.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_ADAPTIVE">TRACKING_PROFILE_ADAPTIVE</a></td>
+        <td class="jd-descrcol" width="100%">Sets the <code>GeotriggerService</code> tracking profile to <b>ADAPTIVE</b>, which automatically adjusts tracking
+ resolution (and battery drain) depending on proximity to triggers and other factors.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_FINE">TRACKING_PROFILE_FINE</a></td>
+        <td class="jd-descrcol" width="100%">Sets the <code>GeotriggerService</code> tracking profile to <b>FINE</b>, which collects the most accurate and
+ timely location updates, at the expense of battery life.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_OFF">TRACKING_PROFILE_OFF</a></td>
+        <td class="jd-descrcol" width="100%">Sets the <code>GeotriggerService</code> tracking profile to <b>OFF</b>, disabling location tracking.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_ROUGH">TRACKING_PROFILE_ROUGH</a></td>
+        <td class="jd-descrcol" width="100%">Sets the <code>GeotriggerService</code> tracking profile to <b>ROUGH</b>, which uses minimal battery power to get
+ the approximate location of the user.</td>
+    </tr>
+    
+    
+
+</table>
+
+
+
+
+
+<!-- =========== ENUM CONSTANT SUMMARY =========== -->
+<table id="inhconstants" class="jd-sumtable"><tr><th>
+  <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
+  <div style="clear:left;">Inherited Constants</div></th></tr>
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-constants-android.app.Service" class="jd-expando-trigger closed"
+          ><img id="inherited-constants-android.app.Service-trigger"
+          src="../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>From class
+android.app.Service
+<div id="inherited-constants-android.app.Service">
+  <div id="inherited-constants-android.app.Service-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-constants-android.app.Service-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol">START_CONTINUATION_MASK</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol">START_FLAG_REDELIVERY</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol">START_FLAG_RETRY</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol">START_NOT_STICKY</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol">START_REDELIVER_INTENT</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol">START_STICKY</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol">START_STICKY_COMPATIBILITY</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-constants-android.content.Context" class="jd-expando-trigger closed"
+          ><img id="inherited-constants-android.content.Context-trigger"
+          src="../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>From class
+android.content.Context
+<div id="inherited-constants-android.content.Context">
+  <div id="inherited-constants-android.content.Context-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-constants-android.content.Context-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol">ACCESSIBILITY_SERVICE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol">ACCOUNT_SERVICE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol">ACTIVITY_SERVICE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol">ALARM_SERVICE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol">AUDIO_SERVICE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol">BIND_AUTO_CREATE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol">BIND_DEBUG_UNBIND</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol">BIND_NOT_FOREGROUND</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol">CLIPBOARD_SERVICE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol">CONNECTIVITY_SERVICE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol">CONTEXT_IGNORE_SECURITY</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol">CONTEXT_INCLUDE_CODE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol">CONTEXT_RESTRICTED</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol">DEVICE_POLICY_SERVICE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol">DOWNLOAD_SERVICE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol">DROPBOX_SERVICE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol">INPUT_METHOD_SERVICE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol">KEYGUARD_SERVICE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol">LAYOUT_INFLATER_SERVICE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol">LOCATION_SERVICE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol">MODE_APPEND</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol">MODE_PRIVATE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol">MODE_WORLD_READABLE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol">MODE_WORLD_WRITEABLE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol">NFC_SERVICE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol">NOTIFICATION_SERVICE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol">POWER_SERVICE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol">SEARCH_SERVICE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol">SENSOR_SERVICE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol">STORAGE_SERVICE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol">TELEPHONY_SERVICE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol">UI_MODE_SERVICE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol">VIBRATOR_SERVICE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol">WALLPAPER_SERVICE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol">WIFI_SERVICE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol">WINDOW_SERVICE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<table id="pubctors" class="jd-sumtable"><tr><th colspan="12">Public Constructors</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#GeotriggerService()">GeotriggerService</a></span>()
+        
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            static
+            
+            <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#getDeviceDefaultTag(android.content.Context)">getDeviceDefaultTag</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)
+        
+        <div class="jd-descrdiv">Get the default tag for the current device.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            static
+            
+            <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#getDeviceId(android.content.Context)">getDeviceId</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)
+        
+        <div class="jd-descrdiv">Get the ID for the current device.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            static
+            
+            <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#getPushIcon(android.content.Context)">getPushIcon</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)
+        
+        <div class="jd-descrdiv">Get the name of the drawable to be used when displaying incoming push messages as status bar notifications.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            static
+            
+            <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#getPushSound(android.content.Context)">getPushSound</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)
+        
+        <div class="jd-descrdiv">Get the name of the sound resource to be played when displaying incoming push messages as status bar
+ notifications.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            static
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#hardStop(android.content.Context)">hardStop</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)
+        
+        <div class="jd-descrdiv">Tell the <code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html">GeotriggerService</a></code> to stop tracking, and NOT restart itself.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            static
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#init(android.content.Context, java.lang.String, java.lang.String, java.lang.String)">init</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> clientId, <a href="http://d.android.com/reference/java/lang/String.html">String</a> gcmSenderId, <a href="http://d.android.com/reference/java/lang/String.html">String</a> profile)
+        
+        <div class="jd-descrdiv">Starts the <code>GeotriggerService</code> using the provided setup parameters.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            static
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#init(android.content.Context, java.lang.String, java.lang.String, java.lang.String[], java.lang.String)">init</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> clientId, <a href="http://d.android.com/reference/java/lang/String.html">String</a> gcmSenderId, <a href="http://d.android.com/reference/java/lang/String.html">String[]</a> tags, <a href="http://d.android.com/reference/java/lang/String.html">String</a> profile)
+        
+        <div class="jd-descrdiv">Starts the <code>GeotriggerService</code> using the provided setup parameters.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            static
+            
+            boolean
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#isPushNotificationHandlingEnabled(android.content.Context)">isPushNotificationHandlingEnabled</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)
+        
+        <div class="jd-descrdiv">Determine if the SDK will automatically display incoming push messages as status bar notifications.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            static
+            
+            boolean
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#isVibrationEnabled(android.content.Context)">isVibrationEnabled</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)
+        
+        <div class="jd-descrdiv">Determine if the device will vibrate when a new push notification is received.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/os/IBinder.html">IBinder</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#onBind(android.content.Intent)">onBind</a></span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> intent)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#onCreate()">onCreate</a></span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#onDestroy()">onDestroy</a></span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#onStartCommand(android.content.Intent, int, int)">onStartCommand</a></span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> intent, int flags, int startId)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            static
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#requestOnDemandUpdate(android.content.Context)">requestOnDemandUpdate</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)
+        
+        <div class="jd-descrdiv">Request a single point be recorded.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            static
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#setLoggingLevel(int)">setLoggingLevel</a></span>(int level)
+        
+        <div class="jd-descrdiv">Set the log level to be used by the Geotrigger SDK.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            static
+            
+            boolean
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#setPushIcon(android.content.Context, java.lang.String)">setPushIcon</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> iconName)
+        
+        <div class="jd-descrdiv">Set the name of the drawable to be used when displaying incoming push messages as status bar notifications.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            static
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#setPushNotificationHandlingEnabled(android.content.Context, boolean)">setPushNotificationHandlingEnabled</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, boolean enabled)
+        
+        <div class="jd-descrdiv">Call this method to enable the default push message notification handling.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            static
+            
+            boolean
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#setPushSound(android.content.Context, java.lang.String)">setPushSound</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> soundName)
+        
+        <div class="jd-descrdiv">Set the name of the sound resource to be played when displaying incoming push messages as status bar
+ notifications.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            static
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#setTrackingProfile(android.content.Context, java.lang.String)">setTrackingProfile</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> profile)
+        
+        <div class="jd-descrdiv"><p>Tell the <code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html">GeotriggerService</a></code> to switch profiles.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            static
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#setVibrationEnabled(android.content.Context, boolean)">setVibrationEnabled</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, boolean enabled)
+        
+        <div class="jd-descrdiv">Set whether or not the device will vibrate when a push notification is received (default: true).</div>
+  
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="inhmethods" class="jd-sumtable"><tr><th>
+  <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
+  <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-android.app.Service" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-android.app.Service-trigger"
+          src="../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  <a href="http://d.android.com/reference/android/app/Service.html">android.app.Service</a>
+
+<div id="inherited-methods-android.app.Service">
+  <div id="inherited-methods-android.app.Service-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-android.app.Service-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">dump</span>(<a href="http://d.android.com/reference/java/io/FileDescriptor.html">FileDescriptor</a> arg0, <a href="http://d.android.com/reference/java/io/PrintWriter.html">PrintWriter</a> arg1, <a href="http://d.android.com/reference/java/lang/String.html">String[]</a> arg2)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">finalize</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            <a href="http://d.android.com/reference/android/app/Application.html">Application</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getApplication</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/os/IBinder.html">IBinder</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">onBind</span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">onConfigurationChanged</span>(<a href="http://d.android.com/reference/android/content/res/Configuration.html">Configuration</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">onCreate</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">onDestroy</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">onLowMemory</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">onRebind</span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">onStart</span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg0, int arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">onStartCommand</span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg0, int arg1, int arg2)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            boolean
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">onUnbind</span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">setForeground</span>(boolean arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">startForeground</span>(int arg0, <a href="http://d.android.com/reference/android/app/Notification.html">Notification</a> arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">stopForeground</span>(boolean arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">stopSelf</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">stopSelf</span>(int arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            boolean
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">stopSelfResult</span>(int arg0)
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-android.content.ContextWrapper" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-android.content.ContextWrapper-trigger"
+          src="../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  <a href="http://d.android.com/reference/android/content/ContextWrapper.html">android.content.ContextWrapper</a>
+
+<div id="inherited-methods-android.content.ContextWrapper">
+  <div id="inherited-methods-android.content.ContextWrapper-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-android.content.ContextWrapper-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">attachBaseContext</span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            boolean
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">bindService</span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg0, <a href="http://d.android.com/reference/android/content/ServiceConnection.html">ServiceConnection</a> arg1, int arg2)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">checkCallingOrSelfPermission</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">checkCallingOrSelfUriPermission</span>(<a href="http://d.android.com/reference/android/net/Uri.html">Uri</a> arg0, int arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">checkCallingPermission</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">checkCallingUriPermission</span>(<a href="http://d.android.com/reference/android/net/Uri.html">Uri</a> arg0, int arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">checkPermission</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0, int arg1, int arg2)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">checkUriPermission</span>(<a href="http://d.android.com/reference/android/net/Uri.html">Uri</a> arg0, int arg1, int arg2, int arg3)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">checkUriPermission</span>(<a href="http://d.android.com/reference/android/net/Uri.html">Uri</a> arg0, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg1, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg2, int arg3, int arg4, int arg5)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">clearWallpaper</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/content/Context.html">Context</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">createPackageContext</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0, int arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/lang/String.html">String[]</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">databaseList</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            boolean
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">deleteDatabase</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            boolean
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">deleteFile</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">enforceCallingOrSelfPermission</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">enforceCallingOrSelfUriPermission</span>(<a href="http://d.android.com/reference/android/net/Uri.html">Uri</a> arg0, int arg1, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg2)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">enforceCallingPermission</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">enforceCallingUriPermission</span>(<a href="http://d.android.com/reference/android/net/Uri.html">Uri</a> arg0, int arg1, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg2)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">enforcePermission</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0, int arg1, int arg2, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg3)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">enforceUriPermission</span>(<a href="http://d.android.com/reference/android/net/Uri.html">Uri</a> arg0, int arg1, int arg2, int arg3, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg4)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">enforceUriPermission</span>(<a href="http://d.android.com/reference/android/net/Uri.html">Uri</a> arg0, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg1, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg2, int arg3, int arg4, int arg5, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg6)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/lang/String.html">String[]</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">fileList</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/content/Context.html">Context</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getApplicationContext</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/content/pm/ApplicationInfo.html">ApplicationInfo</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getApplicationInfo</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/content/res/AssetManager.html">AssetManager</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getAssets</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/content/Context.html">Context</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getBaseContext</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/io/File.html">File</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getCacheDir</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/lang/ClassLoader.html">ClassLoader</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getClassLoader</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/content/ContentResolver.html">ContentResolver</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getContentResolver</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/io/File.html">File</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getDatabasePath</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/io/File.html">File</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getDir</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0, int arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/io/File.html">File</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getExternalCacheDir</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/io/File.html">File</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getExternalFilesDir</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/io/File.html">File</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getFileStreamPath</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/io/File.html">File</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getFilesDir</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/os/Looper.html">Looper</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getMainLooper</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getPackageCodePath</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/content/pm/PackageManager.html">PackageManager</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getPackageManager</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getPackageName</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getPackageResourcePath</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/content/res/Resources.html">Resources</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getResources</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/content/SharedPreferences.html">SharedPreferences</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getSharedPreferences</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0, int arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/lang/Object.html">Object</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getSystemService</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/content/res/Resources.Theme.html">Resources.Theme</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getTheme</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/graphics/drawable/Drawable.html">Drawable</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getWallpaper</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getWallpaperDesiredMinimumHeight</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getWallpaperDesiredMinimumWidth</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">grantUriPermission</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0, <a href="http://d.android.com/reference/android/net/Uri.html">Uri</a> arg1, int arg2)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            boolean
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">isRestricted</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/io/FileInputStream.html">FileInputStream</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">openFileInput</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/io/FileOutputStream.html">FileOutputStream</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">openFileOutput</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0, int arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/database/sqlite/SQLiteDatabase.html">SQLiteDatabase</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">openOrCreateDatabase</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0, int arg1, <a href="http://d.android.com/reference/android/database/sqlite/SQLiteDatabase.CursorFactory.html">SQLiteDatabase.CursorFactory</a> arg2)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/graphics/drawable/Drawable.html">Drawable</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">peekWallpaper</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/content/Intent.html">Intent</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">registerReceiver</span>(<a href="http://d.android.com/reference/android/content/BroadcastReceiver.html">BroadcastReceiver</a> arg0, <a href="http://d.android.com/reference/android/content/IntentFilter.html">IntentFilter</a> arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/content/Intent.html">Intent</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">registerReceiver</span>(<a href="http://d.android.com/reference/android/content/BroadcastReceiver.html">BroadcastReceiver</a> arg0, <a href="http://d.android.com/reference/android/content/IntentFilter.html">IntentFilter</a> arg1, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg2, <a href="http://d.android.com/reference/android/os/Handler.html">Handler</a> arg3)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">removeStickyBroadcast</span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">revokeUriPermission</span>(<a href="http://d.android.com/reference/android/net/Uri.html">Uri</a> arg0, int arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">sendBroadcast</span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">sendBroadcast</span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg0, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">sendOrderedBroadcast</span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg0, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg1, <a href="http://d.android.com/reference/android/content/BroadcastReceiver.html">BroadcastReceiver</a> arg2, <a href="http://d.android.com/reference/android/os/Handler.html">Handler</a> arg3, int arg4, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg5, <a href="http://d.android.com/reference/android/os/Bundle.html">Bundle</a> arg6)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">sendOrderedBroadcast</span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg0, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">sendStickyBroadcast</span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">sendStickyOrderedBroadcast</span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg0, <a href="http://d.android.com/reference/android/content/BroadcastReceiver.html">BroadcastReceiver</a> arg1, <a href="http://d.android.com/reference/android/os/Handler.html">Handler</a> arg2, int arg3, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg4, <a href="http://d.android.com/reference/android/os/Bundle.html">Bundle</a> arg5)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">setTheme</span>(int arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">setWallpaper</span>(<a href="http://d.android.com/reference/android/graphics/Bitmap.html">Bitmap</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">setWallpaper</span>(<a href="http://d.android.com/reference/java/io/InputStream.html">InputStream</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">startActivity</span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            boolean
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">startInstrumentation</span>(<a href="http://d.android.com/reference/android/content/ComponentName.html">ComponentName</a> arg0, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg1, <a href="http://d.android.com/reference/android/os/Bundle.html">Bundle</a> arg2)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">startIntentSender</span>(<a href="http://d.android.com/reference/android/content/IntentSender.html">IntentSender</a> arg0, <a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg1, int arg2, int arg3, int arg4)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/content/ComponentName.html">ComponentName</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">startService</span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            boolean
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">stopService</span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">unbindService</span>(<a href="http://d.android.com/reference/android/content/ServiceConnection.html">ServiceConnection</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">unregisterReceiver</span>(<a href="http://d.android.com/reference/android/content/BroadcastReceiver.html">BroadcastReceiver</a> arg0)
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-android.content.Context" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-android.content.Context-trigger"
+          src="../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  <a href="http://d.android.com/reference/android/content/Context.html">android.content.Context</a>
+
+<div id="inherited-methods-android.content.Context">
+  <div id="inherited-methods-android.content.Context-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-android.content.Context-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            boolean
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">bindService</span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg0, <a href="http://d.android.com/reference/android/content/ServiceConnection.html">ServiceConnection</a> arg1, int arg2)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">checkCallingOrSelfPermission</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">checkCallingOrSelfUriPermission</span>(<a href="http://d.android.com/reference/android/net/Uri.html">Uri</a> arg0, int arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">checkCallingPermission</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">checkCallingUriPermission</span>(<a href="http://d.android.com/reference/android/net/Uri.html">Uri</a> arg0, int arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">checkPermission</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0, int arg1, int arg2)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">checkUriPermission</span>(<a href="http://d.android.com/reference/android/net/Uri.html">Uri</a> arg0, int arg1, int arg2, int arg3)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">checkUriPermission</span>(<a href="http://d.android.com/reference/android/net/Uri.html">Uri</a> arg0, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg1, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg2, int arg3, int arg4, int arg5)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">clearWallpaper</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/content/Context.html">Context</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">createPackageContext</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0, int arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/lang/String.html">String[]</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">databaseList</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            boolean
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">deleteDatabase</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            boolean
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">deleteFile</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">enforceCallingOrSelfPermission</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">enforceCallingOrSelfUriPermission</span>(<a href="http://d.android.com/reference/android/net/Uri.html">Uri</a> arg0, int arg1, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg2)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">enforceCallingPermission</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">enforceCallingUriPermission</span>(<a href="http://d.android.com/reference/android/net/Uri.html">Uri</a> arg0, int arg1, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg2)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">enforcePermission</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0, int arg1, int arg2, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg3)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">enforceUriPermission</span>(<a href="http://d.android.com/reference/android/net/Uri.html">Uri</a> arg0, int arg1, int arg2, int arg3, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg4)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">enforceUriPermission</span>(<a href="http://d.android.com/reference/android/net/Uri.html">Uri</a> arg0, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg1, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg2, int arg3, int arg4, int arg5, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg6)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/lang/String.html">String[]</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">fileList</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/content/Context.html">Context</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getApplicationContext</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/content/pm/ApplicationInfo.html">ApplicationInfo</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getApplicationInfo</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/content/res/AssetManager.html">AssetManager</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getAssets</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/io/File.html">File</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getCacheDir</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/lang/ClassLoader.html">ClassLoader</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getClassLoader</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/content/ContentResolver.html">ContentResolver</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getContentResolver</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/io/File.html">File</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getDatabasePath</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/io/File.html">File</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getDir</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0, int arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/io/File.html">File</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getExternalCacheDir</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/io/File.html">File</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getExternalFilesDir</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/io/File.html">File</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getFileStreamPath</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/io/File.html">File</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getFilesDir</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/os/Looper.html">Looper</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getMainLooper</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getPackageCodePath</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/content/pm/PackageManager.html">PackageManager</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getPackageManager</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getPackageName</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getPackageResourcePath</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/content/res/Resources.html">Resources</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getResources</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/content/SharedPreferences.html">SharedPreferences</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getSharedPreferences</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0, int arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getString</span>(int arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getString</span>(int arg0, <a href="http://d.android.com/reference/java/lang/Object.html">Object...</a> arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/lang/Object.html">Object</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getSystemService</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            <a href="http://d.android.com/reference/java/lang/CharSequence.html">CharSequence</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getText</span>(int arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/content/res/Resources.Theme.html">Resources.Theme</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getTheme</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/graphics/drawable/Drawable.html">Drawable</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getWallpaper</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getWallpaperDesiredMinimumHeight</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getWallpaperDesiredMinimumWidth</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">grantUriPermission</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0, <a href="http://d.android.com/reference/android/net/Uri.html">Uri</a> arg1, int arg2)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            boolean
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">isRestricted</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            <a href="http://d.android.com/reference/android/content/res/TypedArray.html">TypedArray</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">obtainStyledAttributes</span>(int[] arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            <a href="http://d.android.com/reference/android/content/res/TypedArray.html">TypedArray</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">obtainStyledAttributes</span>(<a href="http://d.android.com/reference/android/util/AttributeSet.html">AttributeSet</a> arg0, int[] arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            <a href="http://d.android.com/reference/android/content/res/TypedArray.html">TypedArray</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">obtainStyledAttributes</span>(int arg0, int[] arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            <a href="http://d.android.com/reference/android/content/res/TypedArray.html">TypedArray</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">obtainStyledAttributes</span>(<a href="http://d.android.com/reference/android/util/AttributeSet.html">AttributeSet</a> arg0, int[] arg1, int arg2, int arg3)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/io/FileInputStream.html">FileInputStream</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">openFileInput</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/io/FileOutputStream.html">FileOutputStream</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">openFileOutput</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0, int arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/database/sqlite/SQLiteDatabase.html">SQLiteDatabase</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">openOrCreateDatabase</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0, int arg1, <a href="http://d.android.com/reference/android/database/sqlite/SQLiteDatabase.CursorFactory.html">SQLiteDatabase.CursorFactory</a> arg2)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/graphics/drawable/Drawable.html">Drawable</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">peekWallpaper</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/content/Intent.html">Intent</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">registerReceiver</span>(<a href="http://d.android.com/reference/android/content/BroadcastReceiver.html">BroadcastReceiver</a> arg0, <a href="http://d.android.com/reference/android/content/IntentFilter.html">IntentFilter</a> arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/content/Intent.html">Intent</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">registerReceiver</span>(<a href="http://d.android.com/reference/android/content/BroadcastReceiver.html">BroadcastReceiver</a> arg0, <a href="http://d.android.com/reference/android/content/IntentFilter.html">IntentFilter</a> arg1, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg2, <a href="http://d.android.com/reference/android/os/Handler.html">Handler</a> arg3)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">removeStickyBroadcast</span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">revokeUriPermission</span>(<a href="http://d.android.com/reference/android/net/Uri.html">Uri</a> arg0, int arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">sendBroadcast</span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">sendBroadcast</span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg0, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">sendOrderedBroadcast</span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg0, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg1, <a href="http://d.android.com/reference/android/content/BroadcastReceiver.html">BroadcastReceiver</a> arg2, <a href="http://d.android.com/reference/android/os/Handler.html">Handler</a> arg3, int arg4, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg5, <a href="http://d.android.com/reference/android/os/Bundle.html">Bundle</a> arg6)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">sendOrderedBroadcast</span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg0, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">sendStickyBroadcast</span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">sendStickyOrderedBroadcast</span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg0, <a href="http://d.android.com/reference/android/content/BroadcastReceiver.html">BroadcastReceiver</a> arg1, <a href="http://d.android.com/reference/android/os/Handler.html">Handler</a> arg2, int arg3, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg4, <a href="http://d.android.com/reference/android/os/Bundle.html">Bundle</a> arg5)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">setTheme</span>(int arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">setWallpaper</span>(<a href="http://d.android.com/reference/android/graphics/Bitmap.html">Bitmap</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">setWallpaper</span>(<a href="http://d.android.com/reference/java/io/InputStream.html">InputStream</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">startActivity</span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            boolean
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">startInstrumentation</span>(<a href="http://d.android.com/reference/android/content/ComponentName.html">ComponentName</a> arg0, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg1, <a href="http://d.android.com/reference/android/os/Bundle.html">Bundle</a> arg2)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">startIntentSender</span>(<a href="http://d.android.com/reference/android/content/IntentSender.html">IntentSender</a> arg0, <a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg1, int arg2, int arg3, int arg4)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/content/ComponentName.html">ComponentName</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">startService</span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            boolean
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">stopService</span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">unbindService</span>(<a href="http://d.android.com/reference/android/content/ServiceConnection.html">ServiceConnection</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">unregisterReceiver</span>(<a href="http://d.android.com/reference/android/content/BroadcastReceiver.html">BroadcastReceiver</a> arg0)
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Object" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Object-trigger"
+          src="../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  <a href="http://d.android.com/reference/java/lang/Object.html">java.lang.Object</a>
+
+<div id="inherited-methods-java.lang.Object">
+  <div id="inherited-methods-java.lang.Object-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-java.lang.Object-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/lang/Object.html">Object</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">clone</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            boolean
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">equals</span>(<a href="http://d.android.com/reference/java/lang/Object.html">Object</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">finalize</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            <a href="http://d.android.com/reference/java/lang/Class.html">Class</a>&lt;?&gt;
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getClass</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">hashCode</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">notify</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">notifyAll</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">toString</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">wait</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">wait</span>(long arg0, int arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">wait</span>(long arg0)
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-android.content.ComponentCallbacks" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-android.content.ComponentCallbacks-trigger"
+          src="../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From interface
+
+  <a href="http://d.android.com/reference/android/content/ComponentCallbacks.html">android.content.ComponentCallbacks</a>
+
+<div id="inherited-methods-android.content.ComponentCallbacks">
+  <div id="inherited-methods-android.content.ComponentCallbacks-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-android.content.ComponentCallbacks-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">onConfigurationChanged</span>(<a href="http://d.android.com/reference/android/content/res/Configuration.html">Configuration</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">onLowMemory</span>()
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+</table>
+
+
+</div><!-- jd-descr (summary) -->
+
+<!-- Details -->
+
+
+
+
+
+
+
+
+<!-- XML Attributes -->
+
+
+<!-- Enum Values -->
+
+
+<!-- Constants -->
+
+
+<!-- ========= ENUM CONSTANTS DETAIL ======== -->
+<h2>Constants</h2>
+
+
+
+
+<a id="ACTION_REQUEST_ON_DEMAND_LOCATION"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+      </span>
+        ACTION_REQUEST_ON_DEMAND_LOCATION
+    </h4>
+      <div class="api-level">
+        
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Intent action for requesting a single point. </p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "com.esri.android.action.REQUEST_ON_DEMAND_LOCATION"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<a id="TRACKING_PROFILE_ADAPTIVE"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+      </span>
+        TRACKING_PROFILE_ADAPTIVE
+    </h4>
+      <div class="api-level">
+        
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the <code>GeotriggerService</code> tracking profile to <b>ADAPTIVE</b>, which automatically adjusts tracking
+ resolution (and battery drain) depending on proximity to triggers and other factors.
+
+ <p>Tracking profiles optimize use of native location services for different use cases.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "adaptive"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<a id="TRACKING_PROFILE_FINE"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+      </span>
+        TRACKING_PROFILE_FINE
+    </h4>
+      <div class="api-level">
+        
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the <code>GeotriggerService</code> tracking profile to <b>FINE</b>, which collects the most accurate and
+ timely location updates, at the expense of battery life.
+
+ <p>Tracking profiles optimize use of native location services for different use cases.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "fine"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<a id="TRACKING_PROFILE_OFF"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+      </span>
+        TRACKING_PROFILE_OFF
+    </h4>
+      <div class="api-level">
+        
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the <code>GeotriggerService</code> tracking profile to <b>OFF</b>, disabling location tracking.
+
+ <p>Tracking profiles optimize use of native location services for different use cases.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "off"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<a id="TRACKING_PROFILE_ROUGH"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+      </span>
+        TRACKING_PROFILE_ROUGH
+    </h4>
+      <div class="api-level">
+        
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the <code>GeotriggerService</code> tracking profile to <b>ROUGH</b>, which uses minimal battery power to get
+ the approximate location of the user.
+
+ <p>Tracking profiles optimize use of native location services for different use cases.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "rough"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+
+<!-- Fields -->
+
+
+<!-- Public ctors -->
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<h2>Public Constructors</h2>
+
+
+
+<a id="GeotriggerService()"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        
+      </span>
+      <span class="sympad">GeotriggerService</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<!-- Protected ctors -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+<!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<a id="getDeviceDefaultTag(android.content.Context)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+      </span>
+      <span class="sympad">getDeviceDefaultTag</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Get the default tag for the current device.
+
+ <p>If the device has not yet been registered, then the returned tag will be null.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code>.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the default tag applied to this device.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="getDeviceId(android.content.Context)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+      </span>
+      <span class="sympad">getDeviceId</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Get the ID for the current device.
+
+ <p>If the device has not yet been registered, the returned device ID will be null.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code>.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the ID of the device.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="getPushIcon(android.content.Context)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+      </span>
+      <span class="sympad">getPushIcon</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Get the name of the drawable to be used when displaying incoming push messages as status bar notifications.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the push icon resource name or null.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="getPushSound(android.content.Context)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+      </span>
+      <span class="sympad">getPushSound</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Get the name of the sound resource to be played when displaying incoming push messages as status bar
+ notifications.
+
+ <p>The sound file must be located in the <code>res/raw</code> directory.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the push sound resource name or null.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="hardStop(android.content.Context)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">hardStop</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Tell the <code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html">GeotriggerService</a></code> to stop tracking, and NOT restart itself.
+
+ <p>The service will attempt to send any pending locations before stopping.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code>
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="init(android.content.Context, java.lang.String, java.lang.String, java.lang.String)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">init</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> clientId, <a href="http://d.android.com/reference/java/lang/String.html">String</a> gcmSenderId, <a href="http://d.android.com/reference/java/lang/String.html">String</a> profile)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Starts the <code>GeotriggerService</code> using the provided setup parameters.
+
+ <p><code>profile</code> must be one of:
+ <ul>
+     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_OFF">TRACKING_PROFILE_OFF</a></code>
+     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_ROUGH">TRACKING_PROFILE_ROUGH</a></code>
+     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_ADAPTIVE">TRACKING_PROFILE_ADAPTIVE</a></code>
+     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_FINE">TRACKING_PROFILE_FINE</a></code>
+ </ul></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.</td>
+        </tr>
+        <tr>
+          <th>clientId</th>
+          <td>an ArcGIS Online <code>client_id</code> application.</td>
+        </tr>
+        <tr>
+          <th>gcmSenderId</th>
+          <td>a GCM Sender ID for your application.</td>
+        </tr>
+        <tr>
+          <th>profile</th>
+          <td>a tracking profile.
+</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="http://d.android.com/reference/java/lang/IllegalArgumentException.html">IllegalArgumentException</a></td>
+            <td></td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="init(android.content.Context, java.lang.String, java.lang.String, java.lang.String[], java.lang.String)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">init</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> clientId, <a href="http://d.android.com/reference/java/lang/String.html">String</a> gcmSenderId, <a href="http://d.android.com/reference/java/lang/String.html">String[]</a> tags, <a href="http://d.android.com/reference/java/lang/String.html">String</a> profile)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Starts the <code>GeotriggerService</code> using the provided setup parameters.
+
+ <p><code>profile</code> must be one of:
+ <ul>
+     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_OFF">TRACKING_PROFILE_OFF</a></code>
+     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_ROUGH">TRACKING_PROFILE_ROUGH</a></code>
+     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_ADAPTIVE">TRACKING_PROFILE_ADAPTIVE</a></code>
+     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_FINE">TRACKING_PROFILE_FINE</a></code>
+ </ul></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.</td>
+        </tr>
+        <tr>
+          <th>clientId</th>
+          <td>an ArcGIS Online <code>client_id</code> for your application.</td>
+        </tr>
+        <tr>
+          <th>gcmSenderId</th>
+          <td>a GCM Sender ID for your application.</td>
+        </tr>
+        <tr>
+          <th>tags</th>
+          <td>an optional list of tags to be set on the device after it registers itself.</td>
+        </tr>
+        <tr>
+          <th>profile</th>
+          <td>a tracking profile.
+</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="http://d.android.com/reference/java/lang/IllegalArgumentException.html">IllegalArgumentException</a></td>
+            <td></td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="isPushNotificationHandlingEnabled(android.content.Context)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">isPushNotificationHandlingEnabled</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Determine if the SDK will automatically display incoming push messages as status bar notifications.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>true if push notifications will be automatically handled; false if they will be handled manually.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="isVibrationEnabled(android.content.Context)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">isVibrationEnabled</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Determine if the device will vibrate when a new push notification is received.
+
+ <p>This method works in conjunction with <code><a href="null#shouldVibrate(int)">shouldVibrate(int)</a></code> to determine if the
+ device should vibrate when a new push message is received.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>true if the device should vibrate; false if otherwise.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="onBind(android.content.Intent)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="http://d.android.com/reference/android/os/IBinder.html">IBinder</a>
+      </span>
+      <span class="sympad">onBind</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> intent)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<a id="onCreate()"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">onCreate</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<a id="onDestroy()"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">onDestroy</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<a id="onStartCommand(android.content.Intent, int, int)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">onStartCommand</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> intent, int flags, int startId)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<a id="requestOnDemandUpdate(android.content.Context)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">requestOnDemandUpdate</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Request a single point be recorded.
+
+ <p>You can receive a <code><a href="http://d.android.com/reference/android/location/Location.html">Location</a></code> representing this point by implementing
+ <code><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.html">GeotriggerBroadcastReceiver</a></code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="setLoggingLevel(int)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setLoggingLevel</span>
+      <span class="normal">(int level)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the log level to be used by the Geotrigger SDK.
+
+ <p>The default value is <code>Log.WARN</code>. Other settings are suitable for development, but should not be
+ used for released applications.
+
+ <p><code>level</code> must be one of:
+ <ul>
+     <li><code><a href="null#VERBOSE">VERBOSE</a></code>
+     <li><code><a href="null#DEBUG">DEBUG</a></code>
+     <li><code><a href="null#INFO">INFO</a></code>
+     <li><code><a href="null#WARN">WARN</a></code>
+     <li><code><a href="null#ERROR">ERROR</a></code>
+ </ul>
+</p></div>
+
+    </div>
+</div>
+
+
+<a id="setPushIcon(android.content.Context, java.lang.String)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">setPushIcon</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> iconName)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the name of the drawable to be used when displaying incoming push messages as status bar notifications.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.</td>
+        </tr>
+        <tr>
+          <th>iconName</th>
+          <td>the name of a drawable resource.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>true if the new value was successfully written to SharedPreferences.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="setPushNotificationHandlingEnabled(android.content.Context, boolean)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setPushNotificationHandlingEnabled</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, boolean enabled)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Call this method to enable the default push message notification handling.
+
+ <p>If push message handling is enabled, as it is by default, the SDK will automatically create a status bar
+ notification.
+
+ <p>To manually handle push messages, you can disable them once using this method. Then implement
+ <code><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushMessageListener.html">GeotriggerBroadcastReceiver.PushMessageListener</a></code></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.</td>
+        </tr>
+        <tr>
+          <th>enabled</th>
+          <td>true if push notifications will be automatically handled; false if they will be handled manually.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="setPushSound(android.content.Context, java.lang.String)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">setPushSound</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> soundName)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the name of the sound resource to be played when displaying incoming push messages as status bar
+ notifications.
+
+ <p>The sound file must be located in the <code>res/raw</code> directory.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.</td>
+        </tr>
+        <tr>
+          <th>soundName</th>
+          <td>the name of a sound resource.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>true if the new value was successfully written to SharedPreferences.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="setTrackingProfile(android.content.Context, java.lang.String)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setTrackingProfile</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> profile)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><p>Tell the <code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html">GeotriggerService</a></code> to switch profiles.
+
+ <p>TrackingProfile must be one of:
+ <ul>
+     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_OFF">TRACKING_PROFILE_OFF</a></code>
+     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_ROUGH">TRACKING_PROFILE_ROUGH</a></code>
+     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_ADAPTIVE">TRACKING_PROFILE_ADAPTIVE</a></code>
+     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_FINE">TRACKING_PROFILE_FINE</a></code>
+ </ul></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.</td>
+        </tr>
+        <tr>
+          <th>profile</th>
+          <td>a tracking profile.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="setVibrationEnabled(android.content.Context, boolean)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setVibrationEnabled</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, boolean enabled)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set whether or not the device will vibrate when a push notification is received (default: true).
+
+ <p>Vibration requires the <code><a href="null#VIBRATE">VIBRATE</a></code> permission be declared in the
+ AndroidManifest.xml</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.</td>
+        </tr>
+        <tr>
+          <th>enabled</th>
+          <td>true if the device should vibrate; false if otherwise.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+<!-- ========= END OF CLASS DATA ========= -->
+<a id="navbar_top"></a>
+
+<div id="footer">
+Generated by <a href="http://code.google.com/p/doclava/">Doclava</a>.
+</div> <!-- end footer -->
+
+</div> <!-- jd-content -->
+
+</div><!-- end doc-content -->
+
+</div> <!-- end body-content --> 
+
+<script type="text/javascript">
+init(); /* initialize doclava-developer-docs.js */
+</script>
+
+</body>
+</html>
