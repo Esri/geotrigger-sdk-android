@@ -36,8 +36,8 @@ public final class GeotriggerHelper {
      * @param senderId Project number from https://code.google.com/apis/console
      * @param profile The Geotrigger profile (ie: FINE, ADAPTIVE, ROUGH, OFF) to start the service in.
      */
-    public static void startGeotriggers(final Activity activity, int requestCode, String clientId, String senderId,
-                                        String profile) {
+    public static void startGeotriggerService(final Activity activity, int requestCode, String clientId, String senderId,
+                                              String profile) {
         if (activity == null) {
             throw new IllegalArgumentException("Activity cannot be null.");
         }
