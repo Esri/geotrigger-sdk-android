@@ -1,4 +1,4 @@
-# Geotrigger SDK for Android
+# Android Geotrigger SDK
 
 The Geotrigger Service provides real-time location tracking, geofencing,
 and messaging tools for developers working on location based apps.
