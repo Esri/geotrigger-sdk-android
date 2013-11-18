@@ -148,8 +148,8 @@ push notifications. Information about other platforms and the API itself are als
 
 [esri-site]: http://www.esri.com
 [arcgis-dev-site]: https://developers.arcgis.com
-[geotrigger-docs]: https://developers.arcgis.com/geotriggers
-[geotrigger-docs-android-getting-started]: https://developers.arcgis.com/geotriggers/guide/android-getting-started
+[geotrigger-docs]: https://developers.arcgis.com/geotrigger
+[geotrigger-docs-android-getting-started]: https://developers.arcgis.com/geotrigger/guide/android-getting-started
 [android-docs]: http://developer.android.com/
 [android-sdk]: http://developer.android.com/sdk/index.html
 [google-play-services-setup]: http://developer.android.com/google/play-services/setup.html
