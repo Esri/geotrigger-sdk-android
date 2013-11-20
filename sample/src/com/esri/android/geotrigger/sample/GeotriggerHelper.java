@@ -49,7 +49,7 @@ public final class GeotriggerHelper {
 
         int status = GooglePlayServicesUtil.isGooglePlayServicesAvailable(activity);
 
-        if (status != ConnectionResult.SUCCESS || sSkipPlayServicesInstall) {
+        if (status != ConnectionResult.SUCCESS && !sSkipPlayServicesInstall) {
             if (GooglePlayServicesUtil.isUserRecoverableError(status)) {
                 // This error can be fixed.
                 // Let's delay starting Geotriggers until we know the outcome of the recovery attempt
