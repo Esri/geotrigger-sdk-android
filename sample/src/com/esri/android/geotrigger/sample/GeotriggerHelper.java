@@ -19,6 +19,7 @@ import com.google.android.gms.common.GooglePlayServicesUtil;
 public final class GeotriggerHelper {
     private static final String TAG = "GeotriggerHelper";
     private static boolean sShouldStartGeotriggers;
+    private static boolean sSkipPlayServicesInstall;
 
     private GeotriggerHelper() {}
 
@@ -48,7 +49,7 @@ public final class GeotriggerHelper {
 
         int status = GooglePlayServicesUtil.isGooglePlayServicesAvailable(activity);
 
-        if (status != ConnectionResult.SUCCESS) {
+        if (status != ConnectionResult.SUCCESS || sSkipPlayServicesInstall) {
             if (GooglePlayServicesUtil.isUserRecoverableError(status)) {
                 // This error can be fixed.
                 // Let's delay starting Geotriggers until we know the outcome of the recovery attempt
@@ -64,7 +65,7 @@ public final class GeotriggerHelper {
 
                         // The user has decided not to install Google Play Services.
                         // We should just start Geotriggers without Google Play Services.
-                        sShouldStartGeotriggers = true;
+                        sSkipPlayServicesInstall = true;
                     }
                 });
 
