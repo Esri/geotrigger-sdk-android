@@ -147,9 +147,9 @@ including interacting with the `GeotriggerService`, working with the Geotrigger 
 push notifications. Information about other platforms and the API itself are also available.
 
 [esri-site]: http://www.esri.com
-[arcgis-dev-site]: https://developers.arcgis.com
-[geotrigger-docs]: https://developers.arcgis.com/geotrigger-service
-[geotrigger-docs-android-getting-started]: https://developers.arcgis.com/geotrigger-service/guide/android-getting-started
+[arcgis-dev-site]: https://developers.arcgis.com/
+[geotrigger-docs]: https://developers.arcgis.com/en/geotrigger-service
+[geotrigger-docs-android-getting-started]: https://developers.arcgis.com/en/geotrigger-service/guide/android-getting-started
 [android-docs]: http://developer.android.com/
 [android-sdk]: http://developer.android.com/sdk/index.html
 [google-play-services-setup]: http://developer.android.com/google/play-services/setup.html
