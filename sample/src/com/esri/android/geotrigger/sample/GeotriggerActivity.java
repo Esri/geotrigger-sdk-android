@@ -24,6 +24,11 @@ public class GeotriggerActivity extends Activity implements
     // The project number from https://code.google.com/apis/console
     private static final String GCM_SENDER_ID = "";
 
+    // A list of initial tags to apply to the device.
+    // Triggers created on the server for this application, with at least one of these same tags,
+    // will be active for the device.
+    private static final String[] TAGS = new String[] {"some_tag", "another_tag"};
+
     // The GeotriggerBroadcastReceiver receives intents from the
     // GeotriggerService, calling any listeners implemented in your class.
     private GeotriggerBroadcastReceiver mGeotriggerBroadcastReceiver;
@@ -45,7 +50,7 @@ public class GeotriggerActivity extends Activity implements
         super.onStart();
 
         GeotriggerHelper.startGeotriggerService(this, PLAY_SERVICES_REQUEST_CODE,
-                AGO_CLIENT_ID, GCM_SENDER_ID, GeotriggerService.TRACKING_PROFILE_ADAPTIVE);
+                AGO_CLIENT_ID, GCM_SENDER_ID, TAGS, GeotriggerService.TRACKING_PROFILE_ADAPTIVE);
     }
 
     @Override
@@ -97,7 +102,7 @@ public class GeotriggerActivity extends Activity implements
             // The TriggerBuilder helps build JSON parameters for use with the
             // 'trigger/create' API route.
             JSONObject params = new TriggerBuilder()
-                    .setTags(GeotriggerService.getDeviceDefaultTag(this))
+                    .setTags(TAGS[0]) // make sure to add at least one of the tags we have on the device to this trigger
                     .setGeo(loc, 100)
                     .setDirection(TriggerBuilder.DIRECTION_LEAVE)
                     .setNotificationText("You left the trigger!")
