@@ -35,10 +35,11 @@ public final class GeotriggerHelper {
      *                    if overridden in the provided {@link Activity}
      * @param clientId Client ID from https://developers.arcgis.com/en/applications
      * @param senderId Project number from https://code.google.com/apis/console
+     * @param tags A list of tag names to apply to the device as soon as possible.
      * @param profile The Geotrigger profile (ie: FINE, ADAPTIVE, ROUGH, OFF) to start the service in.
      */
     public static void startGeotriggerService(final Activity activity, int requestCode, String clientId, String senderId,
-                                              String profile) {
+                                              String[] tags, String profile) {
         if (activity == null) {
             throw new IllegalArgumentException("Activity cannot be null.");
         }
@@ -97,7 +98,7 @@ public final class GeotriggerHelper {
 
         if (sShouldStartGeotriggers) {
             // Start the GeotriggerService, in the provided profile
-            GeotriggerService.init(activity, clientId, senderId, profile);
+            GeotriggerService.init(activity, clientId, senderId, tags, profile);
         } else {
             Log.d(TAG, "Delaying the start of Geotriggers, as we are installing Google Play Services," +
                     " or awaiting the availability of at least one provider.");
