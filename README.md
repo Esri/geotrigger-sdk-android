@@ -56,7 +56,16 @@ private static final String AGO_CLIENT_ID = "...";
 private static final String GCM_SENDER_ID = "...";
 ```
 
-### Javadoc
+You can get an ArcGIS Online Client ID by signing up and creating an application on the [ArcGIS for Developers][arcgis-dev-site]
+site.
+
+You can get a GCM Sender ID by creating a project in the [Google Developer Console][goog-dev-console] and copying down your **Project Number**. It should look something like: 588978698153.
+
+You'll also need to make sure **Google Cloud Messaging for Android** is enabled for your project and generate a **Server key** which will need to be pasted into the **Push Certificates** section of your Application's detail page on the [ArcGIS for Developers][arcgis-dev-site] site.
+
+Please refer to the [Configuring Push Notifications][geotrigger-docs-android-push-notifications] guide for more detailed instructions.
+
+## Javadoc
 
 The Geotrigger SDK Javadoc is bundled with the sample application as a jar file
 in the `libs` directory. Please refer to your IDE's documentation for instructions
@@ -150,8 +159,10 @@ push notifications. Information about other platforms and the API itself are als
 [arcgis-dev-site]: https://developers.arcgis.com/
 [geotrigger-docs]: https://developers.arcgis.com/en/geotrigger-service
 [geotrigger-docs-android-getting-started]: https://developers.arcgis.com/en/geotrigger-service/guide/android-getting-started
+[geotrigger-docs-android-push-notifications]: https://developers.arcgis.com/en/geotrigger-service/guide/android-push-notifications/
 [android-docs]: http://developer.android.com/
 [android-sdk]: http://developer.android.com/sdk/index.html
 [google-play-services-setup]: http://developer.android.com/google/play-services/setup.html
 [sample-app-geotrigger-activity]: https://github.com/Esri/geotrigger-sdk-android/blob/master/sample/src/com/esri/android/geotrigger/sample/GeotriggerActivity.java
 [sample-app-geotrigger-helper]: https://github.com/Esri/geotrigger-sdk-android/blob/master/sample/src/com/esri/android/geotrigger/sample/GeotriggerHelper.java
+[goog-dev-console]: https://cloud.google.com/console
