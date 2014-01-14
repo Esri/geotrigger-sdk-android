@@ -4,3 +4,6 @@
 # Ignore generated files and binaries
 bin/
 gen/
+
+# IDE
+*.iml
