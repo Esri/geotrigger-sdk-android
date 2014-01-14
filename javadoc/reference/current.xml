@@ -577,6 +577,19 @@
 <parameter name="context" type="android.content.Context">
 </parameter>
 </method>
+<method name="getTrackingProfile"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
 <method name="hardStop"
  return="void"
  abstract="false"
@@ -779,6 +792,17 @@
  transient="false"
  volatile="false"
  value="&quot;com.esri.android.action.REQUEST_ON_DEMAND_LOCATION&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="SDK_VERSION"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;0.1.1&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
