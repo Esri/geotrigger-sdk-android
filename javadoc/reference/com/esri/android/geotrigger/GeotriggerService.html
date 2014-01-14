@@ -51,6 +51,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="last-modified" content="2013/11/22/">
+<meta name="product" content="api-geotrigger">
+<meta name="sub_category" content="Geotrigger Service">
+<meta name="sub_category_label" content="Geotrigger Service">
+<meta name="search-collection" content="help">
+<meta name="content_type" content="API Reference">
+<meta name="content_type_label" content="API Reference">
+<meta name="search-category" content="help-api,help-api-ref">
+<meta name="subject" content="MOBILE">
+<meta name="subject_label" content="MOBILE">
+<meta name="content-language" content="en">
 
   <meta name="description" content="Javadoc API documentation for Android Geotrigger SDK." />
 
@@ -465,13 +476,20 @@ Summary:
     
     <tr class=" api apilevel-" >
         <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#SDK_VERSION">SDK_VERSION</a></td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
         <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_ADAPTIVE">TRACKING_PROFILE_ADAPTIVE</a></td>
         <td class="jd-descrcol" width="100%">Sets the <code>GeotriggerService</code> tracking profile to <b>ADAPTIVE</b>, which automatically adjusts tracking
  resolution (and battery drain) depending on proximity to triggers and other factors.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
         <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_FINE">TRACKING_PROFILE_FINE</a></td>
         <td class="jd-descrcol" width="100%">Sets the <code>GeotriggerService</code> tracking profile to <b>FINE</b>, which collects the most accurate and
@@ -479,14 +497,14 @@ Summary:
     </tr>
     
     
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
         <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_OFF">TRACKING_PROFILE_OFF</a></td>
         <td class="jd-descrcol" width="100%">Sets the <code>GeotriggerService</code> tracking profile to <b>OFF</b>, disabling location tracking.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
         <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_ROUGH">TRACKING_PROFILE_ROUGH</a></td>
         <td class="jd-descrcol" width="100%">Sets the <code>GeotriggerService</code> tracking profile to <b>ROUGH</b>, which uses minimal battery power to get
@@ -986,6 +1004,24 @@ android.content.Context
             
             static
             
+            <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#getTrackingProfile(android.content.Context)">getTrackingProfile</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)
+        
+        <div class="jd-descrdiv">Get the tracking profile that the <code>GeotriggerService</code> is currently using.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            static
+            
             void
         </td>
         <td class="jd-linkcol" width="100%">
@@ -997,7 +1033,7 @@ android.content.Context
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1015,7 +1051,7 @@ android.content.Context
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1033,7 +1069,7 @@ android.content.Context
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1051,7 +1087,7 @@ android.content.Context
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1069,7 +1105,7 @@ android.content.Context
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1085,7 +1121,7 @@ android.content.Context
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1101,7 +1137,7 @@ android.content.Context
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1117,7 +1153,7 @@ android.content.Context
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1133,7 +1169,7 @@ android.content.Context
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1151,7 +1187,7 @@ android.content.Context
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1169,7 +1205,7 @@ android.content.Context
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1187,7 +1223,7 @@ android.content.Context
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1205,7 +1241,7 @@ android.content.Context
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1224,7 +1260,7 @@ android.content.Context
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1236,13 +1272,13 @@ android.content.Context
         <td class="jd-linkcol" width="100%">
         <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#setTrackingProfile(android.content.Context, java.lang.String)">setTrackingProfile</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> profile)
         
-        <div class="jd-descrdiv"><p>Tell the <code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html">GeotriggerService</a></code> to switch profiles.</div>
+        <div class="jd-descrdiv">Tell the <code>GeotriggerService</code> to switch profiles.</div>
   
   </td></tr>
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -4383,6 +4419,45 @@ From interface
 
 
 
+<a id="SDK_VERSION"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+      </span>
+        SDK_VERSION
+    </h4>
+      <div class="api-level">
+        
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "0.1.1"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
 <a id="TRACKING_PROFILE_ADAPTIVE"></a>
 
 <div class="jd-details api apilevel-"> 
@@ -4792,6 +4867,59 @@ From interface
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>the push sound resource name or null.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="getTrackingProfile(android.content.Context)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+      </span>
+      <span class="sympad">getTrackingProfile</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Get the tracking profile that the <code>GeotriggerService</code> is currently using.
+
+ <p>The returned profile will be one of:</p>
+ <ul>
+     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_OFF">TRACKING_PROFILE_OFF</a></code>
+     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_ROUGH">TRACKING_PROFILE_ROUGH</a></code>
+     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_ADAPTIVE">TRACKING_PROFILE_ADAPTIVE</a></code>
+     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_FINE">TRACKING_PROFILE_FINE</a></code>
+ </ul></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the tracking profile in use.
 </li></ul>
   </div>
 
@@ -5274,8 +5402,9 @@ From interface
       
   <div class="jd-tagdata jd-tagdescr"><p>Set the log level to be used by the Geotrigger SDK.
 
- <p>The default value is <code>Log.WARN</code>. Other settings are suitable for development, but should not be
- used for released applications.
+ <p>The default value is <code>Log.WARN</code> for release builds and <code>Log.DEBUG</code> for debug builds.
+ <code>Log.VERBOSE</code> will show additional logs for HTTP requests and other events, but should not be used
+ for released applications.
 
  <p><code>level</code> must be one of:
  <ul>
@@ -5316,7 +5445,10 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Set the name of the drawable to be used when displaying incoming push messages as status bar notifications.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Set the name of the drawable to be used when displaying incoming push messages as status bar notifications.
+
+ <p>The sound file must be located in the one of the <code>drawable</code> directories within the
+  <code>res</code> directory.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -5326,7 +5458,7 @@ From interface
         </tr>
         <tr>
           <th>iconName</th>
-          <td>the name of a drawable resource.</td>
+          <td>the name of a drawable resource file, without extension or parent directory.</td>
         </tr>
       </table>
   </div>
@@ -5429,7 +5561,7 @@ From interface
         </tr>
         <tr>
           <th>soundName</th>
-          <td>the name of a sound resource.</td>
+          <td>the name of a sound resource file, without extension or parent directory.</td>
         </tr>
       </table>
   </div>
@@ -5468,9 +5600,9 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p><p>Tell the <code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html">GeotriggerService</a></code> to switch profiles.
+  <div class="jd-tagdata jd-tagdescr"><p>Tell the <code>GeotriggerService</code> to switch profiles.
 
- <p>TrackingProfile must be one of:
+ <p><code>profile</code> must be one of:
  <ul>
      <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_OFF">TRACKING_PROFILE_OFF</a></code>
      <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_ROUGH">TRACKING_PROFILE_ROUGH</a></code>
