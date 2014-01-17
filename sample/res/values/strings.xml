@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">GeotriggerActivity</string>
+    <string name="app_name">Geotrigger Sample</string>
     <string name="play_services_dialog_cancel_toast">Google Play Services will help conserve your battery!</string>
     <string name="gps_provider_disabled">GPS Location Services are unavailable!</string>
     <string name="network_provider_disabled">Network Location Services are unavailable!</string>
     <string name="both_gps_and_network_disabled">GPS and Network Location Services are both unavailable!</string>
     <string name="settings">Settings</string>
     <string name="cancel">Cancel</string>
+    <string name="create_activity_label">Create Note</string>
+    <string name="create_note_button">Create Note</string>
 </resources>

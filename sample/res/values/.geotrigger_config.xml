@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copy this file to a new file named "geotrigger_config.xml" and set these values as appropriate for your app. -->
+<resources>
+    <!-- Create a new application at https://developers.arcgis.com/en/applications -->
+    <string name="client_id">Client ID from arcgisonline.com goes here.</string>
+    <!-- The project number from https://code.google.com/apis/console -->
+    <string name="gcm_sender_id">GCM Sender ID goes here.</string>
+</resources>

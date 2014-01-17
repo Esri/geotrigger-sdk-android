@@ -7,3 +7,6 @@ gen/
 
 # IDE
 *.iml
+
+# Config
+geotrigger_config.xml
