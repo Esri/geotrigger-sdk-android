@@ -8,7 +8,7 @@ The file `res/values/.geotrigger_config.xml` (remove the leading `.`) is provide
 
 In order to build this app, include the Geotrigger SDK jars at `../sample/libs/` in the classpath (Eclipse), or add those jars as module dependencies (Intellij). In addition, you will need to set up [Google Play Services][google-play-services] as a dependency of the app as well.
 
-[push-notifications-docs]:https://developers.arcgis.com/geotrigger-service/android-push-notifications
+[push-notifications-docs]:https://developers.arcgis.com/en/geotrigger-service/guide/android-push-notifications/
 [ago-applications]:https://developers.arcgis.com/en/applications/
 [gcm-sender-id]:http://developer.android.com/google/gcm/gs.html#create-proj
 [google-play-services]:http://developer.android.com/google/play-services/setup.html
