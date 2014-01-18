@@ -2,19 +2,11 @@ package com.esri.android.geotrigger.sample;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.location.Location;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
-import com.esri.android.geotrigger.GeotriggerApiClient;
-import com.esri.android.geotrigger.GeotriggerApiListener;
 import com.esri.android.geotrigger.GeotriggerBroadcastReceiver;
 import com.esri.android.geotrigger.GeotriggerService;
-import com.esri.android.geotrigger.TriggerBuilder;
-import com.esri.android.map.MapView;
-import com.esri.android.map.ags.ArcGISTiledMapServiceLayer;
-import org.json.JSONObject;
 
 public class MainActivity extends Activity implements GeotriggerBroadcastReceiver.DeviceReadyListener {
     private static final String TAG = "MainActivity";
@@ -43,7 +35,7 @@ public class MainActivity extends Activity implements GeotriggerBroadcastReceive
         Log.d(TAG, "Device Ready!");
     }
 
-    public void onCreateNoteClicked(View sender) {
+    public void onCreateNoteClick(View sender) {
         Intent intent = new Intent(this, CreateActivity.class);
         startActivity(intent);
     }

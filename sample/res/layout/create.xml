@@ -3,13 +3,45 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
-    <!-- MapView layout and initial extent -->
-    <com.esri.android.map.MapView
-            android:id="@+id/map"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            initExtent = "-1.3296373526814876E7 3930962.41823043 -1.2807176545789773E7 4201243.7502468005">
-    </com.esri.android.map.MapView>
+              android:layout_height="match_parent" >
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:orientation="vertical" >
+        <TextView android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/message_label"
+                  android:paddingLeft="6dp" />
+        <EditText android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="@string/message_hint"
+                  android:inputType="textCapSentences" />
+
+        <TextView android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/location_label"
+                  android:paddingLeft="6dp" />
+        <com.esri.android.map.MapView
+                android:id="@+id/map"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+        </com.esri.android.map.MapView>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="0"
+                  android:gravity="center"
+                  android:orientation="horizontal" >
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dip"
+                android:text="@string/cancel"
+                android:onClick="onCancelClick" />
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dip"
+                android:text="@string/create_note_button"
+                android:onClick="onCreateNoteClick" />
+    </LinearLayout>
 
 </LinearLayout>

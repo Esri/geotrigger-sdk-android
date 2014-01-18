@@ -9,4 +9,7 @@
     <string name="cancel">Cancel</string>
     <string name="create_activity_label">Create Note</string>
     <string name="create_note_button">Create Note</string>
+    <string name="message_label">Message</string>
+    <string name="message_hint">Message to be shown when trigger is fired.</string>
+    <string name="location_label">Location</string>
 </resources>

@@ -9,7 +9,7 @@
             android:layout_height="wrap_content"
             android:text="@string/create_note_button"
             android:textAlignment="center"
-            android:onClick="onCreateNoteClicked"
+            android:onClick="onCreateNoteClick"
             />
 </LinearLayout>
 
