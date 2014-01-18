@@ -4,14 +4,16 @@ import android.app.Activity;
 import android.content.Intent;
 import android.location.Location;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
-import com.esri.android.geotrigger.GeotriggerBroadcastReceiver;
-import com.esri.android.geotrigger.GeotriggerService;
-import com.esri.android.map.MapOptions;
+import android.widget.EditText;
+import android.widget.Toast;
+import com.esri.android.geotrigger.*;
 import com.esri.android.map.MapView;
 import com.esri.android.map.ags.ArcGISTiledMapServiceLayer;
 import com.esri.core.geometry.*;
+import org.json.JSONObject;
 
 public class CreateActivity extends Activity implements GeotriggerBroadcastReceiver.LocationUpdateListener {
     private static final String TAG = "CreateActivity";
@@ -62,9 +64,44 @@ public class CreateActivity extends Activity implements GeotriggerBroadcastRecei
     }
 
     public void onCreateNoteClick(View sender) {
-        // TODO: Create trigger!
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+        EditText messageText = (EditText)findViewById(R.id.messageText);
+        String message = "";
+        if (messageText.getText() != null) {
+            message = messageText.getText().toString();
+        }
+
+        if (!TextUtils.isEmpty(message)) {
+            Envelope extent = new Envelope(mMapView.getExtent().getPoint(0).getX(),
+                    mMapView.getExtent().getPoint(0).getY(),
+                    mMapView.getExtent().getPoint(1).getX(),
+                    mMapView.getExtent().getPoint(1).getY());
+            double radius = extent.getWidth()/2;
+            Point point = (Point)GeometryEngine.project(mMapView.getCenter(),
+                    SpatialReference.create(SpatialReference.WKID_WGS84_WEB_MERCATOR),
+                    SpatialReference.create(SpatialReference.WKID_WGS84));
+
+            TriggerBuilder triggerBuilder = new TriggerBuilder();
+            triggerBuilder.setTags("sample")
+                    .setDirection(TriggerBuilder.DIRECTION_ENTER)
+                    .setGeo(point.getY(), point.getX(), Math.max(radius, 50))
+                    .setNotificationText(message);
+
+            GeotriggerApiClient.runRequest(this, "trigger/create", triggerBuilder.build(), new GeotriggerApiListener() {
+                @Override
+                public void onSuccess(JSONObject jsonObject) {
+                    Toast.makeText(CreateActivity.this, "Trigger created!", Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(CreateActivity.this, MainActivity.class);
+                    startActivity(intent);
+                }
+
+                @Override
+                public void onFailure(Throwable throwable) {
+                    Toast.makeText(CreateActivity.this, "Error creating trigger.", Toast.LENGTH_LONG).show();
+                }
+            });
+        } else {
+            Toast.makeText(this, "Message cannot be empty!", Toast.LENGTH_LONG).show();
+        }
     }
 
     @Override
