@@ -9,10 +9,18 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
-import com.esri.android.geotrigger.*;
+import com.esri.android.geotrigger.GeotriggerApiClient;
+import com.esri.android.geotrigger.GeotriggerApiListener;
+import com.esri.android.geotrigger.GeotriggerBroadcastReceiver;
+import com.esri.android.geotrigger.GeotriggerService;
+import com.esri.android.geotrigger.TriggerBuilder;
 import com.esri.android.map.MapView;
 import com.esri.android.map.ags.ArcGISTiledMapServiceLayer;
-import com.esri.core.geometry.*;
+import com.esri.core.geometry.Envelope;
+import com.esri.core.geometry.GeometryEngine;
+import com.esri.core.geometry.Point;
+import com.esri.core.geometry.Polygon;
+import com.esri.core.geometry.SpatialReference;
 import org.json.JSONObject;
 
 public class CreateActivity extends Activity implements GeotriggerBroadcastReceiver.LocationUpdateListener {
