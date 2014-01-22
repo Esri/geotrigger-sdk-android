@@ -16,8 +16,8 @@ import com.esri.android.geotrigger.GeotriggerService;
 import com.esri.android.geotrigger.TriggerBuilder;
 import com.esri.android.map.MapView;
 import com.esri.android.map.ags.ArcGISTiledMapServiceLayer;
-import com.esri.core.geometry.Envelope;
 import com.esri.core.geometry.GeometryEngine;
+import com.esri.core.geometry.LinearUnit;
 import com.esri.core.geometry.Point;
 import com.esri.core.geometry.Polygon;
 import com.esri.core.geometry.SpatialReference;
@@ -25,6 +25,8 @@ import org.json.JSONObject;
 
 public class CreateActivity extends Activity implements GeotriggerBroadcastReceiver.LocationUpdateListener {
     private static final String TAG = "CreateActivity";
+    private static final String MAP_URL =
+            "http://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer";
 
     private MapView mMapView;
     private GeotriggerBroadcastReceiver mGeotriggerReceiver;
@@ -35,36 +37,36 @@ public class CreateActivity extends Activity implements GeotriggerBroadcastRecei
         setContentView(R.layout.create);
 
         mGeotriggerReceiver = new GeotriggerBroadcastReceiver();
-        initializeMapView();
+
+        // Get the current location from the GeotriggerService onLocationUpdate will be called when the location is
+        // retrieved and will set the map's extent.
+        GeotriggerService.requestOnDemandUpdate(this);
+
+        mMapView = (MapView)findViewById(R.id.map);
+        mMapView.addLayer(new ArcGISTiledMapServiceLayer(MAP_URL));
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        mMapView.unpause();
 
-        if (mGeotriggerReceiver != null) {
-            registerReceiver(mGeotriggerReceiver, GeotriggerBroadcastReceiver.getDefaultIntentFilter());
-        }
+        registerReceiver(mGeotriggerReceiver, GeotriggerBroadcastReceiver.getDefaultIntentFilter());
+        mMapView.unpause();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        if (mMapView != null) {
-            mMapView.pause();
-        }
 
-        if (mGeotriggerReceiver != null) {
-            unregisterReceiver(mGeotriggerReceiver);
-        }
+        unregisterReceiver(mGeotriggerReceiver);
+        mMapView.pause();
     }
 
     public void onCancelClick(View sender) {
         onBackPressed();
     }
 
-    public void onCreateNoteClick(View sender) {
+    public void onCreateNoteClick(View v) {
         EditText messageText = (EditText)findViewById(R.id.messageText);
         String message = "";
         if (messageText.getText() != null) {
@@ -72,22 +74,27 @@ public class CreateActivity extends Activity implements GeotriggerBroadcastRecei
         }
 
         if (!TextUtils.isEmpty(message)) {
-            Envelope extent = new Envelope(mMapView.getExtent().getPoint(0).getX(),
-                    mMapView.getExtent().getPoint(0).getY(),
-                    mMapView.getExtent().getPoint(1).getX(),
-                    mMapView.getExtent().getPoint(1).getY());
-            double radius = extent.getWidth()/2;
             Point point = (Point)GeometryEngine.project(mMapView.getCenter(),
                     SpatialReference.create(SpatialReference.WKID_WGS84_WEB_MERCATOR),
                     SpatialReference.create(SpatialReference.WKID_WGS84));
 
-            TriggerBuilder triggerBuilder = new TriggerBuilder();
-            triggerBuilder.setTags("sample")
-                    .setDirection(TriggerBuilder.DIRECTION_ENTER)
-                    .setGeo(point.getY(), point.getX(), Math.max(radius, 50))
-                    .setNotificationText(message);
+            Point p1 = mMapView.getExtent().getPoint(0);
+            Point p2 = mMapView.getExtent().getPoint(1);
 
-            GeotriggerApiClient.runRequest(this, "trigger/create", triggerBuilder.build(), new GeotriggerApiListener() {
+            double distance = GeometryEngine.geodesicDistance(p1, p2,
+                    SpatialReference.create(SpatialReference.WKID_WGS84_WEB_MERCATOR),
+                    new LinearUnit(LinearUnit.Code.METER));
+
+            double radius = Math.max(50, distance / 2.0);
+
+            JSONObject trigger = new TriggerBuilder()
+                    .setTags("sample")
+                    .setDirection(TriggerBuilder.DIRECTION_ENTER)
+                    .setGeo(point.getY(), point.getX(), radius)
+                    .setNotificationText(message)
+                    .build();
+
+            GeotriggerApiClient.runRequest(this, "trigger/create", trigger, new GeotriggerApiListener() {
                 @Override
                 public void onSuccess(JSONObject jsonObject) {
                     Toast.makeText(CreateActivity.this, "Trigger created!", Toast.LENGTH_LONG).show();
@@ -117,14 +124,5 @@ public class CreateActivity extends Activity implements GeotriggerBroadcastRecei
             Polygon buffer = GeometryEngine.buffer(point, mercator, 100, null);
             mMapView.setExtent(buffer);
         }
-    }
-
-    private void initializeMapView() {
-        // Get the current location from the GeotriggerService onLocationUpdate will be called when the location is
-        // retrieved and will set the map's extent.
-        GeotriggerService.requestOnDemandUpdate(this);
-
-        mMapView = (MapView)findViewById(R.id.map);
-        mMapView.addLayer(new ArcGISTiledMapServiceLayer("http://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer"));
     }
 }
