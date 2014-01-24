@@ -259,7 +259,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;com.esri.android.action.LOCATION_UPLOADED&quot;"
+ value="&quot;com.esri.android.geotrigger.action.LOCATION_UPLOADED&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -270,7 +270,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;com.esri.android.action.SEND_UPDATES_FAIL&quot;"
+ value="&quot;com.esri.android.geotrigger.action.SEND_UPDATES_FAIL&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -281,7 +281,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;com.esri.android.action.TRACKING_PROFILE_CHANGED&quot;"
+ value="&quot;com.esri.android.geotrigger.action.TRACKING_PROFILE_CHANGED&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -292,7 +292,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;com.esri.android.extra.COUNT&quot;"
+ value="&quot;com.esri.android.geotrigger.extra.COUNT&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -303,7 +303,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;com.esri.android.extra.NEW_PROFILE&quot;"
+ value="&quot;com.esri.android.geotrigger.extra.NEW_PROFILE&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -314,7 +314,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;com.esri.android.extra.OLD_PROFILE&quot;"
+ value="&quot;com.esri.android.geotrigger.extra.OLD_PROFILE&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -590,19 +590,6 @@
 <parameter name="context" type="android.content.Context">
 </parameter>
 </method>
-<method name="hardStop"
- return="void"
- abstract="false"
- native="false"
- synchronized="false"
- static="true"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="context" type="android.content.Context">
-</parameter>
-</method>
 <method name="init"
  return="void"
  abstract="false"
@@ -646,6 +633,19 @@
 </parameter>
 <exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
 </exception>
+</method>
+<method name="isLegacyTrackingModeFallbackEnabled"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
 </method>
 <method name="isPushNotificationHandlingEnabled"
  return="boolean"
@@ -697,6 +697,21 @@
  visibility="public"
 >
 <parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="setLegacyTrackingModeFallbackEnabled"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="enabled" type="boolean">
 </parameter>
 </method>
 <method name="setLoggingLevel"
@@ -787,11 +802,24 @@
 <parameter name="enabled" type="boolean">
 </parameter>
 </method>
+<method name="stop"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
 <field name="ACTION_REQUEST_ON_DEMAND_LOCATION"
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;com.esri.android.action.REQUEST_ON_DEMAND_LOCATION&quot;"
+ value="&quot;com.esri.android.geotrigger.action.REQUEST_ON_DEMAND_LOCATION&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -802,7 +830,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;0.1.1&quot;"
+ value="&quot;0.1.2&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -912,7 +940,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;com.esri.android.action.PUSH_MESSAGE_RECEIVED&quot;"
+ value="&quot;com.esri.android.geotrigger.action.PUSH_MESSAGE_RECEIVED&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -923,7 +951,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;com.esri.android.extra.DATA&quot;"
+ value="&quot;com.esri.android.geotrigger.extra.DATA&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"

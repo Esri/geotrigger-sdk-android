@@ -51,7 +51,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="last-modified" content="2013/11/22/">
+<meta name="last-modified" content="2014/01/23">
 <meta name="product" content="api-geotrigger">
 <meta name="sub_category" content="Geotrigger Service">
 <meta name="sub_category_label" content="Geotrigger Service">
@@ -1025,9 +1025,9 @@ android.content.Context
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#hardStop(android.content.Context)">hardStop</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#init(android.content.Context, java.lang.String, java.lang.String, java.lang.String)">init</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> clientId, <a href="http://d.android.com/reference/java/lang/String.html">String</a> gcmSenderId, <a href="http://d.android.com/reference/java/lang/String.html">String</a> profile)
         
-        <div class="jd-descrdiv">Tell the <code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html">GeotriggerService</a></code> to stop tracking, and NOT restart itself.</div>
+        <div class="jd-descrdiv">Starts the <code>GeotriggerService</code> using the provided setup parameters.</div>
   
   </td></tr>
 
@@ -1043,7 +1043,7 @@ android.content.Context
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#init(android.content.Context, java.lang.String, java.lang.String, java.lang.String)">init</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> clientId, <a href="http://d.android.com/reference/java/lang/String.html">String</a> gcmSenderId, <a href="http://d.android.com/reference/java/lang/String.html">String</a> profile)
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#init(android.content.Context, java.lang.String, java.lang.String, java.lang.String[], java.lang.String)">init</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> clientId, <a href="http://d.android.com/reference/java/lang/String.html">String</a> gcmSenderId, <a href="http://d.android.com/reference/java/lang/String.html">String[]</a> tags, <a href="http://d.android.com/reference/java/lang/String.html">String</a> profile)
         
         <div class="jd-descrdiv">Starts the <code>GeotriggerService</code> using the provided setup parameters.</div>
   
@@ -1058,12 +1058,13 @@ android.content.Context
             
             static
             
-            void
+            boolean
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#init(android.content.Context, java.lang.String, java.lang.String, java.lang.String[], java.lang.String)">init</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> clientId, <a href="http://d.android.com/reference/java/lang/String.html">String</a> gcmSenderId, <a href="http://d.android.com/reference/java/lang/String.html">String[]</a> tags, <a href="http://d.android.com/reference/java/lang/String.html">String</a> profile)
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#isLegacyTrackingModeFallbackEnabled(android.content.Context)">isLegacyTrackingModeFallbackEnabled</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)
         
-        <div class="jd-descrdiv">Starts the <code>GeotriggerService</code> using the provided setup parameters.</div>
+        <div class="jd-descrdiv">Determine if the <code>GeotriggerService</code> will use the legacy tracking method on devices that do not
+ support Google Play Services.</div>
   
   </td></tr>
 
@@ -1197,6 +1198,24 @@ android.content.Context
             void
         </td>
         <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#setLegacyTrackingModeFallbackEnabled(android.content.Context, boolean)">setLegacyTrackingModeFallbackEnabled</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, boolean enabled)
+        
+        <div class="jd-descrdiv">Allow the <code>GeotriggerService</code> to fall back to legacy <code>LocationManager</code> based tracking.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            static
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
         <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#setLoggingLevel(int)">setLoggingLevel</a></span>(int level)
         
         <div class="jd-descrdiv">Set the log level to be used by the Geotrigger SDK.</div>
@@ -1205,7 +1224,7 @@ android.content.Context
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1223,7 +1242,7 @@ android.content.Context
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1241,7 +1260,7 @@ android.content.Context
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1260,7 +1279,7 @@ android.content.Context
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1278,7 +1297,7 @@ android.content.Context
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1291,6 +1310,24 @@ android.content.Context
         <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#setVibrationEnabled(android.content.Context, boolean)">setVibrationEnabled</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, boolean enabled)
         
         <div class="jd-descrdiv">Set whether or not the device will vibrate when a push notification is received (default: true).</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            static
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#stop(android.content.Context)">stop</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)
+        
+        <div class="jd-descrdiv">Tell the <code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html">GeotriggerService</a></code> to stop tracking, and NOT restart itself.</div>
   
   </td></tr>
 
@@ -4409,7 +4446,7 @@ From interface
         <span class="jd-tagtitle">Constant Value: </span>
         <span>
             
-                "com.esri.android.action.REQUEST_ON_DEMAND_LOCATION"
+                "com.esri.android.geotrigger.action.REQUEST_ON_DEMAND_LOCATION"
             
         </span>
         </div>
@@ -4448,7 +4485,7 @@ From interface
         <span class="jd-tagtitle">Constant Value: </span>
         <span>
             
-                "0.1.1"
+                "0.1.2"
             
         </span>
         </div>
@@ -4927,49 +4964,6 @@ From interface
 </div>
 
 
-<a id="hardStop(android.content.Context)"></a>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-         
-         
-         
-        void
-      </span>
-      <span class="sympad">hardStop</span>
-      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-
-</div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Tell the <code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html">GeotriggerService</a></code> to stop tracking, and NOT restart itself.
-
- <p>The service will attempt to send any pending locations before stopping.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Parameters</h5>
-      <table class="jd-tagtable">
-        <tr>
-          <th>context</th>
-          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code>
-</td>
-        </tr>
-      </table>
-  </div>
-
-    </div>
-</div>
-
-
 <a id="init(android.content.Context, java.lang.String, java.lang.String, java.lang.String)"></a>
 
 <div class="jd-details api apilevel-"> 
@@ -5108,6 +5102,52 @@ From interface
             <td></td>
         </tr>
       </table>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="isLegacyTrackingModeFallbackEnabled(android.content.Context)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">isLegacyTrackingModeFallbackEnabled</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Determine if the <code>GeotriggerService</code> will use the legacy tracking method on devices that do not
+ support Google Play Services.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>true if fallback to legacy tracking is enabled; false if otherwise.
+</li></ul>
   </div>
 
     </div>
@@ -5366,6 +5406,55 @@ From interface
         <tr>
           <th>context</th>
           <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="setLegacyTrackingModeFallbackEnabled(android.content.Context, boolean)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setLegacyTrackingModeFallbackEnabled</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, boolean enabled)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Allow the <code>GeotriggerService</code> to fall back to legacy <code>LocationManager</code> based tracking.
+
+ <p></p>This option should not be enabled unless your app needs to run on devices that are not supported by
+ Google Play Services, as the legacy tracking method will drain the battery much more quickly than the default
+ <code>LocationClient</code> based tracking method.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.</td>
+        </tr>
+        <tr>
+          <th>enabled</th>
+          <td>true to enable fallback to legacy tracking.
 </td>
         </tr>
       </table>
@@ -5667,6 +5756,49 @@ From interface
         <tr>
           <th>enabled</th>
           <td>true if the device should vibrate; false if otherwise.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="stop(android.content.Context)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">stop</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Tell the <code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html">GeotriggerService</a></code> to stop tracking, and NOT restart itself.
+
+ <p>The service will attempt to send any pending locations before stopping.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code>
 </td>
         </tr>
       </table>
