@@ -41,15 +41,9 @@ public class CreateActivity extends Activity implements GeotriggerBroadcastRecei
     @Override
     protected void onResume() {
         super.onResume();
-        if (mMapView == null) {
-            initializeMapView();
-        } else {
-            mMapView.unpause();
-        }
+        mMapView.unpause();
 
-        if (mGeotriggerReceiver == null) {
-            mGeotriggerReceiver = new GeotriggerBroadcastReceiver();
-        } else {
+        if (mGeotriggerReceiver != null) {
             registerReceiver(mGeotriggerReceiver, GeotriggerBroadcastReceiver.getDefaultIntentFilter());
         }
     }
@@ -67,8 +61,7 @@ public class CreateActivity extends Activity implements GeotriggerBroadcastRecei
     }
 
     public void onCancelClick(View sender) {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+        onBackPressed();
     }
 
     public void onCreateNoteClick(View sender) {
