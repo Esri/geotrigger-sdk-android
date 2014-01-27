@@ -18,12 +18,6 @@ public class GeotriggerActivity extends Activity implements
     private static final String TAG = "GeotriggerActivity";
     private static final int PLAY_SERVICES_REQUEST_CODE = 1;
 
-    // Create a new application at https://developers.arcgis.com/en/applications
-    private static final String AGO_CLIENT_ID = "";
-
-    // The project number from https://code.google.com/apis/console
-    private static final String GCM_SENDER_ID = "";
-
     // A list of initial tags to apply to the device.
     // Triggers created on the server for this application, with at least one of these same tags,
     // will be active for the device.
@@ -49,8 +43,10 @@ public class GeotriggerActivity extends Activity implements
     public void onStart() {
         super.onStart();
 
+        String client_id = getString(R.string.client_id);
+        String gcm_sender_id = getString(R.string.gcm_sender_id);
         GeotriggerHelper.startGeotriggerService(this, PLAY_SERVICES_REQUEST_CODE,
-                AGO_CLIENT_ID, GCM_SENDER_ID, TAGS, GeotriggerService.TRACKING_PROFILE_ADAPTIVE);
+                client_id, gcm_sender_id, TAGS, GeotriggerService.TRACKING_PROFILE_ADAPTIVE);
     }
 
     @Override

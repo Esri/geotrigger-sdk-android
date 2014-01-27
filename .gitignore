@@ -4,3 +4,9 @@
 # Ignore generated files and binaries
 bin/
 gen/
+
+# IDE
+*.iml
+
+# Config
+geotrigger_config.xml
