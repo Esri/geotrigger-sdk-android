@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.location.LocationManager;
 import android.net.wifi.WifiManager;
 import android.os.Build;
+import android.provider.Settings;
 import android.util.Log;
 import android.widget.Toast;
 import com.esri.android.geotrigger.GeotriggerService;
@@ -89,16 +90,27 @@ public final class GeotriggerHelper {
             // Check for GPS and Network Provider, and prompt the user to enable them if not available.
             if (checkForRequiredProviders(activity) == AvailableProviders.BOTH) {
                 // We have both providers enabled, great!
-                // Let's also verify that we get make the most efficient use of the Network provider by checking
-                // that devices running SDK 18 (Jelly Bean MR2) and above have enabled background scanning.
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR2) {
-                    WifiManager wifiManager = (WifiManager) activity.getSystemService(Context.WIFI_SERVICE);
 
-                    // The call to isScanAlwaysAvailable() requires the permission:
-                    //      <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+                // Our usages of the WifiManager below require the permission:
+                //      <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+                WifiManager wifiManager = (WifiManager) activity.getSystemService(Context.WIFI_SERVICE);
+
+                // Let's also verify that we get make the most efficient use of the Network provider by checking
+                // that devices running SDK 18 (Jelly Bean MR2) and above have enabled background scanning,
+                // and that those below SDK 18 have wifi itself enabled.
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR2) {
                     if (!wifiManager.isScanAlwaysAvailable()) {
                         showSettingsDialog(activity, WifiManager.ACTION_REQUEST_SCAN_ALWAYS_AVAILABLE,
                                 activity.getString(R.string.enable_background_scanning));
+                        return;
+                    }
+                } else {
+                    // When running on SDK 17 and below, wifi background scanning is not available.
+                    // Enabling Wifi will drastically improve performance, particularly for Adaptive mode,
+                    // which uses Geofencing.
+                    if (!wifiManager.isWifiEnabled()) {
+                        showSettingsDialog(activity, Settings.ACTION_WIFI_SETTINGS,
+                                activity.getString(R.string.enable_wifi));
                         return;
                     }
                 }
