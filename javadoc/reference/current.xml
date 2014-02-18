@@ -107,7 +107,7 @@
  visibility="public"
 >
 </method>
-<method name="onDeviceReady"
+<method name="onDeviceRegisterFail"
  return="void"
  abstract="false"
  native="false"
@@ -120,7 +120,7 @@
 <parameter name="context" type="android.content.Context">
 </parameter>
 </method>
-<method name="onDeviceRegisterFail"
+<method name="onGeofenceCreation"
  return="void"
  abstract="false"
  native="false"
@@ -131,6 +131,31 @@
  visibility="protected"
 >
 <parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="triggerId" type="java.lang.String">
+</parameter>
+<parameter name="latitude" type="double">
+</parameter>
+<parameter name="longitude" type="double">
+</parameter>
+<parameter name="radius" type="float">
+</parameter>
+<parameter name="isHop" type="boolean">
+</parameter>
+</method>
+<method name="onGeofenceRemoved"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="triggerId" type="java.lang.String">
 </parameter>
 </method>
 <method name="onLocationUpdate"
@@ -221,6 +246,19 @@
 <parameter name="context" type="android.content.Context">
 </parameter>
 <parameter name="pushToken" type="java.lang.String">
+</parameter>
+</method>
+<method name="onReady"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="context" type="android.content.Context">
 </parameter>
 </method>
 <method name="onReceive"
@@ -322,25 +360,6 @@
 >
 </field>
 </class>
-<interface name="GeotriggerBroadcastReceiver.DeviceReadyListener"
- abstract="true"
- static="true"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<method name="onDeviceReady"
- return="void"
- abstract="true"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-</interface>
 <interface name="GeotriggerBroadcastReceiver.DeviceRegisterFailListener"
  abstract="true"
  static="true"
@@ -358,6 +377,56 @@
  deprecated="not deprecated"
  visibility="public"
 >
+</method>
+</interface>
+<interface name="GeotriggerBroadcastReceiver.GeofenceCreationListener"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onGeofenceCreated"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="triggerId" type="java.lang.String">
+</parameter>
+<parameter name="latitude" type="double">
+</parameter>
+<parameter name="longitude" type="double">
+</parameter>
+<parameter name="radius" type="float">
+</parameter>
+<parameter name="isHop" type="boolean">
+</parameter>
+</method>
+</interface>
+<interface name="GeotriggerBroadcastReceiver.GeofenceRemovalListener"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onGeofenceRemoved"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="triggerId" type="java.lang.String">
+</parameter>
 </method>
 </interface>
 <interface name="GeotriggerBroadcastReceiver.LocationUpdateListener"
@@ -484,6 +553,25 @@
 >
 <parameter name="pushToken" type="java.lang.String">
 </parameter>
+</method>
+</interface>
+<interface name="GeotriggerBroadcastReceiver.ReadyListener"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onReady"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
 </method>
 </interface>
 <interface name="GeotriggerBroadcastReceiver.TrackingProfileChangeListener"
@@ -830,7 +918,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;0.1.2&quot;"
+ value="&quot;1.0.0&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -918,7 +1006,7 @@
 </parameter>
 <parameter name="url" type="java.lang.String">
 </parameter>
-<parameter name="data" type="org.json.JSONObject">
+<parameter name="data" type="java.lang.String">
 </parameter>
 </method>
 <method name="onReceive"

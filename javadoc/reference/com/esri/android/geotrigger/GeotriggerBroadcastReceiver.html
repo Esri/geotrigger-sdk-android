@@ -51,7 +51,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="last-modified" content="2014/01/23">
+<meta name="last-modified" content="2014/02/18">
 <meta name="product" content="api-geotrigger">
 <meta name="sub_category" content="Geotrigger Service">
 <meta name="sub_category_label" content="Geotrigger Service">
@@ -166,14 +166,16 @@
     <li><h2>Interfaces</h2>
       <ul>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerApiListener.html">GeotriggerApiListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.DeviceReadyListener.html">GeotriggerBroadcastReceiver.DeviceReadyListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.DeviceRegisterFailListener.html">GeotriggerBroadcastReceiver.DeviceRegisterFailListener</a></li>
+          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceCreationListener.html">GeotriggerBroadcastReceiver.GeofenceCreationListener</a></li>
+          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceRemovalListener.html">GeotriggerBroadcastReceiver.GeofenceRemovalListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUpdateListener.html">GeotriggerBroadcastReceiver.LocationUpdateListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadFailListener.html">GeotriggerBroadcastReceiver.LocationUploadFailListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadListener.html">GeotriggerBroadcastReceiver.LocationUploadListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushMessageListener.html">GeotriggerBroadcastReceiver.PushMessageListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterFailListener.html">GeotriggerBroadcastReceiver.PushTokenRegisterFailListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterListener.html">GeotriggerBroadcastReceiver.PushTokenRegisterListener</a></li>
+          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.ReadyListener.html">GeotriggerBroadcastReceiver.ReadyListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TrackingProfileChangeListener.html">GeotriggerBroadcastReceiver.TrackingProfileChangeListener</a></li>
       </ul>
     </li>
@@ -409,8 +411,8 @@ Summary:
          
         
         interface</td>
-      <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.DeviceReadyListener.html">GeotriggerBroadcastReceiver.DeviceReadyListener</a></td>
-      <td class="jd-descrcol" width="100%">Listener for device ready events.&nbsp;</td>
+      <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.DeviceRegisterFailListener.html">GeotriggerBroadcastReceiver.DeviceRegisterFailListener</a></td>
+      <td class="jd-descrcol" width="100%">Listener for device registration errors.&nbsp;</td>
     </tr>
     
     
@@ -421,12 +423,24 @@ Summary:
          
         
         interface</td>
-      <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.DeviceRegisterFailListener.html">GeotriggerBroadcastReceiver.DeviceRegisterFailListener</a></td>
-      <td class="jd-descrcol" width="100%">Listener for device registration errors.&nbsp;</td>
+      <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceCreationListener.html">GeotriggerBroadcastReceiver.GeofenceCreationListener</a></td>
+      <td class="jd-descrcol" width="100%">Geofence creation listener.&nbsp;</td>
     </tr>
     
     
     <tr class="alt-color api apilevel-" >
+      <td class="jd-typecol">
+        
+         
+         
+        
+        interface</td>
+      <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceRemovalListener.html">GeotriggerBroadcastReceiver.GeofenceRemovalListener</a></td>
+      <td class="jd-descrcol" width="100%">Geofence removal listener.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
       <td class="jd-typecol">
         
          
@@ -438,7 +452,7 @@ Summary:
     </tr>
     
     
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
       <td class="jd-typecol">
         
          
@@ -450,7 +464,7 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
       <td class="jd-typecol">
         
          
@@ -462,7 +476,7 @@ Summary:
     </tr>
     
     
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
       <td class="jd-typecol">
         
          
@@ -474,7 +488,7 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
       <td class="jd-typecol">
         
          
@@ -486,7 +500,7 @@ Summary:
     </tr>
     
     
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
       <td class="jd-typecol">
         
          
@@ -495,6 +509,18 @@ Summary:
         interface</td>
       <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterListener.html">GeotriggerBroadcastReceiver.PushTokenRegisterListener</a></td>
       <td class="jd-descrcol" width="100%">Listener for push token registration events.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+      <td class="jd-typecol">
+        
+         
+         
+        
+        interface</td>
+      <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.ReadyListener.html">GeotriggerBroadcastReceiver.ReadyListener</a></td>
+      <td class="jd-descrcol" width="100%">Listener for device ready events.&nbsp;</td>
     </tr>
     
     
@@ -676,10 +702,10 @@ Summary:
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.html#onDeviceReady(android.content.Context)">onDeviceReady</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.html#onDeviceRegisterFail(android.content.Context)">onDeviceRegisterFail</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)
         
-        <div class="jd-descrdiv">Override this method to implement your own behavior to occur when the device has
- registered with ArcGIS Online and is ready to make API calls.</div>
+        <div class="jd-descrdiv">Override this method to implement your own behavior to occur when the device fails
+ to register with ArcGIS Online.</div>
   
   </td></tr>
 
@@ -695,16 +721,33 @@ Summary:
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.html#onDeviceRegisterFail(android.content.Context)">onDeviceRegisterFail</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.html#onGeofenceCreation(android.content.Context, java.lang.String, double, double, float, boolean)">onGeofenceCreation</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> triggerId, double latitude, double longitude, float radius, boolean isHop)
         
-        <div class="jd-descrdiv">Override this method to implement your own behavior to occur when the device fails
- to register with ArcGIS Online.</div>
+        <div class="jd-descrdiv">Override this method to implement your own behavior when a geofence is created.</div>
   
   </td></tr>
 
 
 	 
     <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.html#onGeofenceRemoved(android.content.Context, java.lang.String)">onGeofenceRemoved</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> triggerId)
+        
+        <div class="jd-descrdiv">Override this method to implement your own behavior when a non-hop geofence is removed (and no longer being tracked).</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -722,7 +765,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -741,7 +784,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -760,7 +803,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -778,7 +821,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -797,7 +840,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -811,6 +854,25 @@ Summary:
         
         <div class="jd-descrdiv">Override this method to implement your own behavior to occur when the device fails to update
  the server with its push message token.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.html#onReady(android.content.Context)">onReady</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)
+        
+        <div class="jd-descrdiv">Override this method to implement your own behavior to occur when the device has
+ registered with ArcGIS Online and is ready to make API calls.</div>
   
   </td></tr>
 
@@ -1766,51 +1828,6 @@ From class
 
 
 
-<a id="onDeviceReady(android.content.Context)"></a>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        protected 
-         
-         
-         
-         
-        void
-      </span>
-      <span class="sympad">onDeviceReady</span>
-      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-
-</div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Override this method to implement your own behavior to occur when the device has
- registered with ArcGIS Online and is ready to make API calls.
-
- <p>This method attempts to call the method of the same name on the associated listener by
- casting Context to that listener type.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Parameters</h5>
-      <table class="jd-tagtable">
-        <tr>
-          <th>context</th>
-          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.
-</td>
-        </tr>
-      </table>
-  </div>
-
-    </div>
-</div>
-
-
 <a id="onDeviceRegisterFail(android.content.Context)"></a>
 
 <div class="jd-details api apilevel-"> 
@@ -1847,6 +1864,112 @@ From class
         <tr>
           <th>context</th>
           <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="onGeofenceCreation(android.content.Context, java.lang.String, double, double, float, boolean)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        protected 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">onGeofenceCreation</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> triggerId, double latitude, double longitude, float radius, boolean isHop)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Override this method to implement your own behavior when a geofence is created.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.</td>
+        </tr>
+        <tr>
+          <th>triggerId</th>
+          <td>Should match what was set when the trigger was created, unless isHop is equal to true.</td>
+        </tr>
+        <tr>
+          <th>latitude</th>
+          <td>latitude of the center of the geofence.</td>
+        </tr>
+        <tr>
+          <th>longitude</th>
+          <td>longitude of the center of the geofence.</td>
+        </tr>
+        <tr>
+          <th>radius</th>
+          <td>the radius of the circular geofence.</td>
+        </tr>
+        <tr>
+          <th>isHop</th>
+          <td>indicates whether this is an internal geofence (true) or a geofence representing a trigger (false).
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="onGeofenceRemoved(android.content.Context, java.lang.String)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        protected 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">onGeofenceRemoved</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> triggerId)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Override this method to implement your own behavior when a non-hop geofence is removed (and no longer being tracked).</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.</td>
+        </tr>
+        <tr>
+          <th>triggerId</th>
+          <td>Should match what was set when the trigger was created, but may also be an internal id.
 </td>
         </tr>
       </table>
@@ -2140,6 +2263,51 @@ From class
         <tr>
           <th>pushToken</th>
           <td>a GCM push token.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="onReady(android.content.Context)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        protected 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">onReady</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Override this method to implement your own behavior to occur when the device has
+ registered with ArcGIS Online and is ready to make API calls.
+
+ <p>This method attempts to call the method of the same name on the associated listener by
+ casting Context to that listener type.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.
 </td>
         </tr>
       </table>
