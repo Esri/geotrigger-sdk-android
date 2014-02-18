@@ -1,5 +1,11 @@
 # Change Log
 
+## v1.0.0 2/18/2014
+* Renamed `GeotriggerBroadcastReceiver.DeviceReadyListener` to `GeotriggerBroadcastReceiver.ReadyListener`, and renamed `onDeviceReady()` to `onReady()`.
+* Improved robustness of GCM registration.
+* Improvements to ADAPTIVE and ROUGH profiles.
+* Miscellaneous bug fixes.
+
 ## v0.1.2 1/23/2014:
 
 * The SDK will now throw a RuntimeException if Google Play Services is not included as a dependency, unless `setLegacyTrackingModeFallbackEnabled()` is called with `true` as the second parameter value.

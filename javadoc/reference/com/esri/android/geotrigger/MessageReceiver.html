@@ -51,7 +51,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="last-modified" content="2014/01/23">
+<meta name="last-modified" content="2014/02/18">
 <meta name="product" content="api-geotrigger">
 <meta name="sub_category" content="Geotrigger Service">
 <meta name="sub_category_label" content="Geotrigger Service">
@@ -166,14 +166,16 @@
     <li><h2>Interfaces</h2>
       <ul>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerApiListener.html">GeotriggerApiListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.DeviceReadyListener.html">GeotriggerBroadcastReceiver.DeviceReadyListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.DeviceRegisterFailListener.html">GeotriggerBroadcastReceiver.DeviceRegisterFailListener</a></li>
+          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceCreationListener.html">GeotriggerBroadcastReceiver.GeofenceCreationListener</a></li>
+          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceRemovalListener.html">GeotriggerBroadcastReceiver.GeofenceRemovalListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUpdateListener.html">GeotriggerBroadcastReceiver.LocationUpdateListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadFailListener.html">GeotriggerBroadcastReceiver.LocationUploadFailListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadListener.html">GeotriggerBroadcastReceiver.LocationUploadListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushMessageListener.html">GeotriggerBroadcastReceiver.PushMessageListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterFailListener.html">GeotriggerBroadcastReceiver.PushTokenRegisterFailListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterListener.html">GeotriggerBroadcastReceiver.PushTokenRegisterListener</a></li>
+          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.ReadyListener.html">GeotriggerBroadcastReceiver.ReadyListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TrackingProfileChangeListener.html">GeotriggerBroadcastReceiver.TrackingProfileChangeListener</a></li>
       </ul>
     </li>
@@ -508,7 +510,7 @@ Summary:
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/MessageReceiver.html#handlePushNotification(android.content.Context, java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.json.JSONObject)">handlePushNotification</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> text, <a href="http://d.android.com/reference/java/lang/String.html">String</a> sound, <a href="http://d.android.com/reference/java/lang/String.html">String</a> icon, <a href="http://d.android.com/reference/java/lang/String.html">String</a> url, <a href="http://d.android.com/reference/org/json/JSONObject.html">JSONObject</a> data)
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/MessageReceiver.html#handlePushNotification(android.content.Context, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)">handlePushNotification</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> text, <a href="http://d.android.com/reference/java/lang/String.html">String</a> sound, <a href="http://d.android.com/reference/java/lang/String.html">String</a> icon, <a href="http://d.android.com/reference/java/lang/String.html">String</a> url, <a href="http://d.android.com/reference/java/lang/String.html">String</a> data)
         
         <div class="jd-descrdiv">Display a basic push notification if default handling is enabled.</div>
   
@@ -1238,7 +1240,7 @@ From class
 
 
 
-<a id="handlePushNotification(android.content.Context, java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.json.JSONObject)"></a>
+<a id="handlePushNotification(android.content.Context, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -1251,7 +1253,7 @@ From class
         void
       </span>
       <span class="sympad">handlePushNotification</span>
-      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> text, <a href="http://d.android.com/reference/java/lang/String.html">String</a> sound, <a href="http://d.android.com/reference/java/lang/String.html">String</a> icon, <a href="http://d.android.com/reference/java/lang/String.html">String</a> url, <a href="http://d.android.com/reference/org/json/JSONObject.html">JSONObject</a> data)</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> text, <a href="http://d.android.com/reference/java/lang/String.html">String</a> sound, <a href="http://d.android.com/reference/java/lang/String.html">String</a> icon, <a href="http://d.android.com/reference/java/lang/String.html">String</a> url, <a href="http://d.android.com/reference/java/lang/String.html">String</a> data)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -1291,7 +1293,7 @@ From class
         </tr>
         <tr>
           <th>data</th>
-          <td>a <code><a href="http://d.android.com/reference/org/json/JSONObject.html">JSONObject</a></code> containing arbitrary data.
+          <td>a <code>String</code> containing arbitrary data.
 </td>
         </tr>
       </table>
