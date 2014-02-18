@@ -118,6 +118,11 @@ handling of Geotrigger notifications.
             <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
             <category android:name="{YOUR_PACKAGE_NAME}" />
         </intent-filter>
+        <intent-filter>
+            <action android:name="android.intent.action.PACKAGE_REPLACED" />
+            <data android:path="{YOUR_PACKAGE}"
+                android:scheme="package" />
+        </intent-filter>
     </receiver>
 </application>
 ```
