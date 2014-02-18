@@ -145,13 +145,13 @@ GeotriggerService.setTrackingProfile(this, GeotriggerService.TRACKING_PROFILE_OF
 ```
 
 If you want the `GeotriggerService` to be destroyed without restarting itself, you can alternatively
-call the static `hardStop` method. This is similar to setting the profile to `OFF`, except that no
+call the static `stop` method. This is similar to setting the profile to `OFF`, except that no
 event is fired to indicate a change in tracking profile, and the `GeotriggerService` will stop
 tracking and no longer run in the background:
 
 ```java
 // Stop the service, and do not recover
-GeotriggerService.hardStop(this);
+GeotriggerService.stop(this);
 ```
 
 ## Further Reading
