@@ -42,6 +42,11 @@
             <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
             <category android:name="com.esri.android.geotrigger.sample" />
           </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <data android:path="com.esri.android.geotrigger.sample"
+                      android:scheme="package" />
+            </intent-filter>
         </receiver>
 
         <!--
