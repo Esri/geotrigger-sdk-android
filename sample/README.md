@@ -5,4 +5,4 @@ This app is a self contained skeleton app made to show the bare minimum of what 
 The app creates a trigger at its current location with a 100m radius which will fire when the device leaves that location. The trigger is configured to send a Push Notification when it fires, but you'll need to make sure you're set up to send/receive push notifications first. See our [Push Notifications Guide][push-notifications-docs] for details on that.
 
 
-[push-notifications-docs]:https://developers.arcgis.com/geotrigger-service/android-push-notifications
+[push-notifications-docs]:https://developers.arcgis.com/geotrigger-service/guide/android-push-notifications/
