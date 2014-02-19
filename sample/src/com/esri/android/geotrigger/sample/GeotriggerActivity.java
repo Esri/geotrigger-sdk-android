@@ -14,14 +14,14 @@ import org.json.JSONObject;
 
 public class GeotriggerActivity extends Activity implements
         GeotriggerBroadcastReceiver.LocationUpdateListener,
-        GeotriggerBroadcastReceiver.DeviceReadyListener {
+        GeotriggerBroadcastReceiver.ReadyListener {
     private static final String TAG = "GeotriggerActivity";
     private static final int PLAY_SERVICES_REQUEST_CODE = 1;
 
     // Create a new application at https://developers.arcgis.com/en/applications
     private static final String AGO_CLIENT_ID = "";
 
-    // The project number from https://code.google.com/apis/console
+    // The project number from https://cloud.google.com/console
     private static final String GCM_SENDER_ID = "";
 
     // A list of initial tags to apply to the device.
@@ -75,11 +75,11 @@ public class GeotriggerActivity extends Activity implements
     }
 
     @Override
-    public void onDeviceReady() {
+    public void onReady() {
         // Called when the device has registered with ArcGIS Online and is ready
         // to make requests to the Geotrigger Service API.
-        Toast.makeText(this, "Device Registered!", Toast.LENGTH_SHORT).show();
-        Log.d(TAG, "Device registered!");
+        Toast.makeText(this, "GeotriggerService ready!", Toast.LENGTH_SHORT).show();
+        Log.d(TAG, "GeotriggerService ready!");
     }
 
     @Override

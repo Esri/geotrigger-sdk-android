@@ -68,7 +68,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
 <title>
 
-  GeotriggerBroadcastReceiver.PushTokenRegisterListener
+  GeotriggerBroadcastReceiver.GeofenceCreationListener
 
 
 | Android Geotrigger SDK
@@ -167,14 +167,14 @@
       <ul>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerApiListener.html">GeotriggerApiListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.DeviceRegisterFailListener.html">GeotriggerBroadcastReceiver.DeviceRegisterFailListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceCreationListener.html">GeotriggerBroadcastReceiver.GeofenceCreationListener</a></li>
+          <li class="selected api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceCreationListener.html">GeotriggerBroadcastReceiver.GeofenceCreationListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceRemovalListener.html">GeotriggerBroadcastReceiver.GeofenceRemovalListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUpdateListener.html">GeotriggerBroadcastReceiver.LocationUpdateListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadFailListener.html">GeotriggerBroadcastReceiver.LocationUploadFailListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadListener.html">GeotriggerBroadcastReceiver.LocationUploadListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushMessageListener.html">GeotriggerBroadcastReceiver.PushMessageListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterFailListener.html">GeotriggerBroadcastReceiver.PushTokenRegisterFailListener</a></li>
-          <li class="selected api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterListener.html">GeotriggerBroadcastReceiver.PushTokenRegisterListener</a></li>
+          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterListener.html">GeotriggerBroadcastReceiver.PushTokenRegisterListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.ReadyListener.html">GeotriggerBroadcastReceiver.ReadyListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TrackingProfileChangeListener.html">GeotriggerBroadcastReceiver.TrackingProfileChangeListener</a></li>
       </ul>
@@ -254,7 +254,7 @@
      
     
     interface
-<h1>GeotriggerBroadcastReceiver.PushTokenRegisterListener</h1>
+<h1>GeotriggerBroadcastReceiver.GeofenceCreationListener</h1>
 
 
 
@@ -273,7 +273,7 @@
 
     <tr>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.esri.android.geotrigger.GeotriggerBroadcastReceiver.PushTokenRegisterListener</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.esri.android.geotrigger.GeotriggerBroadcastReceiver.GeofenceCreationListener</td>
     </tr>
     
 
@@ -289,7 +289,7 @@
 
 
 <h2>Class Overview</h2>
-<p>Listener for push token registration events. </p>
+<p>Geofence creation listener. </p>
 
 
 
@@ -359,9 +359,9 @@
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterListener.html#onPushTokenRegister(java.lang.String)">onPushTokenRegister</a></span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> pushToken)
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceCreationListener.html#onGeofenceCreated(java.lang.String, double, double, float, boolean)">onGeofenceCreated</a></span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> triggerId, double latitude, double longitude, float radius, boolean isHop)
         
-        <div class="jd-descrdiv">Called when the device is ready to receive push notifications.</div>
+        <div class="jd-descrdiv">Called when a new geofence is being added to the LocationClient.</div>
   
   </td></tr>
 
@@ -414,7 +414,7 @@
 
 
 
-<a id="onPushTokenRegister(java.lang.String)"></a>
+<a id="onGeofenceCreated(java.lang.String, double, double, float, boolean)"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -426,8 +426,8 @@
          
         void
       </span>
-      <span class="sympad">onPushTokenRegister</span>
-      <span class="normal">(<a href="http://d.android.com/reference/java/lang/String.html">String</a> pushToken)</span>
+      <span class="sympad">onGeofenceCreated</span>
+      <span class="normal">(<a href="http://d.android.com/reference/java/lang/String.html">String</a> triggerId, double latitude, double longitude, float radius, boolean isHop)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -439,17 +439,7 @@
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Called when the device is ready to receive push notifications.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Parameters</h5>
-      <table class="jd-tagtable">
-        <tr>
-          <th>pushToken</th>
-          <td>the GCM push token that could not be sent to the server.
-</td>
-        </tr>
-      </table>
-  </div>
+  <div class="jd-tagdata jd-tagdescr"><p>Called when a new geofence is being added to the LocationClient.</p></div>
 
     </div>
 </div>

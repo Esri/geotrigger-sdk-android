@@ -51,7 +51,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="last-modified" content="2014/01/23">
+<meta name="last-modified" content="2014/02/18">
 <meta name="product" content="api-geotrigger">
 <meta name="sub_category" content="Geotrigger Service">
 <meta name="sub_category_label" content="Geotrigger Service">
@@ -68,7 +68,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
 <title>
 
-  GeotriggerBroadcastReceiver.DeviceReadyListener
+  GeotriggerBroadcastReceiver.GeofenceRemovalListener
 
 
 | Android Geotrigger SDK
@@ -166,14 +166,16 @@
     <li><h2>Interfaces</h2>
       <ul>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerApiListener.html">GeotriggerApiListener</a></li>
-          <li class="selected api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.DeviceReadyListener.html">GeotriggerBroadcastReceiver.DeviceReadyListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.DeviceRegisterFailListener.html">GeotriggerBroadcastReceiver.DeviceRegisterFailListener</a></li>
+          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceCreationListener.html">GeotriggerBroadcastReceiver.GeofenceCreationListener</a></li>
+          <li class="selected api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceRemovalListener.html">GeotriggerBroadcastReceiver.GeofenceRemovalListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUpdateListener.html">GeotriggerBroadcastReceiver.LocationUpdateListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadFailListener.html">GeotriggerBroadcastReceiver.LocationUploadFailListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadListener.html">GeotriggerBroadcastReceiver.LocationUploadListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushMessageListener.html">GeotriggerBroadcastReceiver.PushMessageListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterFailListener.html">GeotriggerBroadcastReceiver.PushTokenRegisterFailListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterListener.html">GeotriggerBroadcastReceiver.PushTokenRegisterListener</a></li>
+          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.ReadyListener.html">GeotriggerBroadcastReceiver.ReadyListener</a></li>
           <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TrackingProfileChangeListener.html">GeotriggerBroadcastReceiver.TrackingProfileChangeListener</a></li>
       </ul>
     </li>
@@ -252,7 +254,7 @@
      
     
     interface
-<h1>GeotriggerBroadcastReceiver.DeviceReadyListener</h1>
+<h1>GeotriggerBroadcastReceiver.GeofenceRemovalListener</h1>
 
 
 
@@ -271,7 +273,7 @@
 
     <tr>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.esri.android.geotrigger.GeotriggerBroadcastReceiver.DeviceReadyListener</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.esri.android.geotrigger.GeotriggerBroadcastReceiver.GeofenceRemovalListener</td>
     </tr>
     
 
@@ -287,7 +289,7 @@
 
 
 <h2>Class Overview</h2>
-<p>Listener for device ready events. </p>
+<p>Geofence removal listener. </p>
 
 
 
@@ -357,9 +359,9 @@
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.DeviceReadyListener.html#onDeviceReady()">onDeviceReady</a></span>()
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceRemovalListener.html#onGeofenceRemoved(java.lang.String)">onGeofenceRemoved</a></span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> triggerId)
         
-        <div class="jd-descrdiv">Called when the device has registered with ArcGIS Online and is ready to make API calls.</div>
+        <div class="jd-descrdiv">Called when a non-hop geofence is removed (and no longer being tracked).</div>
   
   </td></tr>
 
@@ -412,7 +414,7 @@
 
 
 
-<a id="onDeviceReady()"></a>
+<a id="onGeofenceRemoved(java.lang.String)"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -424,8 +426,8 @@
          
         void
       </span>
-      <span class="sympad">onDeviceReady</span>
-      <span class="normal">()</span>
+      <span class="sympad">onGeofenceRemoved</span>
+      <span class="normal">(<a href="http://d.android.com/reference/java/lang/String.html">String</a> triggerId)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -437,7 +439,7 @@
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Called when the device has registered with ArcGIS Online and is ready to make API calls. </p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Called when a non-hop geofence is removed (and no longer being tracked).</p></div>
 
     </div>
 </div>
