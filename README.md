@@ -1,4 +1,4 @@
-# Android Geotrigger SDK
+# Geotrigger SDK for Android
 
 The Geotrigger Service provides real-time location tracking, geofencing,
 and messaging tools for developers working on location based apps.
@@ -26,7 +26,7 @@ do so now! It's also a good idea to make sure you're running the latest version.
 
 ### Setting up the Google Play Services SDK
 
-Because the Android Geotrigger SDK makes use of the location APIs included in the
+Because the Geotrigger SDK makes use of the location APIs included in the
 Google Play Services SDK, you'll need to include it in your project. Please refer
 to the official [Google Play Services Setup Guide][google-play-services-setup].
 IntelliJ users, please note that you will need to include the 
