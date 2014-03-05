@@ -16,7 +16,6 @@ public class GeotriggerActivity extends Activity implements
         GeotriggerBroadcastReceiver.LocationUpdateListener,
         GeotriggerBroadcastReceiver.ReadyListener {
     private static final String TAG = "GeotriggerActivity";
-    private static final int PLAY_SERVICES_REQUEST_CODE = 1;
 
     // Create a new application at https://developers.arcgis.com/en/applications
     private static final String AGO_CLIENT_ID = "";
@@ -49,8 +48,8 @@ public class GeotriggerActivity extends Activity implements
     public void onStart() {
         super.onStart();
 
-        GeotriggerHelper.startGeotriggerService(this, PLAY_SERVICES_REQUEST_CODE,
-                AGO_CLIENT_ID, GCM_SENDER_ID, TAGS, GeotriggerService.TRACKING_PROFILE_ADAPTIVE);
+        GeotriggerHelper.startGeotriggerService(this, AGO_CLIENT_ID, GCM_SENDER_ID, TAGS,
+                GeotriggerService.TRACKING_PROFILE_ADAPTIVE);
     }
 
     @Override
