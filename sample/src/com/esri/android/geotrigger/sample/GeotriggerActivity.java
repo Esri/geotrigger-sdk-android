@@ -68,7 +68,6 @@ public class GeotriggerActivity extends Activity implements
         // intents that the receiver can handle. If you need to handle events
         // while the app is in the background, you must register the receiver
         // in the manifest.
-        // See: http://esri.github.io/geotrigger-docs/android/handling-events/
         registerReceiver(mGeotriggerBroadcastReceiver,
                 GeotriggerBroadcastReceiver.getDefaultIntentFilter());
     }
