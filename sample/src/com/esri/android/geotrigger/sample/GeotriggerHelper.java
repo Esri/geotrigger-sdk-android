@@ -40,6 +40,26 @@ public final class GeotriggerHelper {
      * that uses the Geotrigger location services.
      *
      * @param activity The {@link Activity} that is currently displayed.
+     * @param clientId Client ID from https://developers.arcgis.com/en/applications
+     * @param senderId Project number from https://code.google.com/apis/console
+     * @param tags A list of tag names to apply to the device as soon as possible.
+     * @param profile The Geotrigger profile (ie: FINE, ADAPTIVE, ROUGH, OFF) to start the service in.
+     */
+    public static void startGeotriggerService(final Activity activity, String clientId, String senderId, String[] tags,
+                                              String profile) {
+        startGeotriggerService(activity, Integer.MIN_VALUE, clientId, senderId, tags, profile);
+    }
+
+    /**
+     * Start Geotriggers by first prompting the user to (1) install Google Play Services if not already installed,
+     * (2) enable GPS and Network providers if not already enabled, and (3) enable background wifi scanning if not
+     * already enabled. This version of the method allows you to specify the "request code" that may be returned
+     * in {@link Activity#onActivityResult} if overridden in the provided {@link Activity}.
+     *
+     * <p>A good place to call this would be from the{@link Activity#onStart} method of an {@link Activity}
+     * that uses the Geotrigger location services.
+     *
+     * @param activity The {@link Activity} that is currently displayed.
      * @param requestCode A request that may be returned in {@link Activity#onActivityResult}
      *                    if overridden in the provided {@link Activity}
      * @param clientId Client ID from https://developers.arcgis.com/en/applications

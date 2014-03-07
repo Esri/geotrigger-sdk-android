@@ -16,7 +16,6 @@ public class GeotriggerActivity extends Activity implements
         GeotriggerBroadcastReceiver.LocationUpdateListener,
         GeotriggerBroadcastReceiver.ReadyListener {
     private static final String TAG = "GeotriggerActivity";
-    private static final int PLAY_SERVICES_REQUEST_CODE = 1;
 
     // Create a new application at https://developers.arcgis.com/en/applications
     private static final String AGO_CLIENT_ID = "";
@@ -49,8 +48,8 @@ public class GeotriggerActivity extends Activity implements
     public void onStart() {
         super.onStart();
 
-        GeotriggerHelper.startGeotriggerService(this, PLAY_SERVICES_REQUEST_CODE,
-                AGO_CLIENT_ID, GCM_SENDER_ID, TAGS, GeotriggerService.TRACKING_PROFILE_ADAPTIVE);
+        GeotriggerHelper.startGeotriggerService(this, AGO_CLIENT_ID, GCM_SENDER_ID, TAGS,
+                GeotriggerService.TRACKING_PROFILE_ADAPTIVE);
     }
 
     @Override
@@ -69,7 +68,6 @@ public class GeotriggerActivity extends Activity implements
         // intents that the receiver can handle. If you need to handle events
         // while the app is in the background, you must register the receiver
         // in the manifest.
-        // See: http://esri.github.io/geotrigger-docs/android/handling-events/
         registerReceiver(mGeotriggerBroadcastReceiver,
                 GeotriggerBroadcastReceiver.getDefaultIntentFilter());
     }
