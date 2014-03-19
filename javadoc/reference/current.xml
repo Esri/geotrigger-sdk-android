@@ -918,7 +918,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;1.0.0&quot;"
+ value="&quot;1.0.1&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"

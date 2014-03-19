@@ -1,5 +1,9 @@
 # Change Log
 
+## v1.0.1 3/19/2014
+* Slighty tweaks to some internal behavior. Should not result in observable differences.
+* Fixed a bug where rapidly switching in and out of Adaptive would flush Geofences improperly.
+
 ## v1.0.0 2/18/2014
 * Renamed `GeotriggerBroadcastReceiver.DeviceReadyListener` to `GeotriggerBroadcastReceiver.ReadyListener`, and renamed `onDeviceReady()` to `onReady()`.
 * Improved robustness of GCM registration.
