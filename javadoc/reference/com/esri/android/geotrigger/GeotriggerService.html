@@ -51,7 +51,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="last-modified" content="2014/03/19">
+<meta name="last-modified" content="2014/05/30">
 <meta name="product" content="api-geotrigger">
 <meta name="sub_category" content="Geotrigger Service">
 <meta name="sub_category_label" content="Geotrigger Service">
@@ -1027,7 +1027,7 @@ android.content.Context
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#init(android.content.Context, java.lang.String, java.lang.String, java.lang.String)">init</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> clientId, <a href="http://d.android.com/reference/java/lang/String.html">String</a> gcmSenderId, <a href="http://d.android.com/reference/java/lang/String.html">String</a> profile)
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#init(android.content.Context, java.lang.String, java.lang.String, java.lang.String[], java.lang.String)">init</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> clientId, <a href="http://d.android.com/reference/java/lang/String.html">String</a> gcmSenderId, <a href="http://d.android.com/reference/java/lang/String.html">String[]</a> tags, <a href="http://d.android.com/reference/java/lang/String.html">String</a> profile)
         
         <div class="jd-descrdiv">Starts the <code>GeotriggerService</code> using the provided setup parameters.</div>
   
@@ -1045,7 +1045,7 @@ android.content.Context
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#init(android.content.Context, java.lang.String, java.lang.String, java.lang.String[], java.lang.String)">init</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> clientId, <a href="http://d.android.com/reference/java/lang/String.html">String</a> gcmSenderId, <a href="http://d.android.com/reference/java/lang/String.html">String[]</a> tags, <a href="http://d.android.com/reference/java/lang/String.html">String</a> profile)
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#init(android.content.Context, java.lang.String, java.lang.String, java.lang.String)">init</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> clientId, <a href="http://d.android.com/reference/java/lang/String.html">String</a> gcmSenderId, <a href="http://d.android.com/reference/java/lang/String.html">String</a> profile)
         
         <div class="jd-descrdiv">Starts the <code>GeotriggerService</code> using the provided setup parameters.</div>
   
@@ -1100,6 +1100,24 @@ android.content.Context
             boolean
         </td>
         <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#isSslCertPinningEnabled(android.content.Context)">isSslCertPinningEnabled</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)
+        
+        <div class="jd-descrdiv">Determine if requests made to the Geotrigger API will use SSL certificate pinning.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            static
+            
+            boolean
+        </td>
+        <td class="jd-linkcol" width="100%">
         <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#isVibrationEnabled(android.content.Context)">isVibrationEnabled</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)
         
         <div class="jd-descrdiv">Determine if the device will vibrate when a new push notification is received.</div>
@@ -1108,7 +1126,7 @@ android.content.Context
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1124,7 +1142,7 @@ android.content.Context
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1140,7 +1158,7 @@ android.content.Context
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1156,7 +1174,7 @@ android.content.Context
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1172,7 +1190,7 @@ android.content.Context
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1190,7 +1208,7 @@ android.content.Context
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1208,7 +1226,7 @@ android.content.Context
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1226,7 +1244,7 @@ android.content.Context
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1244,7 +1262,7 @@ android.content.Context
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1262,7 +1280,7 @@ android.content.Context
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1276,6 +1294,25 @@ android.content.Context
         
         <div class="jd-descrdiv">Set the name of the sound resource to be played when displaying incoming push messages as status bar
  notifications.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            static
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#setSslCertPinningEnabled(android.content.Context, boolean)">setSslCertPinningEnabled</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, boolean enabled)
+        
+        <div class="jd-descrdiv">Enable use of SSL certificate pinning while making requests to the Geotrigger API, securing transmission of
+ location data between devices and the Geotrigger API (default: false).</div>
   
   </td></tr>
 
@@ -4487,7 +4524,7 @@ From interface
         <span class="jd-tagtitle">Constant Value: </span>
         <span>
             
-                "1.0.1"
+                "1.0.2"
             
         </span>
         </div>
@@ -4966,76 +5003,6 @@ From interface
 </div>
 
 
-<a id="init(android.content.Context, java.lang.String, java.lang.String, java.lang.String)"></a>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-         
-         
-         
-        void
-      </span>
-      <span class="sympad">init</span>
-      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> clientId, <a href="http://d.android.com/reference/java/lang/String.html">String</a> gcmSenderId, <a href="http://d.android.com/reference/java/lang/String.html">String</a> profile)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-
-</div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Starts the <code>GeotriggerService</code> using the provided setup parameters.
-
- <p><code>profile</code> must be one of:
- <ul>
-     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_OFF">TRACKING_PROFILE_OFF</a></code>
-     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_ROUGH">TRACKING_PROFILE_ROUGH</a></code>
-     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_ADAPTIVE">TRACKING_PROFILE_ADAPTIVE</a></code>
-     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_FINE">TRACKING_PROFILE_FINE</a></code>
- </ul></p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Parameters</h5>
-      <table class="jd-tagtable">
-        <tr>
-          <th>context</th>
-          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.</td>
-        </tr>
-        <tr>
-          <th>clientId</th>
-          <td>an ArcGIS Online <code>client_id</code> application.</td>
-        </tr>
-        <tr>
-          <th>gcmSenderId</th>
-          <td>a GCM Sender ID for your application.</td>
-        </tr>
-        <tr>
-          <th>profile</th>
-          <td>a tracking profile.
-</td>
-        </tr>
-      </table>
-  </div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Throws</h5>
-      <table class="jd-tagtable">  
-        <tr>
-            <th><a href="http://d.android.com/reference/java/lang/IllegalArgumentException.html">IllegalArgumentException</a></td>
-            <td></td>
-        </tr>
-      </table>
-  </div>
-
-    </div>
-</div>
-
-
 <a id="init(android.content.Context, java.lang.String, java.lang.String, java.lang.String[], java.lang.String)"></a>
 
 <div class="jd-details api apilevel-"> 
@@ -5088,6 +5055,76 @@ From interface
         <tr>
           <th>tags</th>
           <td>an optional list of tags to be set on the device after it registers itself.</td>
+        </tr>
+        <tr>
+          <th>profile</th>
+          <td>a tracking profile.
+</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="http://d.android.com/reference/java/lang/IllegalArgumentException.html">IllegalArgumentException</a></td>
+            <td></td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="init(android.content.Context, java.lang.String, java.lang.String, java.lang.String)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">init</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> clientId, <a href="http://d.android.com/reference/java/lang/String.html">String</a> gcmSenderId, <a href="http://d.android.com/reference/java/lang/String.html">String</a> profile)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Starts the <code>GeotriggerService</code> using the provided setup parameters.
+
+ <p><code>profile</code> must be one of:
+ <ul>
+     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_OFF">TRACKING_PROFILE_OFF</a></code>
+     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_ROUGH">TRACKING_PROFILE_ROUGH</a></code>
+     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_ADAPTIVE">TRACKING_PROFILE_ADAPTIVE</a></code>
+     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_FINE">TRACKING_PROFILE_FINE</a></code>
+ </ul></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.</td>
+        </tr>
+        <tr>
+          <th>clientId</th>
+          <td>an ArcGIS Online <code>client_id</code> application.</td>
+        </tr>
+        <tr>
+          <th>gcmSenderId</th>
+          <td>a GCM Sender ID for your application.</td>
         </tr>
         <tr>
           <th>profile</th>
@@ -5194,6 +5231,51 @@ From interface
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>true if push notifications will be automatically handled; false if they will be handled manually.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="isSslCertPinningEnabled(android.content.Context)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">isSslCertPinningEnabled</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Determine if requests made to the Geotrigger API will use SSL certificate pinning.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>true if SSL certificate pinning is enabled.
 </li></ul>
   </div>
 
@@ -5660,6 +5742,60 @@ From interface
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>true if the new value was successfully written to SharedPreferences.
 </li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="setSslCertPinningEnabled(android.content.Context, boolean)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setSslCertPinningEnabled</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, boolean enabled)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Enable use of SSL certificate pinning while making requests to the Geotrigger API, securing transmission of
+ location data between devices and the Geotrigger API (default: false).
+
+ <p>Certificate pinning hardens against man-in-the-middle attacks by preventing the Geotrigger SDK from
+ communicating with any third parties. It is recommended that you enable this option, but only if you are able to
+ provide timely updates to your app. With this option enabled, any Geotrigger API SSL certificate changes will
+ break old versions of the SDK.
+
+ <p>If your deployment plan does not include the ability to update your app in a timely fashion, you should not
+ enable this option. With certificate pinning disabled, requests will continue to be made using SSL encryption.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.</td>
+        </tr>
+        <tr>
+          <th>enabled</th>
+          <td>tru to enable SSL certificate pinning.
+</td>
+        </tr>
+      </table>
   </div>
 
     </div>

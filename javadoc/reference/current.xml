@@ -748,6 +748,19 @@
 <parameter name="context" type="android.content.Context">
 </parameter>
 </method>
+<method name="isSslCertPinningEnabled"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
 <method name="isVibrationEnabled"
  return="boolean"
  abstract="false"
@@ -860,6 +873,21 @@
 <parameter name="soundName" type="java.lang.String">
 </parameter>
 </method>
+<method name="setSslCertPinningEnabled"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="enabled" type="boolean">
+</parameter>
+</method>
 <method name="setTrackingProfile"
  return="void"
  abstract="false"
@@ -918,7 +946,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;1.0.1&quot;"
+ value="&quot;1.0.2&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
