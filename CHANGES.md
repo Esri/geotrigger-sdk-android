@@ -1,5 +1,8 @@
 # Change Log
 
+## v1.0.2 5/30/2014
+* Added `GeotriggerService.setSslCertPinningEnabled()` to allow control over the use of SSL certificate pinning for requests made by the SDK to the Geotrigger API. The default value is `false`, meaning that SSL certificate pinning will not be used. All requests are made using SSL encryption regardless of this setting.
+
 ## v1.0.1 3/19/2014
 * Slighty tweaks to some internal behavior. Should not result in observable differences.
 * Fixed a bug where rapidly switching in and out of Adaptive would flush Geofences improperly.
