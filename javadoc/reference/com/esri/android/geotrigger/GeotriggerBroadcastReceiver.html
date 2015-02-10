@@ -51,7 +51,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="last-modified" content="2014/05/30">
+<meta name="last-modified" content="2015/02/04">
 <meta name="product" content="api-geotrigger">
 <meta name="sub_category" content="Geotrigger Service">
 <meta name="sub_category_label" content="Geotrigger Service">
@@ -98,7 +98,7 @@
 </noscript>
 </head>
 
-<body class="">
+<body class="1.1.0">
 
 <div id="header">
     <div id="headerLeft">
@@ -139,6 +139,24 @@
       </div><!-- searchForm -->
   </div><!-- search -->
       
+        
+  <div id="api-level-toggle">
+    <input type="checkbox" id="apiLevelCheckbox" onclick="toggleApiLevelSelector(this)" />
+    <label for="apiLevelCheckbox" class="disabled">Filter by API Level: </label>
+    <select id="apiLevelSelector">
+      <!-- option elements added by buildApiLevelSelector() -->
+    </select>
+  </div>
+  <script>
+   var SINCE_DATA = [ '1.0.0', '1.0.1', '1.0.2', '1.1.0' ];
+    
+    var SINCE_LABELS = [ '1.0.0', '1.0.1', '1.0.2', '1.1.0' ];
+    buildApiLevelSelector();
+    addLoadEvent(changeApiLevel);
+  </script>
+
+
+      
     </div>
 </div><!-- header -->
 
@@ -155,7 +173,7 @@
               </div>
               <ul>
                 
-    <li class="selected api apilevel-">
+    <li class="selected api apilevel-1.1.0">
   <a href="../../../../com/esri/android/geotrigger/package-summary.html">com.esri.android.geotrigger</a></li>
               </ul><br/>
             </div> <!-- end packages -->
@@ -165,28 +183,28 @@
               
     <li><h2>Interfaces</h2>
       <ul>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerApiListener.html">GeotriggerApiListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.DeviceRegisterFailListener.html">GeotriggerBroadcastReceiver.DeviceRegisterFailListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceCreationListener.html">GeotriggerBroadcastReceiver.GeofenceCreationListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceRemovalListener.html">GeotriggerBroadcastReceiver.GeofenceRemovalListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUpdateListener.html">GeotriggerBroadcastReceiver.LocationUpdateListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadFailListener.html">GeotriggerBroadcastReceiver.LocationUploadFailListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadListener.html">GeotriggerBroadcastReceiver.LocationUploadListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushMessageListener.html">GeotriggerBroadcastReceiver.PushMessageListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterFailListener.html">GeotriggerBroadcastReceiver.PushTokenRegisterFailListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterListener.html">GeotriggerBroadcastReceiver.PushTokenRegisterListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.ReadyListener.html">GeotriggerBroadcastReceiver.ReadyListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TrackingProfileChangeListener.html">GeotriggerBroadcastReceiver.TrackingProfileChangeListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerApiListener.html">GeotriggerApiListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.DeviceRegisterFailListener.html">GeotriggerBroadcastReceiver.DeviceRegisterFailListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceCreationListener.html">GeotriggerBroadcastReceiver.GeofenceCreationListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceRemovalListener.html">GeotriggerBroadcastReceiver.GeofenceRemovalListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUpdateListener.html">GeotriggerBroadcastReceiver.LocationUpdateListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadFailListener.html">GeotriggerBroadcastReceiver.LocationUploadFailListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadListener.html">GeotriggerBroadcastReceiver.LocationUploadListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushMessageListener.html">GeotriggerBroadcastReceiver.PushMessageListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterFailListener.html">GeotriggerBroadcastReceiver.PushTokenRegisterFailListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterListener.html">GeotriggerBroadcastReceiver.PushTokenRegisterListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.ReadyListener.html">GeotriggerBroadcastReceiver.ReadyListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TrackingProfileChangeListener.html">GeotriggerBroadcastReceiver.TrackingProfileChangeListener</a></li>
       </ul>
     </li>
               
     <li><h2>Classes</h2>
       <ul>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerApiClient.html">GeotriggerApiClient</a></li>
-          <li class="selected api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.html">GeotriggerBroadcastReceiver</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html">GeotriggerService</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/MessageReceiver.html">MessageReceiver</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/TriggerBuilder.html">TriggerBuilder</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerApiClient.html">GeotriggerApiClient</a></li>
+          <li class="selected api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.html">GeotriggerBroadcastReceiver</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html">GeotriggerService</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/MessageReceiver.html">MessageReceiver</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/TriggerBuilder.html">TriggerBuilder</a></li>
       </ul>
     </li>
               
@@ -285,6 +303,8 @@ Summary:
 <div class="api-level">
   
 
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
+
 
   
   
@@ -324,7 +344,7 @@ Summary:
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-">
+<div id="jd-content" class="api apilevel-1.1.0">
 <table class="jd-inheritance-table">
 
 
@@ -404,7 +424,7 @@ Summary:
 
 
   
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
       <td class="jd-typecol">
         
          
@@ -416,7 +436,7 @@ Summary:
     </tr>
     
     
-    <tr class=" api apilevel-" >
+    <tr class=" api apilevel-1.1.0" >
       <td class="jd-typecol">
         
          
@@ -428,7 +448,7 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
       <td class="jd-typecol">
         
          
@@ -440,7 +460,7 @@ Summary:
     </tr>
     
     
-    <tr class=" api apilevel-" >
+    <tr class=" api apilevel-1.1.0" >
       <td class="jd-typecol">
         
          
@@ -452,7 +472,7 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
       <td class="jd-typecol">
         
          
@@ -464,7 +484,7 @@ Summary:
     </tr>
     
     
-    <tr class=" api apilevel-" >
+    <tr class=" api apilevel-1.1.0" >
       <td class="jd-typecol">
         
          
@@ -476,7 +496,7 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
       <td class="jd-typecol">
         
          
@@ -488,7 +508,7 @@ Summary:
     </tr>
     
     
-    <tr class=" api apilevel-" >
+    <tr class=" api apilevel-1.1.0" >
       <td class="jd-typecol">
         
          
@@ -500,7 +520,7 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
       <td class="jd-typecol">
         
          
@@ -512,7 +532,7 @@ Summary:
     </tr>
     
     
-    <tr class=" api apilevel-" >
+    <tr class=" api apilevel-1.1.0" >
       <td class="jd-typecol">
         
          
@@ -524,7 +544,7 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
       <td class="jd-typecol">
         
          
@@ -555,42 +575,42 @@ Summary:
 
 
     
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
         <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
         <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.html#ACTION_LOCATION_UPLOADED">ACTION_LOCATION_UPLOADED</a></td>
         <td class="jd-descrcol" width="100%">Broadcast Action: The <code>GeotriggerService</code> has successfully pushed all batched location fixes to the server.</td>
     </tr>
     
     
-    <tr class=" api apilevel-" >
+    <tr class=" api apilevel-1.1.0" >
         <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
         <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.html#ACTION_SEND_UPDATES_FAIL">ACTION_SEND_UPDATES_FAIL</a></td>
         <td class="jd-descrcol" width="100%">Broadcast Action: The service attempted to send location updates to the server, but failed to do so.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
         <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
         <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.html#ACTION_TRACKING_PROFILE_CHANGED">ACTION_TRACKING_PROFILE_CHANGED</a></td>
         <td class="jd-descrcol" width="100%">Broadcast Action: The tracking service has switched to a new tracking profile.</td>
     </tr>
     
     
-    <tr class=" api apilevel-" >
+    <tr class=" api apilevel-1.1.0" >
         <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
         <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.html#EXTRA_COUNT">EXTRA_COUNT</a></td>
         <td class="jd-descrcol" width="100%">An integer representing the number of objects affected.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
         <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
         <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.html#EXTRA_NEW_PROFILE">EXTRA_NEW_PROFILE</a></td>
         <td class="jd-descrcol" width="100%">The new tracking profile.</td>
     </tr>
     
     
-    <tr class=" api apilevel-" >
+    <tr class=" api apilevel-1.1.0" >
         <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
         <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.html#EXTRA_OLD_PROFILE">EXTRA_OLD_PROFILE</a></td>
         <td class="jd-descrcol" width="100%">The previous tracking profile.</td>
@@ -617,7 +637,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -646,7 +666,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -665,7 +685,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class=" api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -692,7 +712,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -711,7 +731,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class=" api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -729,7 +749,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -747,7 +767,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class=" api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -765,7 +785,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -784,7 +804,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class=" api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -803,7 +823,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -821,7 +841,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class=" api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -840,7 +860,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -859,7 +879,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class=" api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -878,7 +898,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -1438,7 +1458,7 @@ From class
 
 <a id="ACTION_LOCATION_UPLOADED"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -1450,6 +1470,8 @@ From class
     </h4>
       <div class="api-level">
         
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 
         
@@ -1483,7 +1505,7 @@ From class
 
 <a id="ACTION_SEND_UPDATES_FAIL"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -1495,6 +1517,8 @@ From class
     </h4>
       <div class="api-level">
         
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 
         
@@ -1525,7 +1549,7 @@ From class
 
 <a id="ACTION_TRACKING_PROFILE_CHANGED"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -1537,6 +1561,8 @@ From class
     </h4>
       <div class="api-level">
         
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 
         
@@ -1571,7 +1597,7 @@ From class
 
 <a id="EXTRA_COUNT"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -1583,6 +1609,8 @@ From class
     </h4>
       <div class="api-level">
         
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 
         
@@ -1610,7 +1638,7 @@ From class
 
 <a id="EXTRA_NEW_PROFILE"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -1622,6 +1650,8 @@ From class
     </h4>
       <div class="api-level">
         
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 
         
@@ -1649,7 +1679,7 @@ From class
 
 <a id="EXTRA_OLD_PROFILE"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -1661,6 +1691,8 @@ From class
     </h4>
       <div class="api-level">
         
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 
         
@@ -1700,7 +1732,7 @@ From class
 
 <a id="GeotriggerBroadcastReceiver()"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -1715,6 +1747,8 @@ From class
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -1746,7 +1780,7 @@ From class
 
 <a id="getDefaultIntentFilter()"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -1761,6 +1795,8 @@ From class
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -1790,7 +1826,7 @@ From class
 
 <a id="onReceive(android.content.Context, android.content.Intent)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -1805,6 +1841,8 @@ From class
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -1830,7 +1868,7 @@ From class
 
 <a id="onDeviceRegisterFail(android.content.Context)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         protected 
@@ -1845,6 +1883,8 @@ From class
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -1875,7 +1915,7 @@ From class
 
 <a id="onGeofenceCreation(android.content.Context, java.lang.String, double, double, float, boolean)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         protected 
@@ -1890,6 +1930,8 @@ From class
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -1936,7 +1978,7 @@ From class
 
 <a id="onGeofenceRemoved(android.content.Context, java.lang.String)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         protected 
@@ -1951,6 +1993,8 @@ From class
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -1981,7 +2025,7 @@ From class
 
 <a id="onLocationUpdate(android.content.Context, android.location.Location, boolean)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         protected 
@@ -1996,6 +2040,8 @@ From class
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -2017,7 +2063,7 @@ From class
         </tr>
         <tr>
           <th>location</th>
-          <td>a <code><a href="http://d.android.com/reference/android/location/Location.html">Location</a></code> object.</td>
+          <td>a Location object.</td>
         </tr>
         <tr>
           <th>isOnDemand</th>
@@ -2034,7 +2080,7 @@ From class
 
 <a id="onLocationUpload(android.content.Context, int)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         protected 
@@ -2049,6 +2095,8 @@ From class
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -2083,7 +2131,7 @@ From class
 
 <a id="onLocationUploadFail(android.content.Context)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         protected 
@@ -2098,6 +2146,8 @@ From class
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -2128,7 +2178,7 @@ From class
 
 <a id="onPushMessage(android.content.Context, android.os.Bundle)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         protected 
@@ -2143,6 +2193,8 @@ From class
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -2176,7 +2228,7 @@ From class
 
 <a id="onPushTokenRegister(android.content.Context, java.lang.String)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         protected 
@@ -2191,6 +2243,8 @@ From class
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -2225,7 +2279,7 @@ From class
 
 <a id="onPushTokenRegisterFail(android.content.Context, java.lang.String)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         protected 
@@ -2240,6 +2294,8 @@ From class
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -2274,7 +2330,7 @@ From class
 
 <a id="onReady(android.content.Context)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         protected 
@@ -2289,6 +2345,8 @@ From class
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -2319,7 +2377,7 @@ From class
 
 <a id="onTrackingProfileChange(android.content.Context, java.lang.String, java.lang.String)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         protected 
@@ -2334,6 +2392,8 @@ From class
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         

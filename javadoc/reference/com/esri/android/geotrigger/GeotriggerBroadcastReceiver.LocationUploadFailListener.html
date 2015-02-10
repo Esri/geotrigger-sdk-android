@@ -51,7 +51,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="last-modified" content="2014/05/30">
+<meta name="last-modified" content="2015/02/04">
 <meta name="product" content="api-geotrigger">
 <meta name="sub_category" content="Geotrigger Service">
 <meta name="sub_category_label" content="Geotrigger Service">
@@ -98,7 +98,7 @@
 </noscript>
 </head>
 
-<body class="">
+<body class="1.1.0">
 
 <div id="header">
     <div id="headerLeft">
@@ -139,6 +139,24 @@
       </div><!-- searchForm -->
   </div><!-- search -->
       
+        
+  <div id="api-level-toggle">
+    <input type="checkbox" id="apiLevelCheckbox" onclick="toggleApiLevelSelector(this)" />
+    <label for="apiLevelCheckbox" class="disabled">Filter by API Level: </label>
+    <select id="apiLevelSelector">
+      <!-- option elements added by buildApiLevelSelector() -->
+    </select>
+  </div>
+  <script>
+   var SINCE_DATA = [ '1.0.0', '1.0.1', '1.0.2', '1.1.0' ];
+    
+    var SINCE_LABELS = [ '1.0.0', '1.0.1', '1.0.2', '1.1.0' ];
+    buildApiLevelSelector();
+    addLoadEvent(changeApiLevel);
+  </script>
+
+
+      
     </div>
 </div><!-- header -->
 
@@ -155,7 +173,7 @@
               </div>
               <ul>
                 
-    <li class="selected api apilevel-">
+    <li class="selected api apilevel-1.1.0">
   <a href="../../../../com/esri/android/geotrigger/package-summary.html">com.esri.android.geotrigger</a></li>
               </ul><br/>
             </div> <!-- end packages -->
@@ -165,28 +183,28 @@
               
     <li><h2>Interfaces</h2>
       <ul>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerApiListener.html">GeotriggerApiListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.DeviceRegisterFailListener.html">GeotriggerBroadcastReceiver.DeviceRegisterFailListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceCreationListener.html">GeotriggerBroadcastReceiver.GeofenceCreationListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceRemovalListener.html">GeotriggerBroadcastReceiver.GeofenceRemovalListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUpdateListener.html">GeotriggerBroadcastReceiver.LocationUpdateListener</a></li>
-          <li class="selected api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadFailListener.html">GeotriggerBroadcastReceiver.LocationUploadFailListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadListener.html">GeotriggerBroadcastReceiver.LocationUploadListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushMessageListener.html">GeotriggerBroadcastReceiver.PushMessageListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterFailListener.html">GeotriggerBroadcastReceiver.PushTokenRegisterFailListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterListener.html">GeotriggerBroadcastReceiver.PushTokenRegisterListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.ReadyListener.html">GeotriggerBroadcastReceiver.ReadyListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TrackingProfileChangeListener.html">GeotriggerBroadcastReceiver.TrackingProfileChangeListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerApiListener.html">GeotriggerApiListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.DeviceRegisterFailListener.html">GeotriggerBroadcastReceiver.DeviceRegisterFailListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceCreationListener.html">GeotriggerBroadcastReceiver.GeofenceCreationListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceRemovalListener.html">GeotriggerBroadcastReceiver.GeofenceRemovalListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUpdateListener.html">GeotriggerBroadcastReceiver.LocationUpdateListener</a></li>
+          <li class="selected api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadFailListener.html">GeotriggerBroadcastReceiver.LocationUploadFailListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadListener.html">GeotriggerBroadcastReceiver.LocationUploadListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushMessageListener.html">GeotriggerBroadcastReceiver.PushMessageListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterFailListener.html">GeotriggerBroadcastReceiver.PushTokenRegisterFailListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterListener.html">GeotriggerBroadcastReceiver.PushTokenRegisterListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.ReadyListener.html">GeotriggerBroadcastReceiver.ReadyListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TrackingProfileChangeListener.html">GeotriggerBroadcastReceiver.TrackingProfileChangeListener</a></li>
       </ul>
     </li>
               
     <li><h2>Classes</h2>
       <ul>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerApiClient.html">GeotriggerApiClient</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.html">GeotriggerBroadcastReceiver</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html">GeotriggerService</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/MessageReceiver.html">MessageReceiver</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/TriggerBuilder.html">TriggerBuilder</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerApiClient.html">GeotriggerApiClient</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.html">GeotriggerBroadcastReceiver</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html">GeotriggerService</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/MessageReceiver.html">MessageReceiver</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/TriggerBuilder.html">TriggerBuilder</a></li>
       </ul>
     </li>
               
@@ -238,6 +256,8 @@
 <div class="api-level">
   
 
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
+
 
   
   
@@ -267,7 +287,7 @@
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-">
+<div id="jd-content" class="api apilevel-1.1.0">
 <table class="jd-inheritance-table">
 
 
@@ -349,7 +369,7 @@
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
         <td class="jd-typecol">
             abstract
             
@@ -416,7 +436,7 @@
 
 <a id="onLocationUploadFail()"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -431,6 +451,8 @@
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
