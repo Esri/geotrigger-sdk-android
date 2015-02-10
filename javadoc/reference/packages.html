@@ -51,7 +51,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="last-modified" content="2014/05/30">
+<meta name="last-modified" content="2015/02/04">
 <meta name="product" content="api-geotrigger">
 <meta name="sub_category" content="Geotrigger Service">
 <meta name="sub_category_label" content="Geotrigger Service">
@@ -139,6 +139,24 @@
       </div><!-- searchForm -->
   </div><!-- search -->
       
+        
+  <div id="api-level-toggle">
+    <input type="checkbox" id="apiLevelCheckbox" onclick="toggleApiLevelSelector(this)" />
+    <label for="apiLevelCheckbox" class="disabled">Filter by API Level: </label>
+    <select id="apiLevelSelector">
+      <!-- option elements added by buildApiLevelSelector() -->
+    </select>
+  </div>
+  <script>
+   var SINCE_DATA = [ '1.0.0', '1.0.1', '1.0.2', '1.1.0' ];
+    
+    var SINCE_LABELS = [ '1.0.0', '1.0.1', '1.0.2', '1.1.0' ];
+    buildApiLevelSelector();
+    addLoadEvent(changeApiLevel);
+  </script>
+
+
+      
     </div>
 </div><!-- header -->
 
@@ -155,7 +173,7 @@
               </div>
               <ul>
                 
-    <li class="api apilevel-">
+    <li class="api apilevel-1.1.0">
   <a href="./com/esri/android/geotrigger/package-summary.html">com.esri.android.geotrigger</a></li>
               </ul><br/>
             </div> <!-- end packages -->
@@ -210,7 +228,7 @@
 
 <table class="jd-sumtable">
 
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
         <td class="jd-linkcol">
   <a href="./com/esri/android/geotrigger/package-summary.html">com.esri.android.geotrigger</a></td>
         <td class="jd-descrcol" width="100%"></td>

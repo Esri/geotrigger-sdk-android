@@ -1,13 +1,23 @@
 # Change Log
 
+## v1.1.0 2/02/2015
+
+* NOTE: As of this version, Google Play Services is no longer optional and is now a requirement.
+* Improved support for Android Studio and Gradle build system. Eclipse is no longer officially supported.
+* Updates to support the latest Google Play Services version.
+* Added `setServiceStartSticky` method to the `GeotriggerService`, which may help keep the service running longer on some devices which are older or memory constrained. This will also enable tracking to continue after the user has swiped the app out of the recent apps list. If this option is enabled, it is strongly recommended that you add a clear way for the user to stop tracking.
+
 ## v1.0.2 5/30/2014
+
 * Added `GeotriggerService.setSslCertPinningEnabled()` to allow control over the use of SSL certificate pinning for requests made by the SDK to the Geotrigger API. The default value is `false`, meaning that SSL certificate pinning will not be used. All requests are made using SSL encryption regardless of this setting.
 
 ## v1.0.1 3/19/2014
+
 * Slighty tweaks to some internal behavior. Should not result in observable differences.
 * Fixed a bug where rapidly switching in and out of Adaptive would flush Geofences improperly.
 
 ## v1.0.0 2/18/2014
+
 * Renamed `GeotriggerBroadcastReceiver.DeviceReadyListener` to `GeotriggerBroadcastReceiver.ReadyListener`, and renamed `onDeviceReady()` to `onReady()`.
 * Improved robustness of GCM registration.
 * Improvements to ADAPTIVE and ROUGH profiles.

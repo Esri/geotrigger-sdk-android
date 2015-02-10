@@ -51,7 +51,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="last-modified" content="2014/05/30">
+<meta name="last-modified" content="2015/02/04">
 <meta name="product" content="api-geotrigger">
 <meta name="sub_category" content="Geotrigger Service">
 <meta name="sub_category_label" content="Geotrigger Service">
@@ -98,7 +98,7 @@
 </noscript>
 </head>
 
-<body class="">
+<body class="1.1.0">
 
 <div id="header">
     <div id="headerLeft">
@@ -139,6 +139,24 @@
       </div><!-- searchForm -->
   </div><!-- search -->
       
+        
+  <div id="api-level-toggle">
+    <input type="checkbox" id="apiLevelCheckbox" onclick="toggleApiLevelSelector(this)" />
+    <label for="apiLevelCheckbox" class="disabled">Filter by API Level: </label>
+    <select id="apiLevelSelector">
+      <!-- option elements added by buildApiLevelSelector() -->
+    </select>
+  </div>
+  <script>
+   var SINCE_DATA = [ '1.0.0', '1.0.1', '1.0.2', '1.1.0' ];
+    
+    var SINCE_LABELS = [ '1.0.0', '1.0.1', '1.0.2', '1.1.0' ];
+    buildApiLevelSelector();
+    addLoadEvent(changeApiLevel);
+  </script>
+
+
+      
     </div>
 </div><!-- header -->
 
@@ -155,7 +173,7 @@
               </div>
               <ul>
                 
-    <li class="selected api apilevel-">
+    <li class="selected api apilevel-1.1.0">
   <a href="../../../../com/esri/android/geotrigger/package-summary.html">com.esri.android.geotrigger</a></li>
               </ul><br/>
             </div> <!-- end packages -->
@@ -165,28 +183,28 @@
               
     <li><h2>Interfaces</h2>
       <ul>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerApiListener.html">GeotriggerApiListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.DeviceRegisterFailListener.html">GeotriggerBroadcastReceiver.DeviceRegisterFailListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceCreationListener.html">GeotriggerBroadcastReceiver.GeofenceCreationListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceRemovalListener.html">GeotriggerBroadcastReceiver.GeofenceRemovalListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUpdateListener.html">GeotriggerBroadcastReceiver.LocationUpdateListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadFailListener.html">GeotriggerBroadcastReceiver.LocationUploadFailListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadListener.html">GeotriggerBroadcastReceiver.LocationUploadListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushMessageListener.html">GeotriggerBroadcastReceiver.PushMessageListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterFailListener.html">GeotriggerBroadcastReceiver.PushTokenRegisterFailListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterListener.html">GeotriggerBroadcastReceiver.PushTokenRegisterListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.ReadyListener.html">GeotriggerBroadcastReceiver.ReadyListener</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TrackingProfileChangeListener.html">GeotriggerBroadcastReceiver.TrackingProfileChangeListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerApiListener.html">GeotriggerApiListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.DeviceRegisterFailListener.html">GeotriggerBroadcastReceiver.DeviceRegisterFailListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceCreationListener.html">GeotriggerBroadcastReceiver.GeofenceCreationListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceRemovalListener.html">GeotriggerBroadcastReceiver.GeofenceRemovalListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUpdateListener.html">GeotriggerBroadcastReceiver.LocationUpdateListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadFailListener.html">GeotriggerBroadcastReceiver.LocationUploadFailListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadListener.html">GeotriggerBroadcastReceiver.LocationUploadListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushMessageListener.html">GeotriggerBroadcastReceiver.PushMessageListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterFailListener.html">GeotriggerBroadcastReceiver.PushTokenRegisterFailListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterListener.html">GeotriggerBroadcastReceiver.PushTokenRegisterListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.ReadyListener.html">GeotriggerBroadcastReceiver.ReadyListener</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TrackingProfileChangeListener.html">GeotriggerBroadcastReceiver.TrackingProfileChangeListener</a></li>
       </ul>
     </li>
               
     <li><h2>Classes</h2>
       <ul>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerApiClient.html">GeotriggerApiClient</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.html">GeotriggerBroadcastReceiver</a></li>
-          <li class="selected api apilevel-"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html">GeotriggerService</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/MessageReceiver.html">MessageReceiver</a></li>
-          <li class="api apilevel-"><a href="../../../../com/esri/android/geotrigger/TriggerBuilder.html">TriggerBuilder</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerApiClient.html">GeotriggerApiClient</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.html">GeotriggerBroadcastReceiver</a></li>
+          <li class="selected api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html">GeotriggerService</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/MessageReceiver.html">MessageReceiver</a></li>
+          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/TriggerBuilder.html">TriggerBuilder</a></li>
       </ul>
     </li>
               
@@ -287,6 +305,9 @@ Summary:
   
 
 
+  &#124; <a href="#lfields">Fields</a>
+  
+
 
 
   &#124; <a href="#pubctors">Ctors</a>
@@ -306,6 +327,8 @@ Summary:
 </div><!-- end sum-details-links -->
 <div class="api-level">
   
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 
   
@@ -354,7 +377,7 @@ Summary:
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-">
+<div id="jd-content" class="api apilevel-1.1.0">
 <table class="jd-inheritance-table">
 
 
@@ -469,48 +492,32 @@ Summary:
 
 
     
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
         <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
         <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#ACTION_REQUEST_ON_DEMAND_LOCATION">ACTION_REQUEST_ON_DEMAND_LOCATION</a></td>
         <td class="jd-descrcol" width="100%">Intent action for requesting a single point.</td>
     </tr>
     
     
-    <tr class=" api apilevel-" >
+    <tr class=" api apilevel-1.1.0" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#ACTION_SEND_PUSH_TOKEN">ACTION_SEND_PUSH_TOKEN</a></td>
+        <td class="jd-descrcol" width="100%">When given this action the <code>GeotriggerService</code> will attempt to send the provided push token to the
+ server.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-1.1.0" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#EXTRA_PUSH_TOKEN">EXTRA_PUSH_TOKEN</a></td>
+        <td class="jd-descrcol" width="100%">The active GCM registration token associated with this device.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-1.1.0" >
         <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
         <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#SDK_VERSION">SDK_VERSION</a></td>
         <td class="jd-descrcol" width="100%"></td>
-    </tr>
-    
-    
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
-        <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_ADAPTIVE">TRACKING_PROFILE_ADAPTIVE</a></td>
-        <td class="jd-descrcol" width="100%">Sets the <code>GeotriggerService</code> tracking profile to <b>ADAPTIVE</b>, which automatically adjusts tracking
- resolution (and battery drain) depending on proximity to triggers and other factors.</td>
-    </tr>
-    
-    
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
-        <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_FINE">TRACKING_PROFILE_FINE</a></td>
-        <td class="jd-descrcol" width="100%">Sets the <code>GeotriggerService</code> tracking profile to <b>FINE</b>, which collects the most accurate and
- timely location updates, at the expense of battery life.</td>
-    </tr>
-    
-    
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
-        <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_OFF">TRACKING_PROFILE_OFF</a></td>
-        <td class="jd-descrcol" width="100%">Sets the <code>GeotriggerService</code> tracking profile to <b>OFF</b>, disabling location tracking.</td>
-    </tr>
-    
-    
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
-        <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_ROUGH">TRACKING_PROFILE_ROUGH</a></td>
-        <td class="jd-descrcol" width="100%">Sets the <code>GeotriggerService</code> tracking profile to <b>ROUGH</b>, which uses minimal battery power to get
- the approximate location of the user.</td>
     </tr>
     
     
@@ -886,6 +893,62 @@ android.content.Context
 
 
 
+<!-- =========== FIELD SUMMARY =========== -->
+<table id="lfields" class="jd-sumtable"><tr><th colspan="12">Fields</th></tr>
+
+
+    
+      <tr class="alt-color api apilevel-1.1.0" >
+          <td class="jd-typecol">
+          public
+          static
+          final
+          <a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+          <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_ADAPTIVE">TRACKING_PROFILE_ADAPTIVE</a></td>
+          <td class="jd-descrcol" width="100%">Sets the <code>GeotriggerService</code> tracking profile to <b>ADAPTIVE</b>, which automatically adjusts tracking
+ resolution (and battery drain) depending on proximity to triggers and other factors.</td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-1.1.0" >
+          <td class="jd-typecol">
+          public
+          static
+          final
+          <a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+          <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_FINE">TRACKING_PROFILE_FINE</a></td>
+          <td class="jd-descrcol" width="100%">Sets the <code>GeotriggerService</code> tracking profile to <b>FINE</b>, which collects the most accurate and
+ timely location updates, at the expense of battery life.</td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-1.1.0" >
+          <td class="jd-typecol">
+          public
+          static
+          final
+          <a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+          <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_OFF">TRACKING_PROFILE_OFF</a></td>
+          <td class="jd-descrcol" width="100%">Sets the <code>GeotriggerService</code> tracking profile to <b>OFF</b>, disabling location tracking.</td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-1.1.0" >
+          <td class="jd-typecol">
+          public
+          static
+          final
+          <a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+          <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_ROUGH">TRACKING_PROFILE_ROUGH</a></td>
+          <td class="jd-descrcol" width="100%">Sets the <code>GeotriggerService</code> tracking profile to <b>ROUGH</b>, which uses minimal battery power to get
+ the approximate location of the user.</td>
+      </tr>
+      
+    
+
+</table>
+
+
 
 
 
@@ -897,7 +960,7 @@ android.content.Context
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -926,7 +989,7 @@ android.content.Context
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -944,7 +1007,7 @@ android.content.Context
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class=" api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -962,7 +1025,7 @@ android.content.Context
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -980,7 +1043,7 @@ android.content.Context
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class=" api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -999,7 +1062,7 @@ android.content.Context
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -1017,25 +1080,7 @@ android.content.Context
 
 
 	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol">
-            
-            
-            
-            static
-            
-            void
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#init(android.content.Context, java.lang.String, java.lang.String, java.lang.String[], java.lang.String)">init</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> clientId, <a href="http://d.android.com/reference/java/lang/String.html">String</a> gcmSenderId, <a href="http://d.android.com/reference/java/lang/String.html">String[]</a> tags, <a href="http://d.android.com/reference/java/lang/String.html">String</a> profile)
-        
-        <div class="jd-descrdiv">Starts the <code>GeotriggerService</code> using the provided setup parameters.</div>
-  
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -1053,26 +1098,25 @@ android.content.Context
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
             
             static
             
-            boolean
+            void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#isLegacyTrackingModeFallbackEnabled(android.content.Context)">isLegacyTrackingModeFallbackEnabled</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#init(android.content.Context, java.lang.String, java.lang.String, java.lang.String[], java.lang.String)">init</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> clientId, <a href="http://d.android.com/reference/java/lang/String.html">String</a> gcmSenderId, <a href="http://d.android.com/reference/java/lang/String.html">String[]</a> tags, <a href="http://d.android.com/reference/java/lang/String.html">String</a> profile)
         
-        <div class="jd-descrdiv">Determine if the <code>GeotriggerService</code> will use the legacy tracking method on devices that do not
- support Google Play Services.</div>
+        <div class="jd-descrdiv">Starts the <code>GeotriggerService</code> using the provided setup parameters.</div>
   
   </td></tr>
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -1090,7 +1134,7 @@ android.content.Context
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -1108,7 +1152,7 @@ android.content.Context
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -1126,7 +1170,7 @@ android.content.Context
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -1142,7 +1186,7 @@ android.content.Context
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1158,7 +1202,7 @@ android.content.Context
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1174,7 +1218,7 @@ android.content.Context
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
             
             
@@ -1190,7 +1234,7 @@ android.content.Context
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -1208,25 +1252,7 @@ android.content.Context
 
 
 	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">
-            
-            
-            
-            static
-            
-            void
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#setLegacyTrackingModeFallbackEnabled(android.content.Context, boolean)">setLegacyTrackingModeFallbackEnabled</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, boolean enabled)
-        
-        <div class="jd-descrdiv">Allow the <code>GeotriggerService</code> to fall back to legacy <code>LocationManager</code> based tracking.</div>
-  
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
+    <tr class=" api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -1244,7 +1270,7 @@ android.content.Context
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -1262,7 +1288,7 @@ android.content.Context
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class=" api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -1280,7 +1306,7 @@ android.content.Context
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -1299,7 +1325,25 @@ android.content.Context
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class=" api apilevel-1.1.0" >
+        <td class="jd-typecol">
+            
+            
+            
+            static
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#setServiceStartSticky(android.content.Context, boolean)">setServiceStartSticky</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, boolean enabled)
+        
+        <div class="jd-descrdiv">Set the behavior of the GeotriggerService when the app is killed by the user or the OS.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -1318,7 +1362,7 @@ android.content.Context
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -1336,7 +1380,7 @@ android.content.Context
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -1354,7 +1398,7 @@ android.content.Context
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-1.1.0" >
         <td class="jd-typecol">
             
             
@@ -4458,7 +4502,7 @@ From interface
 
 <a id="ACTION_REQUEST_ON_DEMAND_LOCATION"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -4470,6 +4514,8 @@ From interface
     </h4>
       <div class="api-level">
         
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 
         
@@ -4495,9 +4541,98 @@ From interface
 
 
 
+<a id="ACTION_SEND_PUSH_TOKEN"></a>
+
+<div class="jd-details api apilevel-1.1.0"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+      </span>
+        ACTION_SEND_PUSH_TOKEN
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>When given this action the <code>GeotriggerService</code> will attempt to send the provided push token to the
+ server.
+
+ <p>This Intent requires that the following extras be included:
+ <ul>
+   <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#EXTRA_PUSH_TOKEN">EXTRA_PUSH_TOKEN</a></code>
+ </ul>
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "com.esri.android.geotrigger.action.SEND_PUSH_TOKEN"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<a id="EXTRA_PUSH_TOKEN"></a>
+
+<div class="jd-details api apilevel-1.1.0"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+      </span>
+        EXTRA_PUSH_TOKEN
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>The active GCM registration token associated with this device. </p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "com.esri.android.geotrigger.extra.GCM_TOKEN"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
 <a id="SDK_VERSION"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -4509,6 +4644,8 @@ From interface
     </h4>
       <div class="api-level">
         
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 
         
@@ -4524,7 +4661,7 @@ From interface
         <span class="jd-tagtitle">Constant Value: </span>
         <span>
             
-                "1.0.2"
+                "1.1.0"
             
         </span>
         </div>
@@ -4534,9 +4671,19 @@ From interface
 
 
 
+
+<!-- Fields -->
+
+
+<!-- ========= FIELD DETAIL ======== -->
+<h2>Fields</h2>
+
+
+
+
 <a id="TRACKING_PROFILE_ADAPTIVE"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -4548,6 +4695,8 @@ From interface
     </h4>
       <div class="api-level">
         
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 
         
@@ -4563,15 +4712,6 @@ From interface
 </p></div>
 
     
-        <div class="jd-tagdata">
-        <span class="jd-tagtitle">Constant Value: </span>
-        <span>
-            
-                "adaptive"
-            
-        </span>
-        </div>
-    
     </div>
 </div>
 
@@ -4579,7 +4719,7 @@ From interface
 
 <a id="TRACKING_PROFILE_FINE"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -4591,6 +4731,8 @@ From interface
     </h4>
       <div class="api-level">
         
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 
         
@@ -4606,15 +4748,6 @@ From interface
 </p></div>
 
     
-        <div class="jd-tagdata">
-        <span class="jd-tagtitle">Constant Value: </span>
-        <span>
-            
-                "fine"
-            
-        </span>
-        </div>
-    
     </div>
 </div>
 
@@ -4622,7 +4755,7 @@ From interface
 
 <a id="TRACKING_PROFILE_OFF"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -4634,6 +4767,8 @@ From interface
     </h4>
       <div class="api-level">
         
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 
         
@@ -4648,15 +4783,6 @@ From interface
 </p></div>
 
     
-        <div class="jd-tagdata">
-        <span class="jd-tagtitle">Constant Value: </span>
-        <span>
-            
-                "off"
-            
-        </span>
-        </div>
-    
     </div>
 </div>
 
@@ -4664,7 +4790,7 @@ From interface
 
 <a id="TRACKING_PROFILE_ROUGH"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -4676,6 +4802,8 @@ From interface
     </h4>
       <div class="api-level">
         
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 
         
@@ -4691,22 +4819,10 @@ From interface
 </p></div>
 
     
-        <div class="jd-tagdata">
-        <span class="jd-tagtitle">Constant Value: </span>
-        <span>
-            
-                "rough"
-            
-        </span>
-        </div>
-    
     </div>
 </div>
 
 
-
-
-<!-- Fields -->
 
 
 <!-- Public ctors -->
@@ -4719,7 +4835,7 @@ From interface
 
 <a id="GeotriggerService()"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -4734,6 +4850,8 @@ From interface
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -4765,7 +4883,7 @@ From interface
 
 <a id="getDeviceDefaultTag(android.content.Context)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -4780,6 +4898,8 @@ From interface
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -4812,7 +4932,7 @@ From interface
 
 <a id="getDeviceId(android.content.Context)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -4827,6 +4947,8 @@ From interface
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -4859,7 +4981,7 @@ From interface
 
 <a id="getPushIcon(android.content.Context)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -4874,6 +4996,8 @@ From interface
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -4904,7 +5028,7 @@ From interface
 
 <a id="getPushSound(android.content.Context)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -4919,6 +5043,8 @@ From interface
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -4952,7 +5078,7 @@ From interface
 
 <a id="getTrackingProfile(android.content.Context)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -4967,6 +5093,8 @@ From interface
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -5003,9 +5131,81 @@ From interface
 </div>
 
 
+<a id="init(android.content.Context, java.lang.String, java.lang.String, java.lang.String)"></a>
+
+<div class="jd-details api apilevel-1.1.0"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">init</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> clientId, <a href="http://d.android.com/reference/java/lang/String.html">String</a> gcmSenderId, <a href="http://d.android.com/reference/java/lang/String.html">String</a> profile)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Starts the <code>GeotriggerService</code> using the provided setup parameters.
+
+ <p><code>profile</code> must be one of:
+ <ul>
+     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_OFF">TRACKING_PROFILE_OFF</a></code>
+     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_ROUGH">TRACKING_PROFILE_ROUGH</a></code>
+     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_ADAPTIVE">TRACKING_PROFILE_ADAPTIVE</a></code>
+     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_FINE">TRACKING_PROFILE_FINE</a></code>
+ </ul></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.</td>
+        </tr>
+        <tr>
+          <th>clientId</th>
+          <td>an ArcGIS Online <code>client_id</code> application.</td>
+        </tr>
+        <tr>
+          <th>gcmSenderId</th>
+          <td>a GCM Sender ID for your application.</td>
+        </tr>
+        <tr>
+          <th>profile</th>
+          <td>a tracking profile.
+</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="http://d.android.com/reference/java/lang/IllegalArgumentException.html">IllegalArgumentException</a></td>
+            <td></td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
 <a id="init(android.content.Context, java.lang.String, java.lang.String, java.lang.String[], java.lang.String)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -5020,6 +5220,8 @@ From interface
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -5077,125 +5279,9 @@ From interface
 </div>
 
 
-<a id="init(android.content.Context, java.lang.String, java.lang.String, java.lang.String)"></a>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-         
-         
-         
-        void
-      </span>
-      <span class="sympad">init</span>
-      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> clientId, <a href="http://d.android.com/reference/java/lang/String.html">String</a> gcmSenderId, <a href="http://d.android.com/reference/java/lang/String.html">String</a> profile)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-
-</div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Starts the <code>GeotriggerService</code> using the provided setup parameters.
-
- <p><code>profile</code> must be one of:
- <ul>
-     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_OFF">TRACKING_PROFILE_OFF</a></code>
-     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_ROUGH">TRACKING_PROFILE_ROUGH</a></code>
-     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_ADAPTIVE">TRACKING_PROFILE_ADAPTIVE</a></code>
-     <li><code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#TRACKING_PROFILE_FINE">TRACKING_PROFILE_FINE</a></code>
- </ul></p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Parameters</h5>
-      <table class="jd-tagtable">
-        <tr>
-          <th>context</th>
-          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.</td>
-        </tr>
-        <tr>
-          <th>clientId</th>
-          <td>an ArcGIS Online <code>client_id</code> application.</td>
-        </tr>
-        <tr>
-          <th>gcmSenderId</th>
-          <td>a GCM Sender ID for your application.</td>
-        </tr>
-        <tr>
-          <th>profile</th>
-          <td>a tracking profile.
-</td>
-        </tr>
-      </table>
-  </div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Throws</h5>
-      <table class="jd-tagtable">  
-        <tr>
-            <th><a href="http://d.android.com/reference/java/lang/IllegalArgumentException.html">IllegalArgumentException</a></td>
-            <td></td>
-        </tr>
-      </table>
-  </div>
-
-    </div>
-</div>
-
-
-<a id="isLegacyTrackingModeFallbackEnabled(android.content.Context)"></a>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-         
-         
-         
-        boolean
-      </span>
-      <span class="sympad">isLegacyTrackingModeFallbackEnabled</span>
-      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-
-</div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Determine if the <code>GeotriggerService</code> will use the legacy tracking method on devices that do not
- support Google Play Services.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Parameters</h5>
-      <table class="jd-tagtable">
-        <tr>
-          <th>context</th>
-          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.</td>
-        </tr>
-      </table>
-  </div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>true if fallback to legacy tracking is enabled; false if otherwise.
-</li></ul>
-  </div>
-
-    </div>
-</div>
-
-
 <a id="isPushNotificationHandlingEnabled(android.content.Context)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -5210,6 +5296,8 @@ From interface
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -5240,7 +5328,7 @@ From interface
 
 <a id="isSslCertPinningEnabled(android.content.Context)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -5255,6 +5343,8 @@ From interface
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -5275,8 +5365,7 @@ From interface
   </div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>true if SSL certificate pinning is enabled.
-</li></ul>
+      <ul class="nolist"><li>true if SSL certificate pinning is enabled.</li></ul>
   </div>
 
     </div>
@@ -5285,7 +5374,7 @@ From interface
 
 <a id="isVibrationEnabled(android.content.Context)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -5300,6 +5389,8 @@ From interface
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -5333,7 +5424,7 @@ From interface
 
 <a id="onBind(android.content.Intent)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -5348,6 +5439,8 @@ From interface
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -5380,6 +5473,8 @@ From interface
       <div class="api-level">
         <div>
 
+  Since: <a href="../../../../guide/appendix/api-levels.html#level">API Level </a>
+
 </div>
         
   
@@ -5410,6 +5505,8 @@ From interface
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level">API Level </a>
 
 </div>
         
@@ -5442,6 +5539,8 @@ From interface
       <div class="api-level">
         <div>
 
+  Since: <a href="../../../../guide/appendix/api-levels.html#level">API Level </a>
+
 </div>
         
   
@@ -5457,7 +5556,7 @@ From interface
 
 <a id="requestOnDemandUpdate(android.content.Context)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -5472,6 +5571,8 @@ From interface
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -5499,58 +5600,9 @@ From interface
 </div>
 
 
-<a id="setLegacyTrackingModeFallbackEnabled(android.content.Context, boolean)"></a>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-         
-         
-         
-        void
-      </span>
-      <span class="sympad">setLegacyTrackingModeFallbackEnabled</span>
-      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, boolean enabled)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-
-</div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Allow the <code>GeotriggerService</code> to fall back to legacy <code>LocationManager</code> based tracking.
-
- <p>This option should not be enabled unless your app needs to run on devices that are not supported by
- Google Play Services, as the legacy tracking method will drain the battery much more quickly than the default
- <code>LocationClient</code> based tracking method.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Parameters</h5>
-      <table class="jd-tagtable">
-        <tr>
-          <th>context</th>
-          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.</td>
-        </tr>
-        <tr>
-          <th>enabled</th>
-          <td>true to enable fallback to legacy tracking.
-</td>
-        </tr>
-      </table>
-  </div>
-
-    </div>
-</div>
-
-
 <a id="setLoggingLevel(int)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -5565,6 +5617,8 @@ From interface
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -5595,7 +5649,7 @@ From interface
 
 <a id="setPushIcon(android.content.Context, java.lang.String)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -5610,6 +5664,8 @@ From interface
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -5647,7 +5703,7 @@ From interface
 
 <a id="setPushNotificationHandlingEnabled(android.content.Context, boolean)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -5662,6 +5718,8 @@ From interface
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -5698,7 +5756,7 @@ From interface
 
 <a id="setPushSound(android.content.Context, java.lang.String)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -5713,6 +5771,8 @@ From interface
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -5748,9 +5808,62 @@ From interface
 </div>
 
 
+<a id="setServiceStartSticky(android.content.Context, boolean)"></a>
+
+<div class="jd-details api apilevel-1.1.0"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setServiceStartSticky</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, boolean enabled)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the behavior of the GeotriggerService when the app is killed by the user or the OS.
+
+ <p>By default, the service will stay running under most conditions, except for when the user swipes the app out of
+ the running apps list. If your use case requires that tracking continue after the app has been closed by the user,
+ you can use this option to make the service operate under the START_STICKY run mode.
+
+ <p>It is strongly recommended that you provide a way for the user to stop the tracking of their location so the
+ service can be stopped without requiring the user to force kill it from the Settings app.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>a <code><a href="http://d.android.com/reference/android/content/Context.html">Context</a></code> object.</td>
+        </tr>
+        <tr>
+          <th>enabled</th>
+          <td>true if service should be started in sticky mode.</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
 <a id="setSslCertPinningEnabled(android.content.Context, boolean)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -5765,6 +5878,8 @@ From interface
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -5792,8 +5907,7 @@ From interface
         </tr>
         <tr>
           <th>enabled</th>
-          <td>tru to enable SSL certificate pinning.
-</td>
+          <td>tru to enable SSL certificate pinning.</td>
         </tr>
       </table>
   </div>
@@ -5804,7 +5918,7 @@ From interface
 
 <a id="setTrackingProfile(android.content.Context, java.lang.String)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -5819,6 +5933,8 @@ From interface
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -5857,7 +5973,7 @@ From interface
 
 <a id="setVibrationEnabled(android.content.Context, boolean)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -5872,6 +5988,8 @@ From interface
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         
@@ -5905,7 +6023,7 @@ From interface
 
 <a id="stop(android.content.Context)"></a>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-1.1.0"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -5920,6 +6038,8 @@ From interface
     </h4>
       <div class="api-level">
         <div>
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 </div>
         

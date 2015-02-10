@@ -722,19 +722,6 @@
 <exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
 </exception>
 </method>
-<method name="isLegacyTrackingModeFallbackEnabled"
- return="boolean"
- abstract="false"
- native="false"
- synchronized="false"
- static="true"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="context" type="android.content.Context">
-</parameter>
-</method>
 <method name="isPushNotificationHandlingEnabled"
  return="boolean"
  abstract="false"
@@ -800,21 +787,6 @@
 <parameter name="context" type="android.content.Context">
 </parameter>
 </method>
-<method name="setLegacyTrackingModeFallbackEnabled"
- return="void"
- abstract="false"
- native="false"
- synchronized="false"
- static="true"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="context" type="android.content.Context">
-</parameter>
-<parameter name="enabled" type="boolean">
-</parameter>
-</method>
 <method name="setLoggingLevel"
  return="void"
  abstract="false"
@@ -871,6 +843,21 @@
 <parameter name="context" type="android.content.Context">
 </parameter>
 <parameter name="soundName" type="java.lang.String">
+</parameter>
+</method>
+<method name="setServiceStartSticky"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="enabled" type="boolean">
 </parameter>
 </method>
 <method name="setSslCertPinningEnabled"
@@ -942,11 +929,33 @@
  visibility="public"
 >
 </field>
+<field name="ACTION_SEND_PUSH_TOKEN"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.esri.android.geotrigger.action.SEND_PUSH_TOKEN&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_PUSH_TOKEN"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.esri.android.geotrigger.extra.GCM_TOKEN&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="SDK_VERSION"
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;1.0.2&quot;"
+ value="&quot;1.1.0&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -957,7 +966,6 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;adaptive&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -968,7 +976,6 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;fine&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -979,7 +986,6 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;off&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -990,7 +996,6 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;rough&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
