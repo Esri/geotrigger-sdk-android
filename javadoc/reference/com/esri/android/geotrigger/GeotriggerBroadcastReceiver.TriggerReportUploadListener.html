@@ -68,7 +68,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
 <title>
 
-  GeotriggerBroadcastReceiver.LocationUpdateListener
+  GeotriggerBroadcastReceiver.TriggerReportUploadListener
 
 
 | Geotrigger SDK for Android
@@ -187,7 +187,7 @@
           <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.DeviceRegisterFailListener.html">GeotriggerBroadcastReceiver.DeviceRegisterFailListener</a></li>
           <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceCreationListener.html">GeotriggerBroadcastReceiver.GeofenceCreationListener</a></li>
           <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceRemovalListener.html">GeotriggerBroadcastReceiver.GeofenceRemovalListener</a></li>
-          <li class="selected api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUpdateListener.html">GeotriggerBroadcastReceiver.LocationUpdateListener</a></li>
+          <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUpdateListener.html">GeotriggerBroadcastReceiver.LocationUpdateListener</a></li>
           <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadFailListener.html">GeotriggerBroadcastReceiver.LocationUploadFailListener</a></li>
           <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadListener.html">GeotriggerBroadcastReceiver.LocationUploadListener</a></li>
           <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.ProcessLocationFailListener.html">GeotriggerBroadcastReceiver.ProcessLocationFailListener</a></li>
@@ -200,7 +200,7 @@
           <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TriggerDownloadFailListener.html">GeotriggerBroadcastReceiver.TriggerDownloadFailListener</a></li>
           <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TriggerDownloadListener.html">GeotriggerBroadcastReceiver.TriggerDownloadListener</a></li>
           <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TriggerReportUploadFailListener.html">GeotriggerBroadcastReceiver.TriggerReportUploadFailListener</a></li>
-          <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TriggerReportUploadListener.html">GeotriggerBroadcastReceiver.TriggerReportUploadListener</a></li>
+          <li class="selected api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TriggerReportUploadListener.html">GeotriggerBroadcastReceiver.TriggerReportUploadListener</a></li>
       </ul>
     </li>
               
@@ -280,7 +280,7 @@
      
     
     interface
-<h1>GeotriggerBroadcastReceiver.LocationUpdateListener</h1>
+<h1>GeotriggerBroadcastReceiver.TriggerReportUploadListener</h1>
 
 
 
@@ -299,7 +299,7 @@
 
     <tr>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.esri.android.geotrigger.GeotriggerBroadcastReceiver.LocationUpdateListener</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.esri.android.geotrigger.GeotriggerBroadcastReceiver.TriggerReportUploadListener</td>
     </tr>
     
 
@@ -315,7 +315,7 @@
 
 
 <h2>Class Overview</h2>
-<p>Listener for location update events. </p>
+<p>Listener for trigger event report upload events. </p>
 
 
 
@@ -385,9 +385,9 @@
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUpdateListener.html#onLocationUpdate(android.location.Location, boolean)">onLocationUpdate</a></span>(<a href="http://d.android.com/reference/android/location/Location.html">Location</a> location, boolean isOnDemand)
+        <span class="sympad"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TriggerReportUploadListener.html#onTriggerReportUpload(int)">onTriggerReportUpload</a></span>(int count)
         
-        <div class="jd-descrdiv">Called when a new location fix is obtained.</div>
+        <div class="jd-descrdiv">Called when a trigger events report is sent to the server</div>
   
   </td></tr>
 
@@ -440,7 +440,7 @@
 
 
 
-<a id="onLocationUpdate(android.location.Location, boolean)"></a>
+<a id="onTriggerReportUpload(int)"></a>
 
 <div class="jd-details api apilevel-1.2.0"> 
     <h4 class="jd-details-title">
@@ -452,8 +452,8 @@
          
         void
       </span>
-      <span class="sympad">onLocationUpdate</span>
-      <span class="normal">(<a href="http://d.android.com/reference/android/location/Location.html">Location</a> location, boolean isOnDemand)</span>
+      <span class="sympad">onTriggerReportUpload</span>
+      <span class="normal">(int count)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -467,19 +467,13 @@
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Called when a new location fix is obtained.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Called when a trigger events report is sent to the server</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
         <tr>
-          <th>location</th>
-          <td>a <code><a href="http://d.android.com/reference/android/location/Location.html">Location</a></code> object representing the current location of the device.</td>
-        </tr>
-        <tr>
-          <th>isOnDemand</th>
-          <td>whether or not this location was recorded as a result of calling
-          <code><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html#requestOnDemandUpdate(android.content.Context)">requestOnDemandUpdate(Context)</a></code>.
-</td>
+          <th>count</th>
+          <td>the number of trigger events reported</td>
         </tr>
       </table>
   </div>

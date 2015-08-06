@@ -9,13 +9,19 @@ var DATA = [
       { id:7, label:"com.esri.android.geotrigger.GeotriggerBroadcastReceiver.LocationUpdateListener", link:"com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUpdateListener.html", type:"class" },
       { id:8, label:"com.esri.android.geotrigger.GeotriggerBroadcastReceiver.LocationUploadFailListener", link:"com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadFailListener.html", type:"class" },
       { id:9, label:"com.esri.android.geotrigger.GeotriggerBroadcastReceiver.LocationUploadListener", link:"com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadListener.html", type:"class" },
-      { id:10, label:"com.esri.android.geotrigger.GeotriggerBroadcastReceiver.PushMessageListener", link:"com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushMessageListener.html", type:"class" },
-      { id:11, label:"com.esri.android.geotrigger.GeotriggerBroadcastReceiver.PushTokenRegisterFailListener", link:"com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterFailListener.html", type:"class" },
-      { id:12, label:"com.esri.android.geotrigger.GeotriggerBroadcastReceiver.PushTokenRegisterListener", link:"com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterListener.html", type:"class" },
-      { id:13, label:"com.esri.android.geotrigger.GeotriggerBroadcastReceiver.ReadyListener", link:"com/esri/android/geotrigger/GeotriggerBroadcastReceiver.ReadyListener.html", type:"class" },
-      { id:14, label:"com.esri.android.geotrigger.GeotriggerBroadcastReceiver.TrackingProfileChangeListener", link:"com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TrackingProfileChangeListener.html", type:"class" },
-      { id:15, label:"com.esri.android.geotrigger.GeotriggerService", link:"com/esri/android/geotrigger/GeotriggerService.html", type:"class" },
-      { id:16, label:"com.esri.android.geotrigger.MessageReceiver", link:"com/esri/android/geotrigger/MessageReceiver.html", type:"class" },
-      { id:17, label:"com.esri.android.geotrigger.TriggerBuilder", link:"com/esri/android/geotrigger/TriggerBuilder.html", type:"class" }
+      { id:10, label:"com.esri.android.geotrigger.GeotriggerBroadcastReceiver.ProcessLocationFailListener", link:"com/esri/android/geotrigger/GeotriggerBroadcastReceiver.ProcessLocationFailListener.html", type:"class" },
+      { id:11, label:"com.esri.android.geotrigger.GeotriggerBroadcastReceiver.ProcessLocationListener", link:"com/esri/android/geotrigger/GeotriggerBroadcastReceiver.ProcessLocationListener.html", type:"class" },
+      { id:12, label:"com.esri.android.geotrigger.GeotriggerBroadcastReceiver.PushMessageListener", link:"com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushMessageListener.html", type:"class" },
+      { id:13, label:"com.esri.android.geotrigger.GeotriggerBroadcastReceiver.PushTokenRegisterFailListener", link:"com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterFailListener.html", type:"class" },
+      { id:14, label:"com.esri.android.geotrigger.GeotriggerBroadcastReceiver.PushTokenRegisterListener", link:"com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterListener.html", type:"class" },
+      { id:15, label:"com.esri.android.geotrigger.GeotriggerBroadcastReceiver.ReadyListener", link:"com/esri/android/geotrigger/GeotriggerBroadcastReceiver.ReadyListener.html", type:"class" },
+      { id:16, label:"com.esri.android.geotrigger.GeotriggerBroadcastReceiver.TrackingProfileChangeListener", link:"com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TrackingProfileChangeListener.html", type:"class" },
+      { id:17, label:"com.esri.android.geotrigger.GeotriggerBroadcastReceiver.TriggerDownloadFailListener", link:"com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TriggerDownloadFailListener.html", type:"class" },
+      { id:18, label:"com.esri.android.geotrigger.GeotriggerBroadcastReceiver.TriggerDownloadListener", link:"com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TriggerDownloadListener.html", type:"class" },
+      { id:19, label:"com.esri.android.geotrigger.GeotriggerBroadcastReceiver.TriggerReportUploadFailListener", link:"com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TriggerReportUploadFailListener.html", type:"class" },
+      { id:20, label:"com.esri.android.geotrigger.GeotriggerBroadcastReceiver.TriggerReportUploadListener", link:"com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TriggerReportUploadListener.html", type:"class" },
+      { id:21, label:"com.esri.android.geotrigger.GeotriggerService", link:"com/esri/android/geotrigger/GeotriggerService.html", type:"class" },
+      { id:22, label:"com.esri.android.geotrigger.MessageReceiver", link:"com/esri/android/geotrigger/MessageReceiver.html", type:"class" },
+      { id:23, label:"com.esri.android.geotrigger.TriggerBuilder", link:"com/esri/android/geotrigger/TriggerBuilder.html", type:"class" }
 
     ];

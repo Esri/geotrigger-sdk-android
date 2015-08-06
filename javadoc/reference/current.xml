@@ -203,6 +203,34 @@
 <parameter name="context" type="android.content.Context">
 </parameter>
 </method>
+<method name="onProcessLocation"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="count" type="int">
+</parameter>
+</method>
+<method name="onProcessLocationFail"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
 <method name="onPushMessage"
  return="void"
  abstract="false"
@@ -293,11 +321,89 @@
 <parameter name="newProfile" type="java.lang.String">
 </parameter>
 </method>
+<method name="onTriggerDownload"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="count" type="int">
+</parameter>
+</method>
+<method name="onTriggerDownloadFail"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="onTriggerReportUpload"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="count" type="int">
+</parameter>
+</method>
+<method name="onTriggerReportUploadFail"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<field name="ACTION_LOCATION_PROCESSED"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.esri.android.geotrigger.action.LOCATION_PROCESSED&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="ACTION_LOCATION_UPLOADED"
  type="java.lang.String"
  transient="false"
  volatile="false"
  value="&quot;com.esri.android.geotrigger.action.LOCATION_UPLOADED&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ACTION_PROCESS_LOCATION_FAIL"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.esri.android.geotrigger.action.PROCESS_LOCATION_FAIL&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -320,6 +426,50 @@
  transient="false"
  volatile="false"
  value="&quot;com.esri.android.geotrigger.action.TRACKING_PROFILE_CHANGED&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ACTION_TRIGGER_DOWNLOAD"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.esri.android.geotrigger.action.TRIGGER_DOWNLOAD&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ACTION_TRIGGER_DOWNLOAD_FAIL"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.esri.android.geotrigger.action.TRIGGER_DOWNLOAD_FAIL&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ACTION_TRIGGER_REPORT_UPLOAD"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.esri.android.geotrigger.action.TRIGGER_REPORT_UPLOAD&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ACTION_TRIGGER_REPORT_UPLOAD_FAIL"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.esri.android.geotrigger.action.TRIGGER_REPORT_UPLOAD_FAIL&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -492,6 +642,46 @@
 </parameter>
 </method>
 </interface>
+<interface name="GeotriggerBroadcastReceiver.ProcessLocationFailListener"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onProcessLocationFail"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</interface>
+<interface name="GeotriggerBroadcastReceiver.ProcessLocationListener"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onProcessLocation"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="count" type="int">
+</parameter>
+</method>
+</interface>
 <interface name="GeotriggerBroadcastReceiver.PushMessageListener"
  abstract="true"
  static="true"
@@ -597,6 +787,86 @@
 </parameter>
 </method>
 </interface>
+<interface name="GeotriggerBroadcastReceiver.TriggerDownloadFailListener"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onTriggerDownloadFail"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</interface>
+<interface name="GeotriggerBroadcastReceiver.TriggerDownloadListener"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onTriggerDownload"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="count" type="int">
+</parameter>
+</method>
+</interface>
+<interface name="GeotriggerBroadcastReceiver.TriggerReportUploadFailListener"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onTriggerReportUploadFail"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</interface>
+<interface name="GeotriggerBroadcastReceiver.TriggerReportUploadListener"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onTriggerReportUpload"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="count" type="int">
+</parameter>
+</method>
+</interface>
 <class name="GeotriggerService"
  extends="android.app.Service"
  abstract="false"
@@ -678,6 +948,68 @@
 <parameter name="context" type="android.content.Context">
 </parameter>
 </method>
+<method name="getTriggerDownloadInterval"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="getTriggerReportUploadInterval"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="init"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="clientId" type="java.lang.String">
+</parameter>
+<parameter name="profile" type="java.lang.String">
+</parameter>
+</method>
+<method name="init"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="clientId" type="java.lang.String">
+</parameter>
+<parameter name="tags" type="java.lang.String[]">
+</parameter>
+<parameter name="profile" type="java.lang.String">
+</parameter>
+</method>
 <method name="init"
  return="void"
  abstract="false"
@@ -696,8 +1028,6 @@
 </parameter>
 <parameter name="profile" type="java.lang.String">
 </parameter>
-<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
-</exception>
 </method>
 <method name="init"
  return="void"
@@ -719,8 +1049,19 @@
 </parameter>
 <parameter name="profile" type="java.lang.String">
 </parameter>
-<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
-</exception>
+</method>
+<method name="isOfflineProcessingEnabled"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
 </method>
 <method name="isPushNotificationHandlingEnabled"
  return="boolean"
@@ -774,6 +1115,32 @@
 <parameter name="intent" type="android.content.Intent">
 </parameter>
 </method>
+<method name="requestOnDemandTriggerDownload"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="requestOnDemandTriggerReportUpload"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
 <method name="requestOnDemandUpdate"
  return="void"
  abstract="false"
@@ -798,6 +1165,19 @@
  visibility="public"
 >
 <parameter name="level" type="int">
+</parameter>
+</method>
+<method name="setOfflineProcessingEnabled"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
 </parameter>
 </method>
 <method name="setPushIcon"
@@ -890,6 +1270,36 @@
 <parameter name="profile" type="java.lang.String">
 </parameter>
 </method>
+<method name="setTriggerDownloadInterval"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="seconds" type="int">
+</parameter>
+</method>
+<method name="setTriggerReportUploadInterval"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="seconds" type="int">
+</parameter>
+</method>
 <method name="setVibrationEnabled"
  return="void"
  abstract="false"
@@ -918,11 +1328,66 @@
 <parameter name="context" type="android.content.Context">
 </parameter>
 </method>
+<field name="ACTION_REQUEST_ENABLE_OFFLINE_PROCESSING"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.esri.android.geotrigger.action.REQUEST_ENABLE_OFFLINE_PROCESSING&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="ACTION_REQUEST_ON_DEMAND_LOCATION"
  type="java.lang.String"
  transient="false"
  volatile="false"
  value="&quot;com.esri.android.geotrigger.action.REQUEST_ON_DEMAND_LOCATION&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ACTION_REQUEST_ON_DEMAND_TRIGGER_DOWNLOAD"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.esri.android.geotrigger.action.REQUEST_ON_DEMAND_TRIGGER_DOWNLOAD&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ACTION_REQUEST_ON_DEMAND_TRIGGER_REPORT_UPLOAD"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.esri.android.geotrigger.action.REQUEST_ON_DEMAND_TRIGGER_REPORT_UPLOAD&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ACTION_REQUEST_TRIGGER_DOWNLOAD_INTERVAL_CHANGE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.esri.android.geotrigger.action.REQUEST_TRIGGER_DOWNLOAD_INTERVAL_CHANGE&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ACTION_REQUEST_TRIGGER_HISTORY_UPLOAD_INTERVAL_CHANGE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.esri.android.geotrigger.action.REQUEST_TRIGGER_HISTORY_UPLOAD_INTERVAL_CHANGE&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -955,7 +1420,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;1.1.0&quot;"
+ value="&quot;1.2.0&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -966,6 +1431,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
+ value="&quot;adaptive&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -976,6 +1442,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
+ value="&quot;fine&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -986,6 +1453,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
+ value="&quot;off&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -996,6 +1464,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
+ value="&quot;rough&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -1057,11 +1526,77 @@
 <parameter name="intent" type="android.content.Intent">
 </parameter>
 </method>
+<field name="ACTION_LOCAL_MESSAGE_RECEIVED"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.esri.android.geotrigger.intent.OFFLINE_RECEIVE&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="ACTION_PUSH_MESSAGE_RECEIVED"
  type="java.lang.String"
  transient="false"
  volatile="false"
  value="&quot;com.esri.android.geotrigger.action.PUSH_MESSAGE_RECEIVED&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="DATA_DATA"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;data&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="DATA_ICON"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;icon&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="DATA_SOUND"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;sound&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="DATA_TEXT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;text&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="DATA_URL"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;url&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
