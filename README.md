@@ -37,9 +37,6 @@ App `build.gradle`:
 ```groovy
 dependencies {
     ...
-    // Required by the Esri Geotrigger SDK for Android
-    compile 'com.google.android.gms:play-services:6.5.87'
-
     // Esri Geotrigger SDK for Android
     compile 'com.esri.android.geotrigger:geotrigger-sdk:1.2.0'
 }
