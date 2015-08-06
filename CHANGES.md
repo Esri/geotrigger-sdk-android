@@ -1,5 +1,12 @@
 # Change Log
 
+## v1.2.0 8/05/2015
+
+* NOTE: As of this version, Android API levels <15 are no longer supported.
+* Added offline location processing functionality, enabled with a new function `GeotriggerServer.setOfflineProcessingEnabled`.
+* Added `"com.esri.android.geotrigger.intent.OFFLINE_RECEIVE"` intent action for recieving local notifications in offline processing mode
+* Additional information about offline processing can be found at (link)
+
 ## v1.1.0 2/02/2015
 
 * NOTE: As of this version, Google Play Services is no longer optional and is now a requirement.
