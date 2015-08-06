@@ -4,8 +4,9 @@
 
 * NOTE: As of this version, Android API levels <15 are no longer supported.
 * Added offline location processing functionality along with local push notifications, enabled with a new function `GeotriggerService.setOfflineProcessingEnabled`.
-* Added `"com.esri.android.geotrigger.intent.OFFLINE_RECEIVE"` intent action for recieving local notifications in offline processing mode
-* Additional information about offline processing can be found [here][offline-triggers-doc]
+* Added `"com.esri.android.geotrigger.intent.OFFLINE_RECEIVE"` intent action for receiving local notifications in offline processing mode.
+* Added functions `setTriggerDownloadInterval` and  `setTriggerReportUploadInterval` to `GeotriggerService` for managing trigger downloads and trigger event uploads in offline mode.
+* Additional information about offline processing can be found [here][offline-triggers-doc].
 
 ## v1.1.0 2/02/2015
 
