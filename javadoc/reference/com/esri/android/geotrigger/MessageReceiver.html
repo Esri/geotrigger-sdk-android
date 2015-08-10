@@ -51,7 +51,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="last-modified" content="2015/02/04">
+<meta name="last-modified" content="2015/08/03">
 <meta name="product" content="api-geotrigger">
 <meta name="sub_category" content="Geotrigger Service">
 <meta name="sub_category_label" content="Geotrigger Service">
@@ -98,19 +98,19 @@
 </noscript>
 </head>
 
-<body class="1.1.0">
+<body class="1.2.0">
 
 <div id="header">
     <div id="headerLeft">
-    
+
       <span id="masthead-title">Geotrigger SDK for Android</span>
-    
+
     </div>
     <div id="headerRight">
-      
+
   <div id="search" >
       <div id="searchForm">
-          <form accept-charset="utf-8" class="gsc-search-box" 
+          <form accept-charset="utf-8" class="gsc-search-box"
                 onsubmit="return submit_search()">
             <table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody>
                 <tr>
@@ -138,8 +138,8 @@
           </form>
       </div><!-- searchForm -->
   </div><!-- search -->
-      
-        
+
+
   <div id="api-level-toggle">
     <input type="checkbox" id="apiLevelCheckbox" onclick="toggleApiLevelSelector(this)" />
     <label for="apiLevelCheckbox" class="disabled">Filter by API Level: </label>
@@ -148,15 +148,15 @@
     </select>
   </div>
   <script>
-   var SINCE_DATA = [ '1.0.0', '1.0.1', '1.0.2', '1.1.0' ];
-    
-    var SINCE_LABELS = [ '1.0.0', '1.0.1', '1.0.2', '1.1.0' ];
+   var SINCE_DATA = [ '1.0.0', '1.0.1', '1.0.2', '1.1.0', '1.2.0' ];
+
+    var SINCE_LABELS = [ '1.0.0', '1.0.1', '1.0.2', '1.1.0', '1.2.0' ];
     buildApiLevelSelector();
     addLoadEvent(changeApiLevel);
   </script>
 
 
-      
+
     </div>
 </div><!-- header -->
 
@@ -168,55 +168,61 @@
           <div id="resize-packages-nav">
             <div id="packages-nav">
               <div id="index-links">
-                <a href="../../../../packages.html"  >Package Index</a> | 
+                <a href="../../../../packages.html"  >Package Index</a> |
                 <a href="../../../../classes.html" >Class Index</a>
               </div>
               <ul>
-                
-    <li class="selected api apilevel-1.1.0">
+
+    <li class="selected api apilevel-1.2.0">
   <a href="../../../../com/esri/android/geotrigger/package-summary.html">com.esri.android.geotrigger</a></li>
               </ul><br/>
             </div> <!-- end packages -->
           </div> <!-- end resize-packages -->
           <div id="classes-nav">
             <ul>
-              
+
     <li><h2>Interfaces</h2>
       <ul>
-          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerApiListener.html">GeotriggerApiListener</a></li>
-          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.DeviceRegisterFailListener.html">GeotriggerBroadcastReceiver.DeviceRegisterFailListener</a></li>
-          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceCreationListener.html">GeotriggerBroadcastReceiver.GeofenceCreationListener</a></li>
-          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceRemovalListener.html">GeotriggerBroadcastReceiver.GeofenceRemovalListener</a></li>
-          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUpdateListener.html">GeotriggerBroadcastReceiver.LocationUpdateListener</a></li>
-          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadFailListener.html">GeotriggerBroadcastReceiver.LocationUploadFailListener</a></li>
-          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadListener.html">GeotriggerBroadcastReceiver.LocationUploadListener</a></li>
-          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushMessageListener.html">GeotriggerBroadcastReceiver.PushMessageListener</a></li>
-          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterFailListener.html">GeotriggerBroadcastReceiver.PushTokenRegisterFailListener</a></li>
-          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterListener.html">GeotriggerBroadcastReceiver.PushTokenRegisterListener</a></li>
-          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.ReadyListener.html">GeotriggerBroadcastReceiver.ReadyListener</a></li>
-          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TrackingProfileChangeListener.html">GeotriggerBroadcastReceiver.TrackingProfileChangeListener</a></li>
+          <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerApiListener.html">GeotriggerApiListener</a></li>
+          <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.DeviceRegisterFailListener.html">GeotriggerBroadcastReceiver.DeviceRegisterFailListener</a></li>
+          <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceCreationListener.html">GeotriggerBroadcastReceiver.GeofenceCreationListener</a></li>
+          <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.GeofenceRemovalListener.html">GeotriggerBroadcastReceiver.GeofenceRemovalListener</a></li>
+          <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUpdateListener.html">GeotriggerBroadcastReceiver.LocationUpdateListener</a></li>
+          <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadFailListener.html">GeotriggerBroadcastReceiver.LocationUploadFailListener</a></li>
+          <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.LocationUploadListener.html">GeotriggerBroadcastReceiver.LocationUploadListener</a></li>
+          <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.ProcessLocationFailListener.html">GeotriggerBroadcastReceiver.ProcessLocationFailListener</a></li>
+          <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.ProcessLocationListener.html">GeotriggerBroadcastReceiver.ProcessLocationListener</a></li>
+          <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushMessageListener.html">GeotriggerBroadcastReceiver.PushMessageListener</a></li>
+          <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterFailListener.html">GeotriggerBroadcastReceiver.PushTokenRegisterFailListener</a></li>
+          <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.PushTokenRegisterListener.html">GeotriggerBroadcastReceiver.PushTokenRegisterListener</a></li>
+          <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.ReadyListener.html">GeotriggerBroadcastReceiver.ReadyListener</a></li>
+          <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TrackingProfileChangeListener.html">GeotriggerBroadcastReceiver.TrackingProfileChangeListener</a></li>
+          <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TriggerDownloadFailListener.html">GeotriggerBroadcastReceiver.TriggerDownloadFailListener</a></li>
+          <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TriggerDownloadListener.html">GeotriggerBroadcastReceiver.TriggerDownloadListener</a></li>
+          <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TriggerReportUploadFailListener.html">GeotriggerBroadcastReceiver.TriggerReportUploadFailListener</a></li>
+          <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.TriggerReportUploadListener.html">GeotriggerBroadcastReceiver.TriggerReportUploadListener</a></li>
       </ul>
     </li>
-              
+
     <li><h2>Classes</h2>
       <ul>
-          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerApiClient.html">GeotriggerApiClient</a></li>
-          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.html">GeotriggerBroadcastReceiver</a></li>
-          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html">GeotriggerService</a></li>
-          <li class="selected api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/MessageReceiver.html">MessageReceiver</a></li>
-          <li class="api apilevel-1.1.0"><a href="../../../../com/esri/android/geotrigger/TriggerBuilder.html">TriggerBuilder</a></li>
+          <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerApiClient.html">GeotriggerApiClient</a></li>
+          <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerBroadcastReceiver.html">GeotriggerBroadcastReceiver</a></li>
+          <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/GeotriggerService.html">GeotriggerService</a></li>
+          <li class="selected api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/MessageReceiver.html">MessageReceiver</a></li>
+          <li class="api apilevel-1.2.0"><a href="../../../../com/esri/android/geotrigger/TriggerBuilder.html">TriggerBuilder</a></li>
       </ul>
     </li>
-              
-              
-              
-              
+
+
+
+
             </ul><br/>
           </div><!-- end classes -->
         </div><!-- end nav-panels -->
         <div id="nav-tree" style="display:none">
           <div id="index-links">
-            <a href="../../../../packages.html"  >Package Index</a> | 
+            <a href="../../../../packages.html"  >Package Index</a> |
             <a href="../../../../classes.html" >Class Index</a>
           </div>
         </div><!-- end nav-tree -->
@@ -248,19 +254,19 @@
 
 
 
-  
-   
-  
-  
-  
-  
 
-  
-   
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <div class="sum-details-links">
@@ -273,23 +279,23 @@ Summary:
 
 
   <a href="#constants">Constants</a>
-  
+
 
 
 
 
 
   &#124; <a href="#pubctors">Ctors</a>
-  
+
 
 
 
   &#124; <a href="#pubmethods">Methods</a>
-  
+
 
 
   &#124; <a href="#promethods">Protected Methods</a>
-  
+
 
 
   &#124; <a href="#inhmethods">Inherited Methods</a>
@@ -298,13 +304,13 @@ Summary:
 
 </div><!-- end sum-details-links -->
 <div class="api-level">
-  
-
-  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 
-  
-  
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.2.0">API Level 1.2.0</a>
+
+
+
+
 
 </div>
 </div><!-- end api-info-block -->
@@ -314,60 +320,60 @@ Summary:
 
 <div id="jd-header">
     public
-     
-     
-    
+
+
+
     class
 <h1>MessageReceiver</h1>
 
 
 
-  
-  
-  
 
-  
+
+
+
+
     extends <a href="http://d.android.com/reference/android/content/BroadcastReceiver.html">BroadcastReceiver</a><br/>
-  
-  
-  
 
-  
-  
-  
+
+
+
+
+
+
 
 
 </div><!-- end header -->
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-1.1.0">
+<div id="jd-content" class="api apilevel-1.2.0">
 <table class="jd-inheritance-table">
 
 
     <tr>
-         	
+
         <td colspan="3" class="jd-inheritance-class-cell"><a href="http://d.android.com/reference/java/lang/Object.html">java.lang.Object</a></td>
     </tr>
-    
+
 
     <tr>
-        
+
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
-         	
+
         <td colspan="2" class="jd-inheritance-class-cell"><a href="http://d.android.com/reference/android/content/BroadcastReceiver.html">android.content.BroadcastReceiver</a></td>
     </tr>
-    
+
 
     <tr>
-        
+
             <td class="jd-inheritance-space">&nbsp;</td>
-        
+
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
-         	
+
         <td colspan="1" class="jd-inheritance-class-cell">com.esri.android.geotrigger.MessageReceiver</td>
     </tr>
-    
+
 
 </table>
 
@@ -429,21 +435,63 @@ Summary:
 <table id="constants" class="jd-sumtable"><tr><th colspan="12">Constants</th></tr>
 
 
-    
-    <tr class="alt-color api apilevel-1.1.0" >
+
+    <tr class="alt-color api apilevel-1.2.0" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/MessageReceiver.html#ACTION_LOCAL_MESSAGE_RECEIVED">ACTION_LOCAL_MESSAGE_RECEIVED</a></td>
+        <td class="jd-descrcol" width="100%">Broadcast Action: A message was received from the SDK while in offline mode.</td>
+    </tr>
+
+
+    <tr class=" api apilevel-1.2.0" >
         <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
         <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/MessageReceiver.html#ACTION_PUSH_MESSAGE_RECEIVED">ACTION_PUSH_MESSAGE_RECEIVED</a></td>
         <td class="jd-descrcol" width="100%">Broadcast Action: A push message was received.</td>
     </tr>
-    
-    
-    <tr class=" api apilevel-1.1.0" >
+
+
+    <tr class="alt-color api apilevel-1.2.0" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/MessageReceiver.html#DATA_DATA">DATA_DATA</a></td>
+        <td class="jd-descrcol" width="100%"><p>An extra containing the notification data.</td>
+    </tr>
+
+
+    <tr class=" api apilevel-1.2.0" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/MessageReceiver.html#DATA_ICON">DATA_ICON</a></td>
+        <td class="jd-descrcol" width="100%">An extra containing the notification badge to be displayed.</td>
+    </tr>
+
+
+    <tr class="alt-color api apilevel-1.2.0" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/MessageReceiver.html#DATA_SOUND">DATA_SOUND</a></td>
+        <td class="jd-descrcol" width="100%">An extra containing the notification sound to be played.</td>
+    </tr>
+
+
+    <tr class=" api apilevel-1.2.0" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/MessageReceiver.html#DATA_TEXT">DATA_TEXT</a></td>
+        <td class="jd-descrcol" width="100%">An extra containing the message text to be displayed.</td>
+    </tr>
+
+
+    <tr class="alt-color api apilevel-1.2.0" >
+        <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/MessageReceiver.html#DATA_URL">DATA_URL</a></td>
+        <td class="jd-descrcol" width="100%">An extra containing a URI to be opened when the notification is touched.</td>
+    </tr>
+
+
+    <tr class=" api apilevel-1.2.0" >
         <td class="jd-typecol"><a href="http://d.android.com/reference/java/lang/String.html">String</a></td>
         <td class="jd-linkcol"><a href="../../../../com/esri/android/geotrigger/MessageReceiver.html#EXTRA_DATA">EXTRA_DATA</a></td>
         <td class="jd-descrcol" width="100%">A <code>Bundle</code> containing key/value pairs of data.</td>
     </tr>
-    
-    
+
+
 
 </table>
 
@@ -463,19 +511,19 @@ Summary:
 
 
 
-	 
-    <tr class="alt-color api apilevel-1.1.0" >
+
+    <tr class="alt-color api apilevel-1.2.0" >
         <td class="jd-typecol">
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad"><a href="../../../../com/esri/android/geotrigger/MessageReceiver.html#MessageReceiver()">MessageReceiver</a></span>()
-        
+
   </td></tr>
 
 
@@ -492,19 +540,19 @@ Summary:
 
 
 
-	 
-    <tr class="alt-color api apilevel-1.1.0" >
+
+    <tr class="alt-color api apilevel-1.2.0" >
         <td class="jd-typecol">
-            
-            
+
+
             final
-            
-            
+
+
             void
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad"><a href="../../../../com/esri/android/geotrigger/MessageReceiver.html#onReceive(android.content.Context, android.content.Intent)">onReceive</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> intent)
-        
+
   </td></tr>
 
 
@@ -519,21 +567,21 @@ Summary:
 
 
 
-	 
-    <tr class="alt-color api apilevel-1.1.0" >
+
+    <tr class="alt-color api apilevel-1.2.0" >
         <td class="jd-typecol">
-            
-            
-            
-            
-            
+
+
+
+
+
             void
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad"><a href="../../../../com/esri/android/geotrigger/MessageReceiver.html#handlePushNotification(android.content.Context, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)">handlePushNotification</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/java/lang/String.html">String</a> text, <a href="http://d.android.com/reference/java/lang/String.html">String</a> sound, <a href="http://d.android.com/reference/java/lang/String.html">String</a> icon, <a href="http://d.android.com/reference/java/lang/String.html">String</a> url, <a href="http://d.android.com/reference/java/lang/String.html">String</a> data)
-        
+
         <div class="jd-descrdiv">Display a basic push notification if default handling is enabled.</div>
-  
+
   </td></tr>
 
 
@@ -566,278 +614,294 @@ From class
   </div>
   <div id="inherited-methods-android.content.BroadcastReceiver-summary" style="display: none;">
     <table class="jd-sumtable-expando">
-    
 
 
-	 
+
+
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
-            
-            
+
+
             final
-            
-            
+
+
             void
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">abortBroadcast</span>()
-        
+
   </td></tr>
 
 
-	 
+
     <tr class=" api apilevel-" >
         <td class="jd-typecol">
-            
-            
+
+
             final
-            
-            
+
+
             void
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">clearAbortBroadcast</span>()
-        
+
   </td></tr>
 
 
-	 
+
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
-            
-            
+
+
             final
-            
-            
+
+
             boolean
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">getAbortBroadcast</span>()
-        
+
   </td></tr>
 
 
-	 
+
     <tr class=" api apilevel-" >
         <td class="jd-typecol">
-            
-            
+
+
             final
-            
-            
+
+
             boolean
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">getDebugUnregister</span>()
-        
+
   </td></tr>
 
 
-	 
+
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
-            
-            
+
+
             final
-            
-            
+
+
             int
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">getResultCode</span>()
-        
+
   </td></tr>
 
 
-	 
+
     <tr class=" api apilevel-" >
         <td class="jd-typecol">
-            
-            
+
+
             final
-            
-            
+
+
             <a href="http://d.android.com/reference/java/lang/String.html">String</a>
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">getResultData</span>()
-        
+
   </td></tr>
 
 
-	 
+
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
-            
-            
+
+
             final
-            
-            
+
+
             <a href="http://d.android.com/reference/android/os/Bundle.html">Bundle</a>
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">getResultExtras</span>(boolean arg0)
-        
+
   </td></tr>
 
 
-	 
+
     <tr class=" api apilevel-" >
         <td class="jd-typecol">
-            
-            
+
+
             final
-            
-            
+
+
+            BroadcastReceiver.PendingResult
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">goAsync</span>()
+
+  </td></tr>
+
+
+
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+
+
+            final
+
+
             boolean
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">isInitialStickyBroadcast</span>()
-        
+
   </td></tr>
 
 
-	 
-    <tr class="alt-color api apilevel-" >
+
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
-            
-            
+
+
             final
-            
-            
+
+
             boolean
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">isOrderedBroadcast</span>()
-        
+
   </td></tr>
 
 
-	 
-    <tr class=" api apilevel-" >
+
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
             abstract
-            
-            
-            
-            
+
+
+
+
             void
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">onReceive</span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> arg0, <a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg1)
-        
+
   </td></tr>
 
 
-	 
-    <tr class="alt-color api apilevel-" >
+
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
-            
-            
-            
-            
-            
+
+
+
+
+
             <a href="http://d.android.com/reference/android/os/IBinder.html">IBinder</a>
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">peekService</span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> arg0, <a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> arg1)
-        
+
   </td></tr>
 
 
-	 
-    <tr class=" api apilevel-" >
+
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
-            
-            
+
+
             final
-            
-            
+
+
             void
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">setDebugUnregister</span>(boolean arg0)
-        
+
   </td></tr>
 
 
-	 
-    <tr class="alt-color api apilevel-" >
+
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
-            
-            
+
+
             final
-            
-            
+
+
             void
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">setOrderedHint</span>(boolean arg0)
-        
+
   </td></tr>
 
 
-	 
-    <tr class=" api apilevel-" >
+
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
-            
-            
+
+
             final
-            
-            
+
+
             void
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">setResult</span>(int arg0, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg1, <a href="http://d.android.com/reference/android/os/Bundle.html">Bundle</a> arg2)
-        
+
   </td></tr>
 
 
-	 
-    <tr class="alt-color api apilevel-" >
+
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
-            
-            
+
+
             final
-            
-            
+
+
             void
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">setResultCode</span>(int arg0)
-        
+
   </td></tr>
 
 
-	 
-    <tr class=" api apilevel-" >
+
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
-            
-            
+
+
             final
-            
-            
+
+
             void
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">setResultData</span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> arg0)
-        
+
   </td></tr>
 
 
-	 
-    <tr class="alt-color api apilevel-" >
+
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
-            
-            
+
+
             final
-            
-            
+
+
             void
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">setResultExtras</span>(<a href="http://d.android.com/reference/android/os/Bundle.html">Bundle</a> arg0)
-        
+
   </td></tr>
 
 
@@ -864,182 +928,182 @@ From class
   </div>
   <div id="inherited-methods-java.lang.Object-summary" style="display: none;">
     <table class="jd-sumtable-expando">
-    
 
 
-	 
+
+
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
-            
-            
-            
-            
-            
+
+
+
+
+
             <a href="http://d.android.com/reference/java/lang/Object.html">Object</a>
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">clone</span>()
-        
+
   </td></tr>
 
 
-	 
+
     <tr class=" api apilevel-" >
         <td class="jd-typecol">
-            
-            
-            
-            
-            
+
+
+
+
+
             boolean
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">equals</span>(<a href="http://d.android.com/reference/java/lang/Object.html">Object</a> arg0)
-        
+
   </td></tr>
 
 
-	 
+
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
-            
-            
-            
-            
-            
+
+
+
+
+
             void
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">finalize</span>()
-        
+
   </td></tr>
 
 
-	 
+
     <tr class=" api apilevel-" >
         <td class="jd-typecol">
-            
-            
+
+
             final
-            
-            
+
+
             <a href="http://d.android.com/reference/java/lang/Class.html">Class</a>&lt;?&gt;
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">getClass</span>()
-        
+
   </td></tr>
 
 
-	 
+
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
-            
-            
-            
-            
-            
+
+
+
+
+
             int
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">hashCode</span>()
-        
+
   </td></tr>
 
 
-	 
+
     <tr class=" api apilevel-" >
         <td class="jd-typecol">
-            
-            
+
+
             final
-            
-            
+
+
             void
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">notify</span>()
-        
+
   </td></tr>
 
 
-	 
+
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
-            
-            
+
+
             final
-            
-            
+
+
             void
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">notifyAll</span>()
-        
+
   </td></tr>
 
 
-	 
+
     <tr class=" api apilevel-" >
         <td class="jd-typecol">
-            
-            
-            
-            
-            
+
+
+
+
+
             <a href="http://d.android.com/reference/java/lang/String.html">String</a>
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">toString</span>()
-        
+
   </td></tr>
 
 
-	 
+
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
-            
-            
+
+
             final
-            
-            
+
+
             void
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">wait</span>()
-        
+
   </td></tr>
 
 
-	 
+
     <tr class=" api apilevel-" >
         <td class="jd-typecol">
-            
-            
+
+
             final
-            
-            
+
+
             void
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">wait</span>(long arg0, int arg1)
-        
+
   </td></tr>
 
 
-	 
+
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
-            
-            
+
+
             final
-            
-            
+
+
             void
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">wait</span>(long arg0)
-        
+
   </td></tr>
 
 
@@ -1078,48 +1142,300 @@ From class
 
 
 
-<a id="ACTION_PUSH_MESSAGE_RECEIVED"></a>
+<a id="ACTION_LOCAL_MESSAGE_RECEIVED"></a>
 
-<div class="jd-details api apilevel-1.1.0"> 
+<div class="jd-details api apilevel-1.2.0">
     <h4 class="jd-details-title">
       <span class="normal">
-        public 
-        static 
-        final 
+        public
+        static
+        final
+        <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+      </span>
+        ACTION_LOCAL_MESSAGE_RECEIVED
+    </h4>
+      <div class="api-level">
+
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.2.0">API Level 1.2.0</a>
+
+
+
+
+
+      </div>
+    <div class="jd-details-descr">
+
+   <div class="jd-tagdata jd-tagdescr"><p>Broadcast Action: A message was received from the SDK while in offline mode.
+
+ <p>The intent will have the following extra values:
+ <ul>
+     <li><code><a href="../../../../com/esri/android/geotrigger/MessageReceiver.html#EXTRA_DATA">EXTRA_DATA</a></code> the extra data included with the message.
+ </ul>
+</p></div>
+
+
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+
+                "com.esri.android.geotrigger.intent.OFFLINE_RECEIVE"
+
+        </span>
+        </div>
+
+    </div>
+</div>
+
+
+
+<a id="ACTION_PUSH_MESSAGE_RECEIVED"></a>
+
+<div class="jd-details api apilevel-1.2.0">
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        static
+        final
         <a href="http://d.android.com/reference/java/lang/String.html">String</a>
       </span>
         ACTION_PUSH_MESSAGE_RECEIVED
     </h4>
       <div class="api-level">
-        
-
-  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 
-        
-  
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.2.0">API Level 1.2.0</a>
+
+
+
+
 
       </div>
     <div class="jd-details-descr">
-      
+
   <div class="jd-tagdata jd-tagdescr"><p>Broadcast Action: A push message was received.
 
  <p>The intent will have the following extra values:
  <ul>
-     <li><code><a href="../../../../com/esri/android/geotrigger/MessageReceiver.html#EXTRA_DATA">EXTRA_DATA</a></code>the extra data included with the message.
+     <li><code><a href="../../../../com/esri/android/geotrigger/MessageReceiver.html#EXTRA_DATA">EXTRA_DATA</a></code> the extra data included with the message.
  </ul>
 </p></div>
 
-    
+
         <div class="jd-tagdata">
         <span class="jd-tagtitle">Constant Value: </span>
         <span>
-            
+
                 "com.esri.android.geotrigger.action.PUSH_MESSAGE_RECEIVED"
-            
+
         </span>
         </div>
-    
+
+    </div>
+</div>
+
+
+
+<a id="DATA_DATA"></a>
+
+<div class="jd-details api apilevel-1.2.0">
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        static
+        final
+        <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+      </span>
+        DATA_DATA
+    </h4>
+      <div class="api-level">
+
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.2.0">API Level 1.2.0</a>
+
+
+
+
+
+      </div>
+    <div class="jd-details-descr">
+
+  <div class="jd-tagdata jd-tagdescr"><p><p>An extra containing the notification data. </p></div>
+
+
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+
+                "data"
+
+        </span>
+        </div>
+
+    </div>
+</div>
+
+
+
+<a id="DATA_ICON"></a>
+
+<div class="jd-details api apilevel-1.2.0">
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        static
+        final
+        <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+      </span>
+        DATA_ICON
+    </h4>
+      <div class="api-level">
+
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.2.0">API Level 1.2.0</a>
+
+
+
+
+
+      </div>
+    <div class="jd-details-descr">
+
+  <div class="jd-tagdata jd-tagdescr"><p>An extra containing the notification badge to be displayed. </p></div>
+
+
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+
+                "icon"
+
+        </span>
+        </div>
+
+    </div>
+</div>
+
+
+
+<a id="DATA_SOUND"></a>
+
+<div class="jd-details api apilevel-1.2.0">
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        static
+        final
+        <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+      </span>
+        DATA_SOUND
+    </h4>
+      <div class="api-level">
+
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.2.0">API Level 1.2.0</a>
+
+
+
+
+
+      </div>
+    <div class="jd-details-descr">
+
+  <div class="jd-tagdata jd-tagdescr"><p>An extra containing the notification sound to be played. </p></div>
+
+
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+
+                "sound"
+
+        </span>
+        </div>
+
+    </div>
+</div>
+
+
+
+<a id="DATA_TEXT"></a>
+
+<div class="jd-details api apilevel-1.2.0">
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        static
+        final
+        <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+      </span>
+        DATA_TEXT
+    </h4>
+      <div class="api-level">
+
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.2.0">API Level 1.2.0</a>
+
+
+
+
+
+      </div>
+    <div class="jd-details-descr">
+
+  <div class="jd-tagdata jd-tagdescr"><p>An extra containing the message text to be displayed. </p></div>
+
+
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+
+                "text"
+
+        </span>
+        </div>
+
+    </div>
+</div>
+
+
+
+<a id="DATA_URL"></a>
+
+<div class="jd-details api apilevel-1.2.0">
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        static
+        final
+        <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+      </span>
+        DATA_URL
+    </h4>
+      <div class="api-level">
+
+
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.2.0">API Level 1.2.0</a>
+
+
+
+
+
+      </div>
+    <div class="jd-details-descr">
+
+  <div class="jd-tagdata jd-tagdescr"><p>An extra containing a URI to be opened when the notification is touched. </p></div>
+
+
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+
+                "url"
+
+        </span>
+        </div>
+
     </div>
 </div>
 
@@ -1127,40 +1443,40 @@ From class
 
 <a id="EXTRA_DATA"></a>
 
-<div class="jd-details api apilevel-1.1.0"> 
+<div class="jd-details api apilevel-1.2.0">
     <h4 class="jd-details-title">
       <span class="normal">
-        public 
-        static 
-        final 
+        public
+        static
+        final
         <a href="http://d.android.com/reference/java/lang/String.html">String</a>
       </span>
         EXTRA_DATA
     </h4>
       <div class="api-level">
-        
-
-  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
 
 
-        
-  
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.2.0">API Level 1.2.0</a>
+
+
+
+
 
       </div>
     <div class="jd-details-descr">
-      
+
   <div class="jd-tagdata jd-tagdescr"><p>A <code>Bundle</code> containing key/value pairs of data. </p></div>
 
-    
+
         <div class="jd-tagdata">
         <span class="jd-tagtitle">Constant Value: </span>
         <span>
-            
+
                 "com.esri.android.geotrigger.extra.DATA"
-            
+
         </span>
         </div>
-    
+
     </div>
 </div>
 
@@ -1180,15 +1496,15 @@ From class
 
 <a id="MessageReceiver()"></a>
 
-<div class="jd-details api apilevel-1.1.0"> 
+<div class="jd-details api apilevel-1.2.0">
     <h4 class="jd-details-title">
       <span class="normal">
-        public 
-         
-         
-         
-         
-        
+        public
+
+
+
+
+
       </span>
       <span class="sympad">MessageReceiver</span>
       <span class="normal">()</span>
@@ -1196,15 +1512,15 @@ From class
       <div class="api-level">
         <div>
 
-  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.2.0">API Level 1.2.0</a>
 
 </div>
-        
-  
+
+
 
       </div>
     <div class="jd-details-descr">
-      
+
   <div class="jd-tagdata jd-tagdescr"><p></p></div>
 
     </div>
@@ -1228,14 +1544,14 @@ From class
 
 <a id="onReceive(android.content.Context, android.content.Intent)"></a>
 
-<div class="jd-details api apilevel-1.1.0"> 
+<div class="jd-details api apilevel-1.2.0">
     <h4 class="jd-details-title">
       <span class="normal">
-        public 
-         
-        final 
-         
-         
+        public
+
+        final
+
+
         void
       </span>
       <span class="sympad">onReceive</span>
@@ -1244,15 +1560,15 @@ From class
       <div class="api-level">
         <div>
 
-  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.2.0">API Level 1.2.0</a>
 
 </div>
-        
-  
+
+
 
       </div>
     <div class="jd-details-descr">
-      
+
   <div class="jd-tagdata jd-tagdescr"><p></p></div>
 
     </div>
@@ -1270,14 +1586,14 @@ From class
 
 <a id="handlePushNotification(android.content.Context, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)"></a>
 
-<div class="jd-details api apilevel-1.1.0"> 
+<div class="jd-details api apilevel-1.2.0">
     <h4 class="jd-details-title">
       <span class="normal">
-        protected 
-         
-         
-         
-         
+        protected
+
+
+
+
         void
       </span>
       <span class="sympad">handlePushNotification</span>
@@ -1286,15 +1602,15 @@ From class
       <div class="api-level">
         <div>
 
-  Since: <a href="../../../../guide/appendix/api-levels.html#level1.1.0">API Level 1.1.0</a>
+  Since: <a href="../../../../guide/appendix/api-levels.html#level1.2.0">API Level 1.2.0</a>
 
 </div>
-        
-  
+
+
 
       </div>
     <div class="jd-details-descr">
-      
+
   <div class="jd-tagdata jd-tagdescr"><p>Display a basic push notification if default handling is enabled.
 
  <p>Override this method in order to define custom handling for the push notification intent.</p></div>
@@ -1347,7 +1663,7 @@ Generated by <a href="http://code.google.com/p/doclava/">Doclava</a>.
 
 </div><!-- end doc-content -->
 
-</div> <!-- end body-content --> 
+</div> <!-- end body-content -->
 
 <script type="text/javascript">
 init(); /* initialize doclava-developer-docs.js */

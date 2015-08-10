@@ -26,7 +26,7 @@ allprojects {
         ...
         // Repository for the Esri Geotrigger SDK for Android
         maven {
-            url 'http://dl.bintray.com/esri/android'
+            url 'https://esri.bintray.com/android'
         }
     }
 }
@@ -37,11 +37,8 @@ App `build.gradle`:
 ```groovy
 dependencies {
     ...
-    // Required by the Esri Geotrigger SDK for Android
-    compile 'com.google.android.gms:play-services:6.5.87'
-
     // Esri Geotrigger SDK for Android
-    compile 'com.esri.android.geotrigger:geotrigger-sdk:1.1.0'
+    compile 'com.esri.android.geotrigger:geotrigger-sdk:1.2.0'
 }
 ```
 
