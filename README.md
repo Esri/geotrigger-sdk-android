@@ -26,7 +26,7 @@ allprojects {
         ...
         // Repository for the Esri Geotrigger SDK for Android
         maven {
-            url 'http://dl.bintray.com/esri/android'
+            url 'https://esri.bintray.com/android'
         }
     }
 }
