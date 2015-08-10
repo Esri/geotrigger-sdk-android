@@ -8,6 +8,13 @@
   <packaging>aar</packaging>
   <name>Geotrigger SDK for Android</name>
   <url>https://developers.arcgis.com/geotrigger-service/</url>
+  <licenses>
+    <license>
+      <name>Esri License Agreement</name>
+      <url>http://www.esri.com/legal/software-license</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
   <dependencies>
     <dependency>
       <groupId>com.google.android.gms</groupId>
